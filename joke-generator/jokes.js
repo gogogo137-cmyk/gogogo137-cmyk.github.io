@@ -222,6 +222,46 @@ const jokes = [
         setupZh: "為什麼學生跟統計學教授抱怨寒冷的天氣很像「糟糕的數據分析」？",
         punchlineZh: "因為兩者都會讓你因為「偏差的變數」（Biased variables，諧音冷到發抖）而直打冷顫！",
         emoji: "🥶"
+    },
+    {
+        category: "cold",
+        setup: "Why does a gun get depressed if you paint a knife blue?",
+        punchline: "Because blue knives are impenetrable (in Chinese 'Dao Qiang Bu Ru / Blue')!",
+        setupZh: "為什麼把「刀」塗成藍色 (Blue) 的，旁邊的「槍」就會很憂鬱？",
+        punchlineZh: "因為「刀槍不入 (Blue)」！",
+        emoji: "⚔️"
+    },
+    {
+        category: "cold",
+        setup: "Why do foxes trip and fall all the time?",
+        punchline: "Because they are foxes (in Chinese 'Jiao Hua / slippery feet')!",
+        setupZh: "為什麼狐狸在路上散步的時候，常常會跌倒？",
+        punchlineZh: "因為牠們「腳滑」(狡猾)！",
+        emoji: "🦊"
+    },
+    {
+        category: "cold",
+        setup: "A sheep calls an eagle, and the eagle answers 'Wei?' What idiom is this?",
+        punchline: "阳奉阴违 (Sheep Phone Eagle 'Wei')!",
+        setupZh: "小羊打電話給老鷹，老鷹接起來說：「喂？」這代表哪一個成語？",
+        punchlineZh: "「陽奉陰違」(羊 Phone 鷹 \"wei\")！",
+        emoji: "🦅"
+    },
+    {
+        category: "cold",
+        setup: "What is a very polite mouse called?",
+        punchline: "Polite mouse (in Chinese 'Bu Hao Yi Shu / Excuse me')!",
+        setupZh: "請問什麼樣的老鼠最懂禮貌、家教最好？",
+        punchlineZh: "「不好意鼠」(不好意思)！",
+        emoji: "🐭"
+    },
+    {
+        category: "cold",
+        setup: "When does 2 + 1 not equal 3?",
+        punchline: "When you calculate it wrong!",
+        setupZh: "請問在什麼時候，2 加 1 會不等於 3？",
+        punchlineZh: "算錯的時候！",
+        emoji: "➕"
     }
 ];
 
