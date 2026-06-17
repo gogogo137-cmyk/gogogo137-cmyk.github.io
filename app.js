@@ -60,12 +60,12 @@ createApp({
                 },
                 {
                     id: 'hw6',
-                    name: 'Machine Learning Homework 6',
-                    nameZh: '機器學習作業六',
-                    description: 'Advanced data modeling and statistical classifier implementation.',
-                    descriptionZh: '機器學習進階資料建模與統計分類器實作展示。',
+                    name: 'CRISP-DM Project Analysis Report of Top 50 Startups',
+                    nameZh: '五十大新創企業的CRISP-DM 專案分析報告',
+                    description: 'CRISP-DM methodology application on analyzing 50 startup business ventures.',
+                    descriptionZh: '應用 CRISP-DM 方法論分析五十大新創企業的商業指標與數據探勘報告。',
                     icon: 'fa-chart-pie',
-                    link: '../HW6/index.html',
+                    link: 'https://github.com/gogogo137-cmyk/stratup50',
                     color: '#f59e0b'
                 },
                 {
