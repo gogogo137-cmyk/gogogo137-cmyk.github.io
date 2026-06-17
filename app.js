@@ -9,6 +9,16 @@ createApp({
             // Project data structure - Separating data from presentation
             projects: [
                 {
+                    id: 'joke-generator',
+                    name: 'Random Joke Generator',
+                    nameZh: '歡樂隨機笑話產生器',
+                    description: 'Break the ice! An interactive web app to generate witty puns, jokes, and computer science memes.',
+                    descriptionZh: '打破尷尬！一鍵產生精選程式開發梗、冷笑話與冷知識的互動式小工具。',
+                    icon: 'fa-face-laugh-squint',
+                    link: './joke-generator/index.html',
+                    color: '#ff6b6b'
+                },
+                {
                     id: 'mcdonalds',
                     name: 'McDonald\'s Decision Tool',
                     nameZh: '麥當勞金黃選餐隨機機',
