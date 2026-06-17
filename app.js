@@ -45,7 +45,7 @@ createApp({
                     description: 'Predictive analytics on TSMC stock movement using regression modeling.',
                     descriptionZh: '基於迴歸模型與機器學習，進行台積電股票走勢預測與量化分析。',
                     icon: 'fa-microchip',
-                    link: '../HW7-2330/index.html',
+                    link: './HW7-2330/index.html',
                     color: '#06b6d4'
                 },
                 {
@@ -55,7 +55,7 @@ createApp({
                     description: 'Data science analysis on the classic Boston housing dataset with linear models.',
                     descriptionZh: '使用經典波士頓房地產數據集，進行房價特徵分析與線性預測模型。',
                     icon: 'fa-house-chimney',
-                    link: '../HW7%20boston/index.html',
+                    link: './HW7%20boston/index.html',
                     color: '#3b82f6'
                 },
                 {
