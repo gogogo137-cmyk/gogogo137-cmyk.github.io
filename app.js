@@ -80,8 +80,8 @@ createApp({
                 },
                 {
                     id: 'hw5',
-                    name: 'Machine Learning Homework 5',
-                    nameZh: '機器學習作業五',
+                    name: 'Top 10 ML Algorithms',
+                    nameZh: '機器學習十大必學演算法',
                     description: 'Algorithmic homework showcasing dataset processing and metrics compilation.',
                     descriptionZh: '精細資料集處理、核心指標計算與演算法效能評估作業。',
                     icon: 'fa-terminal',
