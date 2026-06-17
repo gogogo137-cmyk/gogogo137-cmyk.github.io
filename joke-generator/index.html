@@ -92,7 +92,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .back-btn {
@@ -138,10 +138,59 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
+        /* Category Selection */
+        .category-select-container {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .select-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
+        #category-select {
+            appearance: none;
+            -webkit-appearance: none;
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 8px 32px 8px 16px;
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-color);
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #category-select:hover {
+            background: rgba(255, 255, 255, 0.6);
+            border-color: var(--accent-color);
+        }
+
+        .select-wrapper::after {
+            content: '\25BC';
+            font-size: 8px;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: var(--text-color);
+            opacity: 0.6;
+        }
+
         /* Emoji display section */
         .emoji-display {
             font-size: 64px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             display: inline-block;
             transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
@@ -223,12 +272,6 @@
             transform: translateY(0);
         }
 
-        .btn-secondary-group {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 12px;
-        }
-
         .btn-secondary {
             background: var(--btn-secondary);
             color: var(--text-color);
@@ -278,13 +321,17 @@
         /* Responsive */
         @media (max-width: 480px) {
             .joke-card {
-                padding: 30px 20px;
+                padding: 35px 20px;
             }
             .setup {
                 font-size: 18px;
             }
             .punchline {
                 font-size: 15px;
+            }
+            .category-select-container {
+                flex-direction: column;
+                gap: 5px;
             }
         }
     </style>
@@ -306,6 +353,21 @@
             </div>
         </div>
 
+        <!-- Category Dropdown Selector -->
+        <div class="category-select-container">
+            <span id="category-label"><i class="fa-solid fa-tags"></i> 選擇分類：</span>
+            <div class="select-wrapper">
+                <select id="category-select" onchange="onCategoryChange(this.value)">
+                    <option value="all" id="opt-all">全部笑話</option>
+                    <option value="programmer" id="opt-programmer">工程師笑話</option>
+                    <option value="cold" id="opt-cold">雙關冷笑話</option>
+                    <option value="cold-war" id="opt-cold-war">冷戰政治笑話</option>
+                    <option value="special" id="opt-special">你的特別笑話</option>
+                    <option value="life" id="opt-life">職場與生活梗</option>
+                </select>
+            </div>
+        </div>
+
         <!-- Animated emoji -->
         <span class="emoji-display" id="emoji-box">😂</span>
 
@@ -321,11 +383,9 @@
                 <i class="fa-solid fa-face-laugh-beam"></i> <span id="next-btn-text">下一個笑話！</span>
             </button>
             
-            <div class="btn-secondary-group">
-                <button class="btn btn-secondary" onclick="copyToClipboard()">
-                    <i class="fa-solid fa-copy"></i> <span id="copy-btn-text">複製笑話</span>
-                </button>
-            </div>
+            <button class="btn btn-secondary" onclick="copyToClipboard()">
+                <i class="fa-solid fa-copy"></i> <span id="copy-btn-text">複製笑話</span>
+            </button>
         </div>
         
         <!-- Clipboard tooltip notification -->
@@ -337,6 +397,7 @@
     <script>
         let currentLang = 'zh';
         let currentJoke = null;
+        let selectedCategory = 'all';
         let lastIndex = -1;
 
         // Language text mappings
@@ -347,7 +408,14 @@
                 copyBtn: "複製笑話",
                 copied: "已複製到剪貼簿！",
                 loading: "正在尋找好笑的梗...",
-                backLink: "../index-zh.html"
+                backLink: "../index-zh.html",
+                categoryLabel: "選擇分類：",
+                optAll: "全部笑話",
+                optProgrammer: "工程師笑話",
+                optCold: "雙關冷笑話",
+                optColdWar: "冷戰政治笑話",
+                optSpecial: "你的特別笑話",
+                optLife: "職場與生活梗"
             },
             en: {
                 backText: "Back to Home",
@@ -355,7 +423,14 @@
                 copyBtn: "Copy Joke",
                 copied: "Copied to clipboard!",
                 loading: "Finding a good one...",
-                backLink: "../index.html"
+                backLink: "../index.html",
+                categoryLabel: "Category:",
+                optAll: "All Jokes",
+                optProgrammer: "Dev Jokes",
+                optCold: "Pun Cold Jokes",
+                optColdWar: "Cold War Politics",
+                optSpecial: "My Special Jokes",
+                optLife: "Workplace & Life"
             }
         };
 
@@ -380,13 +455,40 @@
             document.getElementById('copy-btn-text').textContent = langPack[lang].copyBtn;
             document.getElementById('copied-tooltip').textContent = langPack[lang].copied;
 
+            // Update category selector texts
+            document.getElementById('category-label').innerHTML = `<i class="fa-solid fa-tags"></i> ${langPack[lang].categoryLabel}`;
+            document.getElementById('opt-all').textContent = langPack[lang].optAll;
+            document.getElementById('opt-programmer').textContent = langPack[lang].optProgrammer;
+            document.getElementById('opt-cold').textContent = langPack[lang].optCold;
+            document.getElementById('opt-cold-war').textContent = langPack[lang].optColdWar;
+            document.getElementById('opt-special').textContent = langPack[lang].optSpecial;
+            document.getElementById('opt-life').textContent = langPack[lang].optLife;
+
             // Render current joke in selected language
             renderJoke();
+        }
+
+        // On category dropdown change
+        function onCategoryChange(category) {
+            selectedCategory = category;
+            lastIndex = -1; // Reset tracking index when category changes
+            getRandomJoke();
         }
 
         // Generate random joke
         function getRandomJoke() {
             if (!jokes || jokes.length === 0) return;
+
+            // Filter jokes based on selectedCategory
+            const filteredJokes = selectedCategory === 'all' 
+                ? jokes 
+                : jokes.filter(j => j.category === selectedCategory);
+
+            if (filteredJokes.length === 0) {
+                document.getElementById('setup-text').textContent = currentLang === 'zh' ? "此分類暫無笑話" : "No jokes in this category.";
+                document.getElementById('punchline-text').textContent = "";
+                return;
+            }
 
             // Trigger emoji bounce animation
             const emojiBox = document.getElementById('emoji-box');
@@ -402,13 +504,13 @@
 
             setTimeout(() => {
                 let index;
-                // Avoid picking the same joke twice in a row if there are multiple jokes
+                // Avoid picking the same joke twice in a row if there are multiple jokes in filtered list
                 do {
-                    index = Math.floor(Math.random() * jokes.length);
-                } while (index === lastIndex && jokes.length > 1);
+                    index = Math.floor(Math.random() * filteredJokes.length);
+                } while (index === lastIndex && filteredJokes.length > 1);
 
                 lastIndex = index;
-                currentJoke = jokes[index];
+                currentJoke = filteredJokes[index];
                 
                 // Set Emoji
                 emojiBox.textContent = currentJoke.emoji || "😂";
