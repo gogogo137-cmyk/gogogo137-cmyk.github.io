@@ -358,6 +358,54 @@ const jokes = [
         setupZh: "世界上最長的車是什麼車？",
         punchlineZh: "塞車！",
         emoji: "🚗"
+    },
+    {
+        category: "ancient",
+        setup: "A short-sighted man went to a temple and saw a blank hanging scroll. He asked: 'What is written on it?' Someone said: 'It's blank.' The man replied: 'Ah! I was just wondering why the handwriting is so clean and spacious!'",
+        punchline: "Writing space appreciation!",
+        setupZh: "一個近視眼的人去寺廟，看到牆上掛著一張空白的紙。他問旁邊的人：「這上面寫了什麼字呀？」旁人說：「上面什麼字都還沒寫呢。」近視眼大嘆：",
+        punchlineZh: "「哎呀！我剛剛就在想，怎麼這字寫得這麼乾淨、這麼有空間感！」",
+        emoji: "📜"
+    },
+    {
+        category: "ancient",
+        setup: "A thief broke into a house at night, but found it completely empty. The sleeping owner woke up and said to the thief...",
+        punchline: "'Friend, you came at night to look. I spend my whole day looking and still can't find anything!'",
+        setupZh: "有個小偷半夜溜進一戶窮人家裡，翻箱倒櫃什麼也沒找到。躺在床上的屋主突然翻身坐起，嘆氣對小偷說：",
+        punchlineZh: "「朋友，你大半夜摸黑來找，我都白天睜大眼睛找了一整天，也沒找到半毛錢啊！」",
+        emoji: "🥷"
+    },
+    {
+        category: "ancient",
+        setup: "A painter drew a picture of a tiger, but everyone said it looked like a dog. To avoid embarrassment, he hung up a sign next to it...",
+        punchline: "'Caution: Fierce tiger. If you don't believe it and get bitten, there is no compensation.'",
+        setupZh: "有個畫家畫了一隻老虎，但大家都說畫得像隻狗。畫家為了面子，便在畫作旁邊寫了一行字：",
+        punchlineZh: "「畫中乃是猛虎，若有不信者，咬死不賠。」",
+        emoji: "🐅"
+    },
+    {
+        category: "ancient",
+        setup: "A disciple told his master: 'I have prepared 100 tall hats (flattery) to give to people, so I won't get into trouble.' The master said: 'A gentleman should be honest, why flatter?' The disciple sighed: 'Alas, there are very few people who are as noble as you, Master!' The master smiled: 'True.' The disciple left and said to a friend...",
+        punchline: "'Now I have ninety-nine hats left!'",
+        setupZh: "弟子要去當官，對老師說：「我準備了一百頂高帽子，見人就送一頂，官場就好混了。」老師氣說：「君子行事應正直，怎能迎合諂媚？」弟子嘆道：「唉！如今天下像老師這樣清高、不愛戴高帽的人，實在太少了！」老師高興笑說：「你說得確實有道理。」弟子出門對朋友說：",
+        punchlineZh: "「我這就送出去一頂了，還剩九十九頂！」",
+        emoji: "🎩"
+    },
+    {
+        category: "ancient",
+        setup: "A forgetful man forgot his own name. He leaned over a deep well and shouted: 'Who is down there?' The echo replied: 'Who is down there?' The man said...",
+        punchline: "'Ah, he has the same name as me!'",
+        setupZh: "一個健忘的人忘記了自己的名字。他走到一口深井旁，朝井裡大喊：「下面的人叫什麼名字？」井底傳來回音：「下面的人叫什麼名字？」健忘的人大驚：",
+        punchlineZh: "「天啊！下面那個人居然跟我同名同姓！」",
+        emoji: "🕳️"
+    },
+    {
+        category: "ancient",
+        setup: "A villager bought a mirror for the first time. He looked into it and cried: 'Why did you bring another man home?' His wife looked in and cried...",
+        punchline: "'And you even brought an old woman too!'",
+        setupZh: "鄉下人第一次買鏡子，拿回家看了一眼，驚呼：「老婆！你怎麼又帶了個男人回家？」老婆拿過鏡子一看，大哭道：",
+        punchlineZh: "「你還好意思說！你連他老娘也一起帶回來了！」",
+        emoji: "🪞"
     }
 ];
 
