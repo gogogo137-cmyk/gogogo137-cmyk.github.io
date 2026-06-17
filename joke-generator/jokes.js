@@ -262,6 +262,102 @@ const jokes = [
         setupZh: "請問在什麼時候，2 加 1 會不等於 3？",
         punchlineZh: "算錯的時候！",
         emoji: "➕"
+    },
+    {
+        category: "breakfast",
+        setup: "Which chicken in the world runs the slowest?",
+        punchline: "Nicole Kidman (sounds like 'Ni-ke Ji-man' / This chicken is slow)!",
+        setupZh: "世界上跑得最慢的雞是哪一隻？",
+        punchlineZh: "妮可基嫚 (妮可雞慢)！",
+        emoji: "🐔"
+    },
+    {
+        category: "breakfast",
+        setup: "What does a mung bean become when it commits suicide?",
+        punchline: "Mung bean paste (sounds like 'mung bean kills itself' in Chinese)!",
+        setupZh: "綠豆自殺會變成什麼？",
+        punchlineZh: "綠豆沙 (綠豆殺)！",
+        emoji: "🫘"
+    },
+    {
+        category: "breakfast",
+        setup: "Which flower is the most tired and has no energy?",
+        punchline: "Jasmine (Mo-li-hua, sounds like 'Mei-li-hua' / No-energy flower)!",
+        setupZh: "哪一種花最沒力氣？",
+        punchlineZh: "茉莉花 (沒力花)！",
+        emoji: "🌸"
+    },
+    {
+        category: "breakfast",
+        setup: "Among erasers, pencils, and ballpoint pens, who is the most despicable?",
+        punchline: "Pencil, because 'Bi-Jiao-Jian' (sounds like 'comparing pens is cheaper/meaner')!",
+        setupZh: "橡皮擦、鉛筆、原子筆，哪一個最卑鄙？",
+        punchlineZh: "鉛筆，因為「筆較賤」(比較賤)！",
+        emoji: "✏️"
+    },
+    {
+        category: "breakfast",
+        setup: "Who is the grandmother of McDonald's?",
+        punchline: "Madonna (sounds like 'Mai-dang-na' / McDonald's grandma)!",
+        setupZh: "麥當勞的阿嬤是誰？",
+        punchlineZh: "麥當娜 (麥當na / 麥當勞的阿嬤)！",
+        emoji: "👵"
+    },
+    {
+        category: "breakfast",
+        setup: "What mouse walks on two legs? Mickey Mouse. What duck walks on two legs?",
+        punchline: "All ducks do!",
+        setupZh: "什麼老鼠用兩隻腳走路？米老鼠。那什麼鴨子用兩隻腳走路？",
+        punchlineZh: "所有的鴨子！(都被騙了吧～)",
+        emoji: "🦆"
+    },
+    {
+        category: "breakfast",
+        setup: "Which pen is most likely to fall asleep during an exam?",
+        punchline: "The ballpoint pen, because it always keeps its eyes closed (sounds like 'pen' in Chinese)!",
+        setupZh: "哪一種筆在考試時最容易睡著？",
+        punchlineZh: "原子筆，因為它總是「筆」(閉)著眼！",
+        emoji: "🖊️"
+    },
+    {
+        category: "breakfast",
+        setup: "What fruit is most likely to trigger a war?",
+        punchline: "Blueberry (sounds like 'Lan-mei' / Inevitably there will be a battle)!",
+        setupZh: "什麼水果最容易引發戰爭？",
+        punchlineZh: "藍莓，因為「藍莓」(難免)會有一戰！",
+        emoji: "🫐"
+    },
+    {
+        category: "breakfast",
+        setup: "Who is the most helpful cartoon character but always extends a 'round hand'?",
+        punchline: "Doraemon, because his hands are literally spheres (sounds like 'extending a helping hand')!",
+        setupZh: "誰最熱心助人，但每次都只會伸出「圓手」？",
+        punchlineZh: "哆啦A夢，因為他的手是圓的 (伸出圓手/援手)！",
+        emoji: "🐱"
+    },
+    {
+        category: "breakfast",
+        setup: "What plant is the shortest?",
+        punchline: "Dandelion (sounds like 'Pu-gong-ying' / Spread on the ground)!",
+        setupZh: "什麼植物長得最矮？",
+        punchlineZh: "蒲公英，因為「鋪地(蒲公)英」！",
+        emoji: "🌾"
+    },
+    {
+        category: "breakfast",
+        setup: "A black cat and a white cat go for a walk. The black cat falls into the water and the white cat saves it. What does the black cat say?",
+        punchline: "Meow! (Cats can only meow!)",
+        setupZh: "黑貓跟白貓出去散步，黑貓掉進水裡被白貓救起來，黑貓跟白貓說了什麼？",
+        punchlineZh: "喵！(貓咪本來就只會喵喵叫啊～)",
+        emoji: "🐱"
+    },
+    {
+        category: "breakfast",
+        setup: "What is the longest car in the world?",
+        punchline: "Traffic jam (sounds like 'plugged car' in Chinese)!",
+        setupZh: "世界上最長的車是什麼車？",
+        punchlineZh: "塞車！",
+        emoji: "🚗"
     }
 ];
 
