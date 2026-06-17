@@ -19,6 +19,16 @@ createApp({
                     color: '#ff6b6b'
                 },
                 {
+                    id: 'cheerleader-selector',
+                    name: 'Cheerleader加權隨機應援機',
+                    nameZh: '啦啦隊員加權隨選應援機',
+                    description: 'A professional sporty selector that dynamically filters cheerleaders from CPBL, TPBL, and TVL, and calculates square root popularity weights.',
+                    descriptionZh: '高質感職業啦啦隊篩選器，支援職棒、職籃、職排與多國籍篩選，並以人氣開根號加權演算法隨機隨選應援。',
+                    icon: 'fa-ranking-star',
+                    link: './cheerleader/index.html',
+                    color: '#ff007f'
+                },
+                {
                     id: 'mcdonalds',
                     name: 'McDonald\'s Decision Tool',
                     nameZh: '麥當勞金黃選餐隨機機',
