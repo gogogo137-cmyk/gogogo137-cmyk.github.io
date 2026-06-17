@@ -138,6 +138,41 @@ const jokes = [
         setupZh: "如何分辨 HTML 究竟是不是程式語言？",
         punchlineZh: "直接在工程師面前說「HTML 是程式語言」，然後測量他們翻白眼的速度即可。",
         emoji: "🙄"
+    },
+    {
+        setup: "An American dog, a Polish dog, and a Soviet dog meet. The American dog says: 'In my country, if you bark long enough, someone will give you meat.'",
+        punchline: "The Polish dog asks: 'What is meat?' The Soviet dog asks: 'What is bark?'",
+        setupZh: "一隻美國狗、一隻波蘭狗和一隻蘇聯狗相遇。美國狗得意地說：「在我們國家，只要你叫得夠久，就會有人給你肉吃。」",
+        punchlineZh: "波蘭狗疑惑地問：「什麼是『肉』？」蘇聯狗則害怕地問：「什麼是『叫』？」",
+        emoji: "🐕"
+    },
+    {
+        setup: "Reagan and Gorbachev run a head-to-head two-car race. Reagan wins.",
+        punchline: "The next day, Soviet newspaper Pravda reports: 'In the international car race, General Secretary Gorbachev won a glorious second place, while US President Reagan came in next-to-last.'",
+        setupZh: "美國總統雷根和蘇聯總書記戈巴契夫進行了一場兩人的私人賽車對決，最後雷根贏了。",
+        punchlineZh: "隔天蘇聯《真理報》頭條報導：「在國際賽車大賽中，我們偉大的戈巴契夫總書記榮獲第二名佳績！而美國總統雷根則是不幸落入倒數第二名。」",
+        emoji: "🏎️"
+    },
+    {
+        setup: "A citizen is waiting in a massive line to buy bread in Moscow. Furious, he shouts: 'I\'ve had enough! I\'m going to the Kremlin to shoot the General Secretary!'",
+        punchline: "Two hours later, he returns to the line. People ask: 'Did you shoot him?' - 'No, the line over there was even longer!'",
+        setupZh: "莫斯科街頭，一名男子排了數個小時的長隊買麵包，終於氣瘋了，大喊：「我不排了！我要去克里姆林宮把總書記崩了！」說完憤而離去。",
+        punchlineZh: "兩個小時後，他垂頭喪氣地回到隊伍中。大家悄悄問他：「你動手了嗎？」他嘆氣道：「沒有，克里姆林宮那邊想開槍的人排得比這還長！」",
+        emoji: "🥖"
+    },
+    {
+        setup: "Three men are sitting in a Gulag cell and ask each other why they were arrested. The first says: 'I was 5 minutes late, so they accused me of spying.' The second says: 'I was 5 minutes early, so they accused me of infiltrating.'",
+        punchline: "The third man sighs: 'I arrived exactly on time, so they accused me of buying a Western watch.'",
+        setupZh: "西伯利亞古拉格集中營裡有三個囚犯。第一個說：「我上班遲到了五分鍾，他們控告我企圖怠工破壞社會主義經濟。」第二個說：「我上班早到了五分鍾，他們控告我是西方派來的滲透特務。」",
+        punchlineZh: "第三個搖搖頭嘆道：「我每天都分秒不差準時上班，結果他們控告我非法購買並使用西方的走私手錶。」",
+        emoji: "⛓️"
+    },
+    {
+        setup: "Gorbachev, running late for a meeting, tells his chauffeur to sit in the back so he can drive. He speeds and gets pulled over by a cop.",
+        punchline: "The cop looks in the window, runs back to his chief and says: 'I can't ticket him! He's too important!' - 'Who is it? Reagan?' - 'I don\'t know, but his driver is Gorbachev!'",
+        setupZh: "戈巴契夫開會快要遲到了，他命令司機坐到後座，自己親自踩油門飆車。因為超速被一名年輕警員攔了下來。",
+        punchlineZh: "警員看了一眼車內，驚慌失措地跑回警長身旁說：「我不敢開單！車裡那個人太大咖了！」警長問：「是誰？雷根嗎？」警員顫抖地說：「我不知道他是誰，但他的司機是戈巴契夫！」",
+        emoji: "👮"
     }
 ];
 
