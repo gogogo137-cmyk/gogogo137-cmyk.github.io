@@ -29,6 +29,16 @@ createApp({
                     color: '#ff007f'
                 },
                 {
+                    id: 'nonsense-selector',
+                    name: 'Nonsense Random Selector',
+                    nameZh: '隨選幹話金句全集機',
+                    description: 'A cyber-neon selector generating classic Taiwanese nonsense sayings, with mock metrics and philosophical analyses.',
+                    descriptionZh: '霓虹電競風格的台灣經典幹話金句產生器，附帶趣味指標與一本正經的偽科學賞析。',
+                    icon: 'fa-face-laugh-wink',
+                    link: './nonsense/index.html',
+                    color: '#bc13fe'
+                },
+                {
                     id: 'mcdonalds',
                     name: 'McDonald\'s Decision Tool',
                     nameZh: '麥當勞金黃選餐隨機機',
@@ -193,3 +203,4 @@ createApp({
         window.removeEventListener('scroll', this.handleScroll);
     }
 }).mount('#app');
+
