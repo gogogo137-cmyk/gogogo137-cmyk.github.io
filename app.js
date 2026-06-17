@@ -55,7 +55,7 @@ createApp({
                     description: 'Multi-variable regression models mapping property values across California districts.',
                     descriptionZh: '多變數地理迴歸分析，針對加利福尼亞州不同地區的房屋價值預測模型。',
                     icon: 'fa-map-location-dot',
-                    link: '../HW7%20califonia/index.html',
+                    link: 'https://github.com/gogogo137-cmyk/HW7-califonia',
                     color: '#10b981'
                 },
                 {
