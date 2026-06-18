@@ -107,7 +107,7 @@ function setupThreeJS() {
 
     // Scene
     scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x0b0f19, 0.015);
+    scene.fog = new THREE.FogExp2(0xf8fafc, 0.015);
 
     // Camera
     camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 100);
@@ -140,7 +140,7 @@ function setupThreeJS() {
     scene.add(dirLight2);
 
     // Grid helper (infinite looking)
-    const gridHelper = new THREE.GridHelper(20, 20, 0xffffff, 0x1f2937);
+    const gridHelper = new THREE.GridHelper(20, 20, 0x94a3b8, 0xe2e8f0);
     gridHelper.position.y = -0.01;
     scene.add(gridHelper);
 
