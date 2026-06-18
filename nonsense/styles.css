@@ -1,17 +1,17 @@
 /* Reset & Variables */
 :root {
-    --bg-dark: #090514;
-    --bg-gradient: linear-gradient(135deg, #090514 0%, #150a21 50%, #03121a 100%);
-    --card-bg: rgba(28, 20, 41, 0.6);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --primary-accent: #ff007f; /* Neon Hot Pink */
-    --secondary-accent: #00f0ff; /* Neon Cyan */
-    --gold-accent: #ffc72c; /* Gold */
+    --bg-dark: #070312;
+    --bg-gradient: linear-gradient(135deg, #070312 0%, #11052c 50%, #03140a 100%);
+    --card-bg: rgba(22, 11, 38, 0.65);
+    --card-border: rgba(255, 255, 255, 0.06);
+    --primary-accent: #bc13fe; /* Neon Purple */
+    --secondary-accent: #39ff14; /* Neon Lime Green */
+    --orange-accent: #ff5f1f; /* Neon Orange */
     --text-primary: #f8fafc;
     --text-secondary: #cbd5e1;
-    --text-muted: #64748b;
+    --text-muted: #5e6b7c;
     --font-main: 'Outfit', 'Noto Sans TC', sans-serif;
-    --shadow-neon: 0 0 25px rgba(255, 0, 127, 0.25);
+    --shadow-neon: 0 0 25px rgba(57, 255, 20, 0.2);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -99,7 +99,7 @@ header {
     justify-content: center;
     font-size: 1.8rem;
     color: white;
-    box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
 }
 
 .title-group h1 {
@@ -126,17 +126,17 @@ header {
     align-items: center;
     gap: 8px;
     transition: var(--transition-smooth);
-    border: 1px solid rgba(0, 240, 255, 0.2);
+    border: 1px solid rgba(57, 255, 20, 0.2);
     padding: 8px 16px;
     border-radius: 12px;
-    background: rgba(0, 240, 255, 0.04);
+    background: rgba(57, 255, 20, 0.04);
 }
 
 .back-home-btn:hover {
-    color: white;
+    color: #070312;
     background: var(--secondary-accent);
     border-color: var(--secondary-accent);
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
     transform: translateX(-3px);
 }
 
@@ -153,25 +153,25 @@ header {
     }
 }
 
-/* Left Panel: Spotlight Presentation Card */
+/* Spotlight Presentation Card */
 .spotlight-card {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--card-border);
     border-radius: 28px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 0, 127, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(57, 255, 20, 0.08);
     padding: 2rem;
     display: grid;
-    grid-template-columns: 1.1fr 1.3fr;
+    grid-template-columns: 1fr 1.3fr;
     gap: 2rem;
     transition: border-color 0.5s ease, box-shadow 0.5s ease;
     min-height: 520px;
 }
 
 .spotlight-card:hover {
-    border-color: rgba(255, 0, 127, 0.25);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 0, 127, 0.2);
+    border-color: rgba(57, 255, 20, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(57, 255, 20, 0.15);
 }
 
 .spotlight-left {
@@ -187,18 +187,54 @@ header {
     min-height: 380px;
 }
 
-.spotlight-left img {
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
+/* Dynamic Glowing Pulsating Icon for Quotes */
+.spotlight-avatar-container {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(188, 19, 254, 0.1) 0%, rgba(57, 255, 20, 0.1) 100%);
+    border: 2px dashed var(--secondary-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5rem;
+    color: var(--secondary-accent);
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+    box-shadow: inset 0 0 20px rgba(57, 255, 20, 0.2);
+    animation: rotatePulse 8s linear infinite;
     transition: filter 0.15s ease, transform 0.15s ease;
-    display: block;
+}
+
+.spotlight-avatar-container i {
+    animation: counterRotate 8s linear infinite;
+}
+
+@keyframes rotatePulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+        border-color: var(--secondary-accent);
+        box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.08);
+        border-color: var(--primary-accent);
+        box-shadow: 0 0 35px rgba(188, 19, 254, 0.3);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+        border-color: var(--secondary-accent);
+        box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+    }
+}
+
+@keyframes counterRotate {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .spinning-effect {
-    filter: blur(15px) grayscale(0.5);
-    transform: scale(0.95);
+    filter: blur(8px) grayscale(0.5);
+    transform: scale(0.92);
 }
 
 .spotlight-right {
@@ -211,32 +247,31 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-#spotlight-name {
-    font-size: 1.8rem;
+#spotlight-quote {
+    font-size: 1.6rem;
     font-weight: 800;
     color: white;
+    line-height: 1.4;
+    word-break: break-all;
+    min-height: 80px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
-.spotlight-nat {
+.spotlight-badge {
+    align-self: flex-start;
     font-size: 0.8rem;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--text-secondary);
-    padding: 3px 10px;
+    background: rgba(188, 19, 254, 0.15);
+    color: #df9aff;
+    border: 1px solid rgba(188, 19, 254, 0.3);
+    padding: 4px 12px;
     border-radius: 20px;
-    font-weight: 600;
-}
-
-#spotlight-team {
-    font-size: 1rem;
-    color: var(--primary-accent);
     font-weight: 700;
-    margin-top: 0.4rem;
 }
 
 .spotlight-metrics {
@@ -247,8 +282,8 @@ header {
 }
 
 .metric-item {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 12px;
     padding: 0.6rem 0.8rem;
     text-align: center;
@@ -263,14 +298,12 @@ header {
 
 .metric-value {
     font-family: monospace;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
 .metric-value.highlight {
-    color: var(--gold-accent);
-    font-size: 1.25rem;
-    font-family: 'Outfit', sans-serif;
+    color: var(--orange-accent);
 }
 
 .spotlight-desc-box {
@@ -350,7 +383,7 @@ header {
 }
 
 .filter-btn {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--card-border);
     color: var(--text-secondary);
     padding: 8px 14px;
@@ -363,22 +396,23 @@ header {
 }
 
 .filter-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.06);
     color: white;
 }
 
 .filter-btn.active {
     background: var(--secondary-accent);
     border-color: var(--secondary-accent);
-    color: #090514;
-    box-shadow: 0 0 15px rgba(0, 240, 255, 0.35);
+    color: #070312;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
     font-weight: 700;
 }
 
-.filter-btn.active.nat-btn {
+.filter-btn.active.category-btn {
     background: var(--primary-accent);
     border-color: var(--primary-accent);
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.35);
+    color: white;
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.4);
 }
 
 /* Action Spin Button */
@@ -391,7 +425,7 @@ header {
     padding: 1.2rem;
     font-size: 1.15rem;
     font-weight: 800;
-    background: linear-gradient(135deg, var(--primary-accent) 0%, #b30059 100%);
+    background: linear-gradient(135deg, var(--primary-accent) 0%, #7e0cb3 100%);
     color: white;
     border: none;
     border-radius: 16px;
@@ -401,14 +435,14 @@ header {
     justify-content: center;
     gap: 10px;
     transition: var(--transition-smooth);
-    box-shadow: 0 4px 20px rgba(255, 0, 127, 0.35);
+    box-shadow: 0 4px 20px rgba(188, 19, 254, 0.3);
     font-family: var(--font-main);
 }
 
 .btn-spin:hover:not(:disabled) {
-    background: linear-gradient(135deg, #ff3399 0%, var(--primary-accent) 100%);
+    background: linear-gradient(135deg, #cc3ffc 0%, var(--primary-accent) 100%);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(255, 0, 127, 0.5);
+    box-shadow: 0 8px 25px rgba(188, 19, 254, 0.45);
 }
 
 .btn-spin:active:not(:disabled) {
@@ -418,11 +452,11 @@ header {
 .btn-spin:disabled {
     opacity: 0.65;
     cursor: not-allowed;
-    background: #475569;
+    background: #272c34;
     box-shadow: none;
 }
 
-/* Cheerleaders Pool Gallery */
+/* Quotes Pool Gallery */
 .pool-gallery-section {
     background: var(--card-bg);
     backdrop-filter: blur(20px);
@@ -453,112 +487,86 @@ header {
     font-size: 0.85rem;
     color: var(--secondary-accent);
     font-weight: 700;
-    background: rgba(0, 240, 255, 0.1);
+    background: rgba(57, 255, 20, 0.08);
     padding: 4px 12px;
     border-radius: 20px;
-    border: 1px solid rgba(0, 240, 255, 0.2);
+    border: 1px solid rgba(57, 255, 20, 0.15);
 }
 
 .cheer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.25rem;
 }
 
-.cheer-mini-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+.quote-mini-card {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.03);
     border-radius: 16px;
-    padding: 1rem;
+    padding: 1.2rem;
     display: flex;
     gap: 1rem;
     align-items: center;
     transition: var(--transition-smooth);
 }
 
-.cheer-mini-card:hover {
-    background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(0, 240, 255, 0.15);
+.quote-mini-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(57, 255, 20, 0.12);
     transform: translateY(-2px);
 }
 
-.mini-card-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    overflow: hidden;
+.mini-card-icon-placeholder {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(188, 19, 254, 0.08);
+    border: 1px dashed rgba(188, 19, 254, 0.2);
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.mini-card-img img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--primary-accent);
+    flex-shrink: 0;
 }
 
 .mini-card-info {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 3px;
-    min-width: 0; /* Ensures text truncation works */
+    gap: 4px;
+    min-width: 0;
 }
 
 .mini-card-info h4 {
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: white;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.3;
 }
 
-.mini-card-team {
+.mini-card-category-text {
     font-size: 0.75rem;
     color: var(--text-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .mini-card-badges {
     display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
+    gap: 6px;
     margin-top: 2px;
 }
 
-.badge-nat {
+.badge-index {
     font-size: 0.65rem;
-    background: rgba(255, 255, 255, 0.06);
-    color: var(--text-secondary);
+    background: rgba(57, 255, 20, 0.08);
+    color: var(--secondary-accent);
     padding: 1px 6px;
     border-radius: 4px;
     font-weight: bold;
-}
-
-.badge {
-    font-size: 0.65rem;
-    padding: 1px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-    color: #000;
-}
-
-.badge-cpbl {
-    background: var(--secondary-accent);
-}
-
-.badge-tpbl {
-    background: var(--primary-accent);
-    color: white;
-}
-
-.badge-tvl {
-    background: var(--gold-accent);
+    border: 1px solid rgba(57, 255, 20, 0.15);
 }
 
 .no-data {
@@ -576,21 +584,11 @@ header {
 }
 
 @keyframes bounceSpotlight {
-    0% {
-        transform: scale(1);
-    }
-    30% {
-        transform: scale(1.05) rotate(-1deg);
-    }
-    50% {
-        transform: scale(0.98) rotate(1deg);
-    }
-    70% {
-        transform: scale(1.01) rotate(0deg);
-    }
-    100% {
-        transform: scale(1);
-    }
+    0% { transform: scale(1); }
+    30% { transform: scale(1.04) rotate(-0.5deg); }
+    50% { transform: scale(0.99) rotate(0.5deg); }
+    70% { transform: scale(1.01) rotate(0deg); }
+    100% { transform: scale(1); }
 }
 
 /* Responsive */
@@ -615,10 +613,11 @@ header {
         grid-template-columns: 1fr;
         padding: 1.25rem;
         border-radius: 20px;
+        min-height: auto;
     }
     .spotlight-left {
-        min-height: 280px;
-        max-height: 320px;
+        min-height: 200px;
+        max-height: 240px;
     }
     .control-card {
         padding: 1.25rem;
