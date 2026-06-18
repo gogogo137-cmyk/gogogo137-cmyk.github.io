@@ -165,6 +165,22 @@
                 </div>
             </section>
         </main>
+    <!-- Talk History Floating Button & Modal -->
+    <button class="talk-history-trigger" id="talk-history-trigger" title="專案開發對話紀錄">
+        <i class="fa-solid fa-comments"></i> 對話紀錄
+    </button>
+
+    <div class="talk-history-modal" id="talk-history-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-card">
+            <div class="modal-card-header">
+                <h3>💬 專案開發對話紀錄 (Talk History)</h3>
+                <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-card-body markdown-body" id="modal-card-body">
+                <p style="text-align: center; color: var(--text-secondary);"><i class="fa-solid fa-spinner fa-spin"></i> 正在載入對話紀錄...</p>
+            </div>
+        </div>
     </div>
 
     <!-- CDNs -->
@@ -174,6 +190,49 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
     <!-- GSAP for animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Marked.js for parsing markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Talk History dynamic loader -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const trigger = document.getElementById('talk-history-trigger');
+            const modal = document.getElementById('talk-history-modal');
+            const closeBtn = document.getElementById('modal-close');
+            const overlay = document.getElementById('modal-overlay');
+            const body = document.getElementById('modal-card-body');
+            let loaded = false;
+
+            const openModal = async () => {
+                modal.classList.add('active');
+                if (!loaded) {
+                    try {
+                        const response = await fetch('./talk-history.md');
+                        if (!response.ok) throw new Error('Failed to load file');
+                        const markdown = await response.text();
+                        body.innerHTML = marked.parse(markdown);
+                        loaded = true;
+                    } catch (err) {
+                        body.innerHTML = `<p style="color: var(--accent-red); text-align: center;"><i class="fa-solid fa-circle-exclamation"></i> 載入對話紀錄失敗，請稍後再試。</p>`;
+                        console.error(err);
+                    }
+                }
+            };
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+            };
+
+            trigger.addEventListener('click', openModal);
+            closeBtn.addEventListener('click', closeModal);
+            overlay.addEventListener('click', closeModal);
+            
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
     <!-- App Main Script -->
     <script src="app.js"></script>
 </body>
