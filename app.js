@@ -49,6 +49,16 @@ createApp({
                     color: '#8b5cf6'
                 },
                 {
+                    id: 'svm-visualizer',
+                    name: 'SVM 3D Interactive Visualizer',
+                    nameZh: 'SVM 支持向量機 3D 視覺化互動器',
+                    description: 'An interactive 3D WebGL tool illustrating linear inseparability, kernel lifting, hyperplane separation, and decision boundary projections.',
+                    descriptionZh: '高質感 3D 互動式網頁應用。透過三維空間投影與動態超平面切割，直觀理解 SVM、RBF Kernel 與 Margin 最大化機制。',
+                    icon: 'fa-circle-nodes',
+                    link: './svm-visualizer/index.html',
+                    color: '#10b981'
+                },
+                {
                     id: 'hw7-2330',
                     name: 'TSMC Stock regression (2330)',
                     nameZh: '台積電 (2330) 股票回歸分析',
