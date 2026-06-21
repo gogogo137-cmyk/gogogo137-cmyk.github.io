@@ -39,6 +39,16 @@ createApp({
                     color: '#00f0ff'
                 },
                 {
+                    id: 'panda-puzzle',
+                    name: 'Cute Panda 5x5 Jigsaw Puzzle',
+                    nameZh: '萌萌熊貓 5x5 拼圖挑戰',
+                    description: 'A cozy bamboo-themed 5x5 giant panda jigsaw puzzle featuring high-quality AI generated panda images, responsive layout, and smart snapping mechanics.',
+                    descriptionZh: '綠意竹林主題的 5x5 熊貓拼圖挑戰。收錄多張萌寵熊貓相片，支援自訂圖片上傳與滑鼠/觸控拖曳定位，通關即享彩帶慶祝特效！',
+                    icon: 'fa-paw',
+                    link: './panda-puzzle/index.html',
+                    color: '#10b981'
+                },
+                {
                     id: 'nonsense-selector',
                     name: 'Nonsense Random Selector',
                     nameZh: '隨選幹話金句全集機',
