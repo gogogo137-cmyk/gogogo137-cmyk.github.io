@@ -9,16 +9,6 @@ createApp({
             // Project data structure - Separating data from presentation
             projects: [
                 {
-                    id: 'sportslottery',
-                    name: 'Taiwan Sports Lottery Simulation',
-                    nameZh: '台灣運動彩券模擬投注機',
-                    description: 'A mock sports lottery system featuring dynamic odds, multiple bet types (Spread, Moneyline, Over/Under), and simulated match results.',
-                    descriptionZh: '高質感運動彩券模擬系統。支援虛擬資金管理、動態賠率、多種玩法（讓分、不讓分、大小、單雙），並可一鍵模擬比賽比分與結算派彩。',
-                    icon: 'fa-ticket',
-                    link: './sportslottery/index.html',
-                    color: '#eab308'
-                },
-                {
                     id: 'joke-generator',
                     name: 'Random Joke Generator',
                     nameZh: '歡樂隨機笑話產生器',
