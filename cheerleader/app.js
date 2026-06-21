@@ -1596,6 +1596,36 @@ const cheerleaders = [
     "image": "assets/emily.png",
     "bio": "為 樂天桃猿 Rakuten Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
     "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "mimi",
+    "name": "冞冞 (Mimi)",
+    "nameEn": "Mimi",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 350000,
+    "emoji": "💫",
+    "image": "assets/se7en.png",
+    "bio": "統一獅 Uni-Girls 的超人氣成員，以甜美的笑容與精湛的舞技深受球迷喜愛。在看台上充滿活力的應援表現，具有強大的渲染力與親和力。",
+    "direction": "個人自媒體經營、商業活動主持、美妝與穿搭代言、運動休閒推廣。"
+  },
+  {
+    "id": "wenwen",
+    "name": "汶汶 (Wenwen)",
+    "nameEn": "Wenwen",
+    "team": "中信兄弟 Passion Sisters",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 360000,
+    "emoji": "🐘",
+    "image": "assets/qunqun.png",
+    "bio": "中信兄弟 Passion Sisters 的活力成員，以青春亮麗的外型與充滿陽光朝氣的笑容為特色。在球場上展現滿滿的熱情，與球迷的互動親切又自然。",
+    "direction": "綜藝節目嘉賓、平面模特兒、品牌大使、自媒體經營與舞蹈表演。"
   }
 ];
 
