@@ -1602,7 +1602,7 @@ const cheerleaders = [
 // Current State
 let activeLeague = "all";
 let activeNationality = "all";
-let lastSelectedIndex = -1;
+let selectedCheerleaderId = "dahye"; // default selected cheerleader ID
 
 // Render original stats on load
 document.addEventListener("DOMContentLoaded", () => {
@@ -1615,6 +1615,7 @@ function filterLeague(league) {
     activeLeague = league;
     document.querySelectorAll(".league-btn").forEach(btn => btn.classList.remove("active"));
     document.getElementById(`lbtn-${league}`).classList.add("active");
+    syncSelectionWithFilter();
     renderAllCards();
     updateCansProbability();
 }
@@ -1623,6 +1624,7 @@ function filterNationality(nat) {
     activeNationality = nat;
     document.querySelectorAll(".nat-btn").forEach(btn => btn.classList.remove("active"));
     document.getElementById(`nbtn-${nat}`).classList.add("active");
+    syncSelectionWithFilter();
     renderAllCards();
     updateCansProbability();
 }
@@ -1634,6 +1636,57 @@ function getFilteredList() {
         const natMatch = (activeNationality === "all" || c.nationality === activeNationality);
         return leagueMatch && natMatch;
     });
+}
+
+// Get probability of a cheerleader in the current filtered pool
+function getCheerleaderProbabilityText(c) {
+    if (!c) return "0.00%";
+    const filtered = getFilteredList();
+    const isInPool = filtered.some(item => item.id === c.id);
+    if (!isInPool) return "0.00% (不在候選池中)";
+    const sumSqrt = filtered.reduce((sum, item) => sum + Math.sqrt(item.popularity), 0);
+    if (sumSqrt === 0) return "0.00%";
+    const prob = (Math.sqrt(c.popularity) / sumSqrt) * 100;
+    return prob.toFixed(2) + "%";
+}
+
+// Handle cheerleader card click from the pool
+function selectCheerleader(c) {
+    selectedCheerleaderId = c.id;
+    
+    // Update selected styling in pool grid
+    document.querySelectorAll(".cheer-mini-card").forEach(card => {
+        if (card.getAttribute("data-id") === c.id) {
+            card.classList.add("selected");
+        } else {
+            card.classList.remove("selected");
+        }
+    });
+    
+    // Render in spotlight
+    const probText = getCheerleaderProbabilityText(c);
+    renderPreviewCard(c, probText, false);
+    triggerCelebration();
+}
+
+// Sync currently selected cheerleader when filters change
+function syncSelectionWithFilter() {
+    const filtered = getFilteredList();
+    if (filtered.length === 0) {
+        selectedCheerleaderId = null;
+        const probEl = document.getElementById("spotlight-prob");
+        if (probEl) probEl.textContent = "0.00%";
+        return;
+    }
+    
+    const isSelectedInPool = filtered.some(c => c.id === selectedCheerleaderId);
+    if (!isSelectedInPool) {
+        selectedCheerleaderId = filtered[0].id;
+    }
+    
+    const selectedCheerleader = filtered.find(c => c.id === selectedCheerleaderId);
+    const probText = getCheerleaderProbabilityText(selectedCheerleader);
+    renderPreviewCard(selectedCheerleader, probText, false);
 }
 
 // Render cards in the pool gallery
@@ -1660,7 +1713,9 @@ function renderAllCards() {
         if (c.nationality === "japan") natText = "日本";
 
         const card = document.createElement("div");
-        card.className = "cheer-mini-card";
+        card.className = "cheer-mini-card" + (c.id === selectedCheerleaderId ? " selected" : "");
+        card.setAttribute("data-id", c.id);
+        card.onclick = () => selectCheerleader(c);
         card.innerHTML = `
             <div class="mini-card-img" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 199, 44, 0.05) 100%)">
                 <img src="${c.image}" alt="${c.name}">
@@ -1681,7 +1736,6 @@ function renderAllCards() {
 // Update the probability badges on the screen without spinning
 function updateCansProbability() {
     const filtered = getFilteredList();
-    const sumSqrt = filtered.reduce((sum, c) => sum + Math.sqrt(c.popularity), 0);
     const poolCountText = document.getElementById("pool-count");
     if (poolCountText) {
         poolCountText.textContent = `當前篩選池：${filtered.length} 人`;
@@ -1730,6 +1784,14 @@ function spinWheel() {
             }
             
             // Display Winner
+            selectedCheerleaderId = winner.id;
+            document.querySelectorAll(".cheer-mini-card").forEach(card => {
+                if (card.getAttribute("data-id") === winner.id) {
+                    card.classList.add("selected");
+                } else {
+                    card.classList.remove("selected");
+                }
+            });
             renderPreviewCard(winner, winnerProb.toFixed(2) + "%", false);
             triggerCelebration();
             btn.disabled = false;

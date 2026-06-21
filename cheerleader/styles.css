@@ -474,12 +474,20 @@ header {
     gap: 1rem;
     align-items: center;
     transition: var(--transition-smooth);
+    cursor: pointer;
 }
 
 .cheer-mini-card:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(0, 240, 255, 0.15);
     transform: translateY(-2px);
+}
+
+.cheer-mini-card.selected {
+    background: rgba(255, 0, 127, 0.06);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+    transform: translateY(-1px);
 }
 
 .mini-card-img {
