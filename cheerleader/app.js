@@ -1872,3 +1872,95 @@ function triggerCelebration() {
         card.classList.remove("bounce-anim");
     }, 600);
 }
+
+// Keyboard arrow navigation
+document.addEventListener("keydown", (e) => {
+    // Ignore keypresses inside input fields to preserve native typing
+    if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.isContentEditable) {
+        return;
+    }
+
+    const filtered = getFilteredList();
+    if (filtered.length === 0) return;
+
+    const cards = Array.from(document.querySelectorAll(".cheer-mini-card"));
+    if (cards.length === 0) return;
+
+    let currentIndex = cards.findIndex(card => card.getAttribute("data-id") === selectedCheerleaderId);
+    
+    // If no card is selected, highlight the first card upon pressing any arrow key
+    if (currentIndex === -1) {
+        if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(e.key)) {
+            const firstCheerleader = filtered[0];
+            selectCheerleader(firstCheerleader);
+            e.preventDefault();
+        }
+        return;
+    }
+
+    let nextIndex = currentIndex;
+
+    if (e.key === "ArrowLeft") {
+        nextIndex = (currentIndex - 1 + cards.length) % cards.length;
+        const targetId = cards[nextIndex].getAttribute("data-id");
+        const cheerleader = filtered.find(c => c.id === targetId);
+        if (cheerleader) {
+            selectCheerleader(cheerleader);
+            scrollToSelectedCard(cards[nextIndex]);
+        }
+        e.preventDefault();
+    } else if (e.key === "ArrowRight") {
+        nextIndex = (currentIndex + 1) % cards.length;
+        const targetId = cards[nextIndex].getAttribute("data-id");
+        const cheerleader = filtered.find(c => c.id === targetId);
+        if (cheerleader) {
+            selectCheerleader(cheerleader);
+            scrollToSelectedCard(cards[nextIndex]);
+        }
+        e.preventDefault();
+    } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+        const currentCard = cards[currentIndex];
+        const currentRect = currentCard.getBoundingClientRect();
+        const currentCenter = currentRect.left + currentRect.width / 2;
+        
+        let bestCandidate = null;
+        let minDistance = Infinity;
+
+        cards.forEach((card, idx) => {
+            if (idx === currentIndex) return;
+            const rect = card.getBoundingClientRect();
+            const center = rect.left + rect.width / 2;
+            
+            // Determine vertical relationship with offset threshold
+            const isAbove = rect.bottom <= currentRect.top + 5;
+            const isBelow = rect.top >= currentRect.bottom - 5;
+            
+            if ((e.key === "ArrowUp" && isAbove) || (e.key === "ArrowDown" && isBelow)) {
+                const dy = rect.top - currentRect.top;
+                const dx = center - currentCenter;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+                
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    bestCandidate = card;
+                }
+            }
+        });
+
+        if (bestCandidate) {
+            const targetId = bestCandidate.getAttribute("data-id");
+            const cheerleader = filtered.find(c => c.id === targetId);
+            if (cheerleader) {
+                selectCheerleader(cheerleader);
+                scrollToSelectedCard(bestCandidate);
+            }
+        }
+        e.preventDefault();
+    }
+});
+
+// Helper to scroll the selected card into view smoothly
+function scrollToSelectedCard(cardElement) {
+    if (!cardElement) return;
+    cardElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
