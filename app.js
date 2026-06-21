@@ -29,6 +29,16 @@ createApp({
                     color: '#ff007f'
                 },
                 {
+                    id: 'jigsaw-puzzle',
+                    name: 'Cheerleader Jigsaw Puzzle',
+                    nameZh: '啦啦隊女孩精美拼圖挑戰',
+                    description: 'Interactive responsive jigsaw puzzle game using dynamic CSS variables, PointerEvents drag-and-drop, and custom canvas confetti victory animations.',
+                    descriptionZh: '高質感互動拼圖遊戲。採用響應式 CSS 變數切割與 PointerEvents 拖曳定位，拼圖成功後可觸發粒子紙花慶祝特效，並支援相片上傳。',
+                    icon: 'fa-puzzle-piece',
+                    link: './jigsaw-puzzle/index.html',
+                    color: '#00f0ff'
+                },
+                {
                     id: 'nonsense-selector',
                     name: 'Nonsense Random Selector',
                     nameZh: '隨選幹話金句全集機',
