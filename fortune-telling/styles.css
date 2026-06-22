@@ -167,7 +167,189 @@ body {
     font-weight: 300;
 }
 
-/* 5. Navigation Tab Switcher */
+/* ==========================================
+   5. Step 1: Onboarding Panel & Crystal Ball
+   ========================================== */
+.onboarding-panel {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: center;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Crystal ball aesthetic */
+.crystal-ball-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.crystal-ball {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.25) 0%, rgba(139, 92, 246, 0.15) 50%, rgba(6, 182, 212, 0.3) 80%, rgba(15, 12, 30, 0.9) 100%);
+    box-shadow: 
+        0 0 40px rgba(139, 92, 246, 0.4),
+        0 0 80px rgba(6, 182, 212, 0.2),
+        inset 0 0 30px rgba(255, 255, 255, 0.2),
+        inset -10px -10px 50px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    animation: floatBall 6s ease-in-out infinite;
+}
+
+@keyframes floatBall {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.ball-glow {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    filter: blur(2px);
+}
+
+.ball-sparkles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.ball-sparkles i {
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+}
+
+.spark-1 { top: 30%; left: 40%; font-size: 1.2rem; animation: pulseSparkle 3s infinite; }
+.spark-2 { top: 60%; left: 25%; font-size: 0.9rem; animation: pulseSparkle 4s infinite 1s; }
+.spark-3 { top: 45%; left: 70%; font-size: 1rem; animation: pulseSparkle 5s infinite 2s; }
+
+@keyframes pulseSparkle {
+    0%, 100% { transform: scale(0.6) rotate(0deg); opacity: 0.2; }
+    50% { transform: scale(1.2) rotate(180deg); opacity: 0.9; filter: drop-shadow(0 0 5px white); }
+}
+
+.ball-reflection {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
+    filter: blur(10px);
+}
+
+.crystal-pedestal {
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(135deg, #1f1a3a 0%, #0d0a1b 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    position: relative;
+    margin-top: -10px;
+    z-index: -1;
+}
+
+.crystal-pedestal::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 10px;
+    background: #0d0a1b;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Form Styles */
+.form-card h2 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.form-card p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d1d5db;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-group input, .form-group select {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: white;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: var(--cyan);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.2);
+}
+
+.form-group select option {
+    background-color: #0d0a1b;
+    color: white;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 15px;
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ==========================================
+   6. Navigation Tab Switcher & Edit Info Btn
+   ========================================== */
 .oracle-tabs {
     display: flex;
     gap: 15px;
@@ -176,19 +358,21 @@ body {
     padding: 8px;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: center;
+    position: relative;
 }
 
 .tab-btn {
     flex: 1;
-    max-width: 250px;
+    max-width: 220px;
     background: transparent;
     border: none;
     outline: none;
     color: #9ca3af;
     font-family: inherit;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     font-weight: 600;
-    padding: 12px 20px;
+    padding: 12px 15px;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -210,7 +394,32 @@ body {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
-/* 6. Workspace Card Container */
+.edit-info-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #9ca3af;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+.edit-info-btn:hover {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: rotate(45deg);
+}
+
+/* ==========================================
+   7. Workspace Card Container
+   ========================================== */
 .workspace-card {
     background: var(--card-bg);
     backdrop-filter: blur(25px);
@@ -275,7 +484,210 @@ body {
     line-height: 1.6;
 }
 
-/* 7. TAROT SECTION STYLES */
+/* ==========================================
+   8. SECTION 0: DESTINY GRID STYLES
+   ========================================== */
+.destiny-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.destiny-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.destiny-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.destiny-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Distinctive styling cards */
+.card-bagua::before { background: linear-gradient(90deg, #dc2626, #b45309); }
+.card-bagua:hover { border-color: rgba(220, 38, 38, 0.3); }
+
+.card-ziwei::before { background: linear-gradient(90deg, #8b5cf6, #db2777); }
+.card-ziwei:hover { border-color: rgba(139, 92, 246, 0.3); }
+
+.card-zodiac::before { background: linear-gradient(90deg, #06b6d4, #10b981); }
+.card-zodiac:hover { border-color: rgba(6, 182, 212, 0.3); }
+
+.card-lifepath::before { background: linear-gradient(90deg, #f59e0b, #ec4899); }
+.card-lifepath:hover { border-color: rgba(245, 158, 11, 0.3); }
+
+.destiny-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.destiny-card .card-icon {
+    font-size: 1.5rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.card-bagua .card-icon { color: #f87171; background: rgba(239, 68, 68, 0.1); }
+.card-ziwei .card-icon { color: #c084fc; background: rgba(168, 85, 247, 0.1); }
+.card-zodiac .card-icon { color: #22d3ee; background: rgba(6, 182, 212, 0.1); }
+.card-lifepath .card-icon { color: #fbbf24; background: rgba(245, 158, 11, 0.1); }
+
+.destiny-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.destiny-card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+}
+
+.bagua-title, .ziwei-title, .zodiac-title, .lifepath-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.lifepath-title span {
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.destiny-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+.card-advice-box {
+    margin-top: auto;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #e5e7eb;
+}
+
+.card-advice-box strong {
+    display: block;
+    color: var(--accent);
+    margin-bottom: 3px;
+}
+
+.zodiac-metadata {
+    display: flex;
+    gap: 15px;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-top: -5px;
+}
+
+.zodiac-metadata strong {
+    color: white;
+}
+
+/* Five elements progress bars */
+.five-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.five-elements h4 {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+
+.element-row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.elem-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #9ca3af;
+}
+
+.elem-bar {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.elem-fill {
+    height: 100%;
+    border-radius: 4px;
+    width: 0%;
+    transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fill-wood { background: #10b981; }
+.fill-fire { background: #ef4444; }
+.fill-earth { background: #f59e0b; }
+.fill-metal { background: #e5e7eb; }
+.fill-water { background: #3b82f6; }
+
+/* Lifepath keywords tags */
+.lifepath-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.keyword-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+/* ==========================================
+   9. TAROT SECTION STYLES
+   ========================================== */
 .tarot-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -530,7 +942,7 @@ body {
     line-height: 1.6;
 }
 
-/* 8. HOROSCOPE SECTION STYLES */
+/* 10. HOROSCOPE SECTION STYLES */
 .zodiac-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -756,7 +1168,7 @@ body {
     border: 1px solid rgba(245, 158, 11, 0.2);
 }
 
-/* 9. DIVINATION & CHEN QIAN SECTION STYLES */
+/* 11. DIVINATION & CHEN QIAN SECTION STYLES */
 .divination-workspace {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1058,7 +1470,7 @@ body {
     color: #b91c1c;
 }
 
-/* 10. Disclaimer / Footer */
+/* 12. Disclaimer / Footer */
 .app-disclaimer {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -1080,8 +1492,28 @@ body {
     color: #9ca3af;
 }
 
-/* 11. Responsive Layout adjustments */
+/* 13. Responsive Layout adjustments */
 @media (max-width: 900px) {
+    .onboarding-panel {
+        grid-template-columns: 1fr;
+        padding: 35px 20px;
+        gap: 30px;
+    }
+    
+    .crystal-ball {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .crystal-pedestal {
+        width: 90px;
+        height: 28px;
+    }
+    
+    .destiny-grid {
+        grid-template-columns: 1fr;
+    }
+
     .report-body {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1141,5 +1573,9 @@ body {
     
     .stat-percent {
         text-align: left;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
     }
 }

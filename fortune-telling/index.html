@@ -30,14 +30,62 @@
                 </div>
                 <div class="title-group">
                     <h1>星境啟示錄</h1>
-                    <p>融合天體星象與古老命理，引領您探尋命運的宇宙解答 🌌</p>
+                    <p>輸入姓名與生日，觀測您的易經卦象、紫微命宮與西方星盤軌跡 🌌</p>
                 </div>
             </div>
         </header>
 
-        <!-- Mode Switcher Tabs -->
-        <nav class="oracle-tabs">
-            <button class="tab-btn active" onclick="switchMode('tarot')">
+        <!-- Step 1: Onboarding Destiny Form Panel (水晶球表單) -->
+        <section class="onboarding-panel" id="onboarding-panel">
+            <div class="crystal-ball-container">
+                <div class="crystal-ball">
+                    <div class="ball-glow"></div>
+                    <div class="ball-sparkles">
+                        <i class="fa-solid fa-star spark-1"></i>
+                        <i class="fa-solid fa-moon spark-2"></i>
+                        <i class="fa-solid fa-sun spark-3"></i>
+                    </div>
+                    <div class="ball-reflection"></div>
+                </div>
+                <div class="crystal-pedestal"></div>
+            </div>
+
+            <div class="form-card">
+                <h2>開啟命運星圖</h2>
+                <p>請輸入您的真實資料，啟動星際軌跡運算與命理排盤</p>
+                
+                <div class="form-group">
+                    <label for="input-name"><i class="fa-solid fa-signature text-accent"></i> 姓名 / 稱呼</label>
+                    <input type="text" id="input-name" placeholder="請輸入姓名..." maxlength="10">
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="input-birthday"><i class="fa-solid fa-calendar-days text-accent"></i> 出生日期</label>
+                        <input type="date" id="input-birthday" value="1998-06-15">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-gender"><i class="fa-solid fa-venus-mars text-accent"></i> 陰陽屬性</label>
+                        <select id="input-gender">
+                            <option value="male" selected>乾 (男 / Yang)</option>
+                            <option value="female">坤 (女 / Yin)</option>
+                            <option value="none">無 (不設限 / None)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block" onclick="activateDestinyMap()">
+                    <i class="fa-solid fa-compass-drafting"></i> 啟動天命排盤
+                </button>
+            </div>
+        </section>
+
+        <!-- Mode Switcher Tabs (預設隱藏，輸入資料後解鎖) -->
+        <nav class="oracle-tabs" id="oracle-tabs" style="display: none;">
+            <button class="tab-btn active" onclick="switchMode('destiny')">
+                <i class="fa-solid fa-compass"></i> 🧭 命盤總覽
+            </button>
+            <button class="tab-btn" onclick="switchMode('tarot')">
                 <i class="fa-solid fa-cards"></i> 🔮 塔羅密語
             </button>
             <button class="tab-btn" onclick="switchMode('horoscope')">
@@ -46,16 +94,117 @@
             <button class="tab-btn" onclick="switchMode('divination')">
                 <i class="fa-solid fa-gong"></i> 🏮 聖筊靈籤
             </button>
+            <button class="edit-info-btn" onclick="showOnboardingForm()" title="修改個人資料">
+                <i class="fa-solid fa-user-gear"></i>
+            </button>
         </nav>
 
-        <!-- Main Workspace -->
-        <main class="workspace-card">
+        <!-- Main Workspace (預設隱藏，解鎖後展示) -->
+        <main class="workspace-card" id="workspace-card" style="display: none;">
+            
+            <!-- SECTION 0: DESTINY BOARD (新分頁) -->
+            <section id="mode-destiny" class="oracle-section active">
+                <div class="section-intro">
+                    <h2><span id="destiny-user-name">-</span> 的宇宙天命盤</h2>
+                    <p>結合易經八卦、紫微主星、西洋星座與生命靈數，這是星軌賦予您的天賦與命運印記。</p>
+                </div>
+
+                <div class="destiny-grid">
+                    <!-- Card 1: Bagua & Five Elements -->
+                    <div class="destiny-card card-bagua">
+                        <div class="card-header">
+                            <span class="card-icon">☯</span>
+                            <h3>易經八卦與五行</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="bagua-title" id="bagua-title">離卦・離為火</div>
+                            <p class="card-text" id="bagua-desc">載入中...</p>
+                            
+                            <!-- Five elements meter -->
+                            <div class="five-elements">
+                                <h4>五行能量分佈</h4>
+                                <div class="element-row">
+                                    <span class="elem-label">木 (Wood)</span>
+                                    <div class="elem-bar"><div class="elem-fill fill-wood" id="elem-wood" style="width: 20%"></div></div>
+                                </div>
+                                <div class="element-row">
+                                    <span class="elem-label">火 (Fire)</span>
+                                    <div class="elem-bar"><div class="elem-fill fill-fire" id="elem-fire" style="width: 20%"></div></div>
+                                </div>
+                                <div class="element-row">
+                                    <span class="elem-label">土 (Earth)</span>
+                                    <div class="elem-bar"><div class="elem-fill fill-earth" id="elem-earth" style="width: 20%"></div></div>
+                                </div>
+                                <div class="element-row">
+                                    <span class="elem-label">金 (Metal)</span>
+                                    <div class="elem-bar"><div class="elem-fill fill-metal" id="elem-metal" style="width: 20%"></div></div>
+                                </div>
+                                <div class="element-row">
+                                    <span class="elem-label">水 (Water)</span>
+                                    <div class="elem-bar"><div class="elem-fill fill-water" id="elem-water" style="width: 20%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Ziwei Doushu Life Palace -->
+                    <div class="destiny-card card-ziwei">
+                        <div class="card-header">
+                            <span class="card-icon">🌌</span>
+                            <h3>紫微斗數命宮主星</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="ziwei-title" id="ziwei-title">紫微星・帝王之相</div>
+                            <p class="card-text" id="ziwei-desc">載入中...</p>
+                            <div class="card-advice-box">
+                                <strong>【命宮天啟】</strong>
+                                <span id="ziwei-advice">載入中...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Western Zodiac & Planets -->
+                    <div class="destiny-card card-zodiac">
+                        <div class="card-header">
+                            <span class="card-icon" id="zodiac-card-icon">♈</span>
+                            <h3>西洋占星與守護星</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="zodiac-title" id="zodiac-card-title">雙子座 Gemini</div>
+                            <div class="zodiac-metadata">
+                                <span>守護星：<strong id="zodiac-ruler">-</strong></span>
+                                <span>元素屬性：<strong id="zodiac-element">-</strong></span>
+                            </div>
+                            <p class="card-text" id="zodiac-desc">載入中...</p>
+                            <div class="card-advice-box">
+                                <strong>【星曜和諧】</strong>
+                                <span id="zodiac-advice">載入中...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Life Path Number -->
+                    <div class="destiny-card card-lifepath">
+                        <div class="card-header">
+                            <span class="card-icon">🔢</span>
+                            <h3>西方生命靈數</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="lifepath-title">生命靈數：<span id="lifepath-number">7</span></div>
+                            <p class="card-text" id="lifepath-desc">載入中...</p>
+                            <div class="lifepath-keywords" id="lifepath-keywords">
+                                <!-- Dynamic keywords tags -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
             <!-- SECTION 1: TAROT ORACLE -->
-            <section id="mode-tarot" class="oracle-section active">
+            <section id="mode-tarot" class="oracle-section">
                 <div class="section-intro">
                     <h2>大阿爾克那・三陣啟示</h2>
-                    <p>靜下心來，默想您心中的問題，隨機抽取三張牌，代表您的「過去」、「現在」與「未來」。</p>
+                    <p>靜下心來，默想您心中的問題，隨機抽取三張牌，代表您（<span class="user-placeholder-name">-</span>）的「過去」、「現在」與「未來」。</p>
                 </div>
 
                 <div class="tarot-board">
@@ -133,56 +282,56 @@
             <section id="mode-horoscope" class="oracle-section">
                 <div class="section-intro">
                     <h2>星曜行運軌跡</h2>
-                    <p>選擇您的星座，觀測今日宇宙射線與星象運行帶給您的能量能量與專屬指引。</p>
+                    <p>下方為您的出生星盤星座。您也可以隨意點擊其他星座，觀測今日宇宙磁場對該星座的能量能量分佈。</p>
                 </div>
 
                 <!-- Zodiac Sign Grid Selector -->
                 <div class="zodiac-grid">
-                    <button class="zodiac-item" onclick="selectZodiac('aries')">
+                    <button class="zodiac-item" id="zodiac-aries" onclick="selectZodiac('aries')">
                         <span class="zodiac-symbol">♈</span>
                         <span class="zodiac-name">牡羊座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('taurus')">
+                    <button class="zodiac-item" id="zodiac-taurus" onclick="selectZodiac('taurus')">
                         <span class="zodiac-symbol">♉</span>
                         <span class="zodiac-name">金牛座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('gemini')">
+                    <button class="zodiac-item" id="zodiac-gemini" onclick="selectZodiac('gemini')">
                         <span class="zodiac-symbol">♊</span>
                         <span class="zodiac-name">雙子座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('cancer')">
+                    <button class="zodiac-item" id="zodiac-cancer" onclick="selectZodiac('cancer')">
                         <span class="zodiac-symbol">♋</span>
                         <span class="zodiac-name">巨蟹座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('leo')">
+                    <button class="zodiac-item" id="zodiac-leo" onclick="selectZodiac('leo')">
                         <span class="zodiac-symbol">♌</span>
                         <span class="zodiac-name">獅子座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('virgo')">
+                    <button class="zodiac-item" id="zodiac-virgo" onclick="selectZodiac('virgo')">
                         <span class="zodiac-symbol">♍</span>
                         <span class="zodiac-name">處女座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('libra')">
+                    <button class="zodiac-item" id="zodiac-libra" onclick="selectZodiac('libra')">
                         <span class="zodiac-symbol">♎</span>
                         <span class="zodiac-name">天秤座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('scorpio')">
+                    <button class="zodiac-item" id="zodiac-scorpio" onclick="selectZodiac('scorpio')">
                         <span class="zodiac-symbol">♏</span>
                         <span class="zodiac-name">天蠍座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('sagittarius')">
+                    <button class="zodiac-item" id="zodiac-sagittarius" onclick="selectZodiac('sagittarius')">
                         <span class="zodiac-symbol">♐</span>
                         <span class="zodiac-name">射手座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('capricorn')">
+                    <button class="zodiac-item" id="zodiac-capricorn" onclick="selectZodiac('capricorn')">
                         <span class="zodiac-symbol">♑</span>
                         <span class="zodiac-name">摩羯座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('aquarius')">
+                    <button class="zodiac-item" id="zodiac-aquarius" onclick="selectZodiac('aquarius')">
                         <span class="zodiac-symbol">♒</span>
                         <span class="zodiac-name">水瓶座</span>
                     </button>
-                    <button class="zodiac-item" onclick="selectZodiac('pisces')">
+                    <button class="zodiac-item" id="zodiac-pisces" onclick="selectZodiac('pisces')">
                         <span class="zodiac-symbol">♓</span>
                         <span class="zodiac-name">雙魚座</span>
                     </button>
