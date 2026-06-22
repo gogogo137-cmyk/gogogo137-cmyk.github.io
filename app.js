@@ -69,6 +69,16 @@ createApp({
                     color: '#8b5cf6'
                 },
                 {
+                    id: 'fortune-telling',
+                    name: 'Cosmic Divination Oracle',
+                    nameZh: '星境啟示錄占卜坊',
+                    description: 'A premium mystical oracle application offering Tarot draws, daily horoscopes, and traditional throw-jiao divination.',
+                    descriptionZh: '高質感神秘學占卜系統。整合大阿爾克那塔羅牌三牌啟示、每日星象運勢度量衡，以及經典求籤與擲筊互動問卜。',
+                    icon: 'fa-wand-magic-sparkles',
+                    link: './fortune-telling/index.html',
+                    color: '#a855f7'
+                },
+                {
                     id: 'svm-visualizer',
                     name: 'SVM 3D Interactive Visualizer',
                     nameZh: 'SVM 支持向量機 3D 視覺化互動器',

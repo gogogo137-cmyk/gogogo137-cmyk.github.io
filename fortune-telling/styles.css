@@ -1,0 +1,1145 @@
+/* ==========================================
+   🔮 CSS Custom Stylesheet: Cosmic Divination
+   ========================================== */
+
+/* 1. Core Variables & Setup */
+:root {
+    --bg-dark: #07050f;
+    --card-bg: rgba(15, 12, 30, 0.65);
+    --card-border: rgba(255, 255, 255, 0.07);
+    --card-border-glow: rgba(139, 92, 246, 0.25);
+    
+    /* Neon Accent Colors */
+    --accent: #f59e0b;       /* Mystical Gold */
+    --accent-glow: rgba(245, 158, 11, 0.35);
+    --purple: #8b5cf6;       /* Astral Purple */
+    --purple-light: #a78bfa;
+    --cyan: #06b6d4;         /* Celestial Cyan */
+    
+    /* Stat Bar Colors */
+    --color-love: #ec4899;
+    --color-work: #3b82f6;
+    --color-money: #eab308;
+    --color-health: #10b981;
+    
+    /* Font Families */
+    --font-sans: 'Outfit', 'Montserrat', 'Noto Sans TC', sans-serif;
+    --font-serif: 'Noto Serif TC', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-dark);
+    color: #f3f4f6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 2. Parallax Cosmic Background Animations */
+.stars-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: radial-gradient(circle at 50% 50%, #110e25 0%, #05040a 100%);
+    background-image: 
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    animation: starsTwinkle 120s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes starsTwinkle {
+    from { background-position: 0 0, 40px 60px, 130px 270px; }
+    to { background-position: 550px 1100px, 1090px 700px, 1280px 1350px; }
+}
+
+.nebula-bg {
+    position: fixed;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    z-index: -1;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 70% 60%, rgba(6, 182, 212, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(236, 72, 153, 0.08) 0%, transparent 40%);
+    filter: blur(80px);
+    animation: nebulaDrift 40s ease-in-out infinite alternate;
+}
+
+@keyframes nebulaDrift {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(5deg) scale(1.1); }
+}
+
+/* 3. App Layout Container */
+.app-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 4. Header Styling */
+.app-header {
+    background: var(--card-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.back-home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d1d5db;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.back-home-btn:hover {
+    background: var(--purple);
+    color: white;
+    box-shadow: 0 0 15px var(--purple);
+    transform: translateX(-3px);
+}
+
+.logo-icon {
+    font-size: 2.2rem;
+    color: var(--accent);
+    text-shadow: 0 0 15px var(--accent-glow);
+    animation: floatIcon 4s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.title-group h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #ffffff 30%, var(--purple-light) 70%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 5px;
+}
+
+.title-group p {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    font-weight: 300;
+}
+
+/* 5. Navigation Tab Switcher */
+.oracle-tabs {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    background: rgba(10, 8, 22, 0.4);
+    padding: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn {
+    flex: 1;
+    max-width: 250px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #9ca3af;
+    font-family: inherit;
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tab-btn:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+    color: white;
+    background: linear-gradient(135deg, var(--purple) 0%, rgba(139, 92, 246, 0.6) 100%);
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* 6. Workspace Card Container */
+.workspace-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(255,255,255,0.02);
+    min-height: 480px;
+    position: relative;
+    transition: border-color 0.5s ease;
+}
+
+.workspace-card:hover {
+    border-color: var(--card-border-glow);
+}
+
+/* Section visibility */
+.oracle-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.oracle-section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-intro h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-intro h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin: 8px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.section-intro p {
+    font-size: 0.95rem;
+    color: #d1d5db;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* 7. TAROT SECTION STYLES */
+.tarot-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+.tarot-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-position-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.tarot-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3.4;
+    max-width: 180px;
+    perspective: 1200px;
+    cursor: pointer;
+}
+
+.tarot-card .card-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Card Front: Back of the Tarot card pattern */
+.tarot-card .card-front {
+    background: linear-gradient(135deg, #1b163a 0%, #0d0a1b 100%);
+    padding: 10px;
+    transform: rotateY(0deg);
+}
+
+.card-back-pattern {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed rgba(245, 158, 11, 0.4);
+    border-radius: 10px;
+    background-image: 
+        radial-gradient(circle at center, rgba(139, 92, 246, 0.3) 0%, transparent 60%),
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.02) 10px, rgba(255,255,255,0.02) 11px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-back-pattern::before {
+    content: '🔮';
+    font-size: 2.2rem;
+    opacity: 0.7;
+    filter: drop-shadow(0 0 10px var(--accent-glow));
+    animation: spinSymbol 8s linear infinite;
+}
+
+@keyframes spinSymbol {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Card Back: Revealed tarot face */
+.tarot-card .card-back {
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #1a162b 0%, #2e1d52 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    text-align: center;
+    border: 2px solid var(--accent);
+}
+
+.tarot-card.flipped .card-front {
+    transform: rotateY(-180deg);
+}
+
+.tarot-card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+/* Inner elements of tarot card back */
+.tarot-img-symbol {
+    font-size: 3rem;
+    margin: 15px 0 5px;
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
+}
+
+.tarot-card-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.tarot-card-orient {
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.tarot-card-orient.reversed {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--cyan);
+}
+
+.tarot-card-index {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+/* Tarot Controls */
+.tarot-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Common button styles */
+.btn {
+    border: none;
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent) 0%, #d97706 100%);
+    color: #07050f;
+    box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(245, 158, 11, 0.5);
+    background: linear-gradient(135deg, #fbbf24 0%, #fbbf24 100%);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Tarot Interpretation Panels */
+.tarot-results {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    padding: 25px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tarot-results h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tarot-results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.result-box {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.result-box h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #9ca3af;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.result-box .card-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.result-box .card-desc {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+/* 8. HOROSCOPE SECTION STYLES */
+.zodiac-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.zodiac-item {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    outline: none;
+}
+
+.zodiac-item:hover {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: rgba(139, 92, 246, 0.3);
+    transform: translateY(-3px);
+}
+
+.zodiac-item.selected {
+    background: rgba(6, 182, 212, 0.15);
+    border-color: var(--cyan);
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+}
+
+.zodiac-symbol {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.zodiac-item:hover .zodiac-symbol {
+    transform: scale(1.15);
+}
+
+.zodiac-item.selected .zodiac-symbol {
+    color: var(--cyan);
+    text-shadow: 0 0 8px rgba(6, 182, 212, 0.5);
+}
+
+.zodiac-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #d1d5db;
+}
+
+/* Horoscope Report Box */
+.horoscope-report {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    animation: fadeIn 0.8s ease;
+}
+
+.report-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding-bottom: 20px;
+}
+
+.report-zodiac-icon {
+    font-size: 3rem;
+    color: var(--cyan);
+    text-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(6, 182, 212, 0.08);
+}
+
+.report-title-group h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.report-date {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-top: 3px;
+}
+
+.report-body {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+}
+
+/* Progress bars */
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 50px;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #d1d5db;
+}
+
+.stat-label i {
+    width: 18px;
+    margin-right: 6px;
+    text-align: center;
+}
+
+.stat-bar-outer {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.stat-bar-inner {
+    height: 100%;
+    border-radius: 10px;
+    width: 0%;
+    transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stat-percent {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    text-align: right;
+}
+
+/* Bar Colors & Glows */
+.text-love { color: var(--color-love); }
+.bg-love {
+    background: linear-gradient(90deg, #f472b6, var(--color-love));
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+}
+
+.text-work { color: var(--color-work); }
+.bg-work {
+    background: linear-gradient(90deg, #60a5fa, var(--color-work));
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+.text-money { color: var(--color-money); }
+.bg-money {
+    background: linear-gradient(90deg, #fef08a, var(--color-money));
+    box-shadow: 0 0 10px rgba(234, 179, 8, 0.4);
+}
+
+.text-health { color: var(--color-health); }
+.bg-health {
+    background: linear-gradient(90deg, #34d399, var(--color-health));
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+/* Horoscope descriptions */
+.report-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary-card, .advice-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.summary-card h4, .advice-card h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.summary-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #e5e7eb;
+}
+
+.advice-card p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #d1d5db;
+}
+
+.text-accent { color: var(--accent); }
+.highlight-val {
+    color: white;
+    font-weight: 700;
+    margin-left: 5px;
+    background: rgba(245, 158, 11, 0.12);
+    padding: 2px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+/* 9. DIVINATION & CHEN QIAN SECTION STYLES */
+.divination-workspace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto 35px;
+    align-items: center;
+}
+
+.qian-section, .jiao-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Qian Barrel (籤筒) Container */
+.qian-barrel-container {
+    position: relative;
+    width: 140px;
+    height: 200px;
+    background: linear-gradient(135deg, #2a1510 0%, #150a08 100%);
+    border: 3px solid #854d0e;
+    border-radius: 20px 20px 8px 8px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(0,0,0,0.6);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.qian-barrel-container:hover {
+    transform: scale(1.03);
+}
+
+.qian-barrel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.qian-stick {
+    position: absolute;
+    bottom: 50%;
+    width: 8px;
+    height: 140px;
+    background: #eab308;
+    border-radius: 4px;
+    border-top: 15px solid #b45309;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.5s ease;
+}
+
+/* Staggered arrangement of qian sticks in barrel */
+.stick-1 { left: 25px; transform: rotate(-12deg); }
+.stick-2 { left: 40px; transform: rotate(-6deg); }
+.stick-3 { left: 55px; transform: rotate(-2deg); }
+.stick-4 { left: 70px; transform: rotate(4deg); }
+.stick-5 { left: 85px; transform: rotate(9deg); }
+.stick-6 { left: 100px; transform: rotate(14deg); }
+.stick-7 { left: 60px; transform: rotate(-10deg) translateY(-8px); height: 142px; z-index: 2; }
+
+.qian-barrel-label {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #854d0e;
+    color: #fef08a;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid #a16207;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* Shake barrel keyframe animation */
+.qian-barrel-container.shaking {
+    animation: shakeBarrel 0.6s ease infinite;
+}
+
+@keyframes shakeBarrel {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    15% { transform: translate(-8px, -5px) rotate(-8deg); }
+    30% { transform: translate(6px, 8px) rotate(6deg); }
+    45% { transform: translate(-6px, -4px) rotate(-6deg); }
+    60% { transform: translate(8px, 6px) rotate(8deg); }
+    75% { transform: translate(-4px, 4px) rotate(-4deg); }
+    90% { transform: translate(4px, -2px) rotate(4deg); }
+}
+
+/* Shaking sticks animation */
+.qian-barrel-container.shaking .qian-stick {
+    animation: jitterSticks 0.6s ease infinite;
+}
+
+@keyframes jitterSticks {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+/* Stick output animations */
+.qian-barrel-container.spit-out .stick-7 {
+    transform: translateY(-80px) rotate(-15deg);
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(254, 240, 138, 0.6);
+}
+
+/* Jiao Blocks (筊杯) crescent simulation */
+.jiao-display-area {
+    display: flex;
+    gap: 40px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.jiao-block {
+    width: 80px;
+    height: 45px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Represent crescent block shape via CSS clip-path or rounded borders */
+.jiao-block .jiao-face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 80px 80px 0 0; /* Crescent top */
+}
+
+/* Flat face: Red bottom of crescent */
+.jiao-block .crescent-flat {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    border-bottom: 5px solid #7f1d1d;
+    transform: rotateX(0deg);
+}
+
+/* Convex face: Wooden rounded back */
+.jiao-block .crescent-convex {
+    background: linear-gradient(135deg, #7f1d1d 0%, #450a0a 100%);
+    border-radius: 80px 80px 0 0;
+    transform: rotateX(180deg);
+}
+
+/* Jiao Status Text display */
+.jiao-status-hud {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.jiao-status-hud.success-text {
+    color: #fef08a;
+    text-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
+}
+
+.jiao-status-hud.fail-text {
+    color: #f43f5e;
+}
+
+/* Throw jiao animations */
+@keyframes tossLeft {
+    0% { transform: translateY(0) rotate(0deg) scale(1); }
+    30% { transform: translateY(-70px) rotate(180deg) scale(1.2); }
+    70% { transform: translateY(20px) rotate(390deg) scale(0.9); }
+    100% { transform: translateY(0) rotate(var(--rot-left, 360deg)) scale(1); }
+}
+
+@keyframes tossRight {
+    0% { transform: translateY(0) rotate(0deg) scale(1); }
+    30% { transform: translateY(-80px) rotate(-180deg) scale(1.2); }
+    70% { transform: translateY(15px) rotate(-340deg) scale(0.9); }
+    100% { transform: translateY(0) rotate(var(--rot-right, -360deg)) scale(1); }
+}
+
+.jiao-block.tossing-left {
+    animation: tossLeft 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+.jiao-block.tossing-right {
+    animation: tossRight 1.2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+/* Fortune Slip layout (紙靈籤) */
+.qian-result-card {
+    background: #fffdf5; /* Parchment white */
+    border: 2px solid #b91c1c; /* Crimson border */
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 20px auto 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 25px rgba(185, 28, 28, 0.05);
+    color: #1f2937;
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    position: relative;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Inner red margin border on slip */
+.qian-result-card::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 1px solid rgba(185, 28, 28, 0.3);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.slip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b91c1c;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.slip-header h4 {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #b91c1c;
+    letter-spacing: 2px;
+}
+
+.slip-badge {
+    background: #b91c1c;
+    color: #fffdf5;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.slip-num {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: center;
+    color: #b91c1c;
+    margin-bottom: 15px;
+}
+
+.poem-display {
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    line-height: 2.2;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #111827;
+    font-weight: 700;
+    margin: 20px 0;
+    white-space: pre-line;
+}
+
+.slip-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(185, 28, 28, 0.2);
+    margin: 20px 0;
+}
+
+.slip-meaning {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #374151;
+}
+
+.slip-meaning p strong {
+    color: #b91c1c;
+}
+
+/* 10. Disclaimer / Footer */
+.app-disclaimer {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+.app-disclaimer p {
+    font-size: 0.75rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-disclaimer p strong {
+    color: #9ca3af;
+}
+
+/* 11. Responsive Layout adjustments */
+@media (max-width: 900px) {
+    .report-body {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .workspace-card {
+        padding: 25px 15px;
+    }
+    
+    .tarot-board {
+        gap: 15px;
+    }
+    
+    .zodiac-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .divination-workspace {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .tarot-results-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-header {
+        padding: 15px;
+    }
+    
+    .title-group h1 {
+        font-size: 1.4rem;
+    }
+    
+    .zodiac-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .oracle-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .tab-btn {
+        max-width: none;
+    }
+    
+    .stat-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    
+    .stat-percent {
+        text-align: left;
+    }
+}
