@@ -91,6 +91,94 @@ const baguaTrigrams = [
     { name: "坤卦 (Kun) ・ 坤為地 ☷", element: "土", desc: "象徵純陰、大地、厚德載物。您具有極佳的包容力與母性關懷，默默付出而不居功，但有時會顯得缺乏自主決魄力。" }
 ];
 
+// 6. Glyphomancy (梅花易數測字) Database
+const glyphomancyDatabase = [
+    { char: "豐", title: "豐收充實之象", desc: "「豐」字由「井」與「豆」演變，代表器皿中盛滿祭品，象徵資源充沛、收穫在望。這顯示您目前或即將迎來一個物質或精神上的豐收期，合作順利，但也需防範物極必反、財多身弱，宜謙遜守成。" },
+    { char: "泰", title: "安泰亨通之象", desc: "「泰」字象徵小往大來，天地交感。預示著局勢正朝向極為和諧、平安的方向發展。困境即將消散，人際關係融洽。若能保持真誠，任何計畫都將水到渠成。" },
+    { char: "恆", title: "恆常有恆之象", desc: "「恆」字由「心」與「亘」組成，象徵心志長久。這表示您所問之事需要時間累積，切忌急功近利。只要堅持初衷，穩定推進，最終必定會獲得長遠且穩固的成功。" },
+    { char: "臨", title: "居高臨下之象", desc: "「臨」代表君臨、觀察與指導。這表示您正面臨一個升遷或發揮影響力的關鍵契機。您需要拿出領導者的格局與氣度去照料他人，但要防範傲慢態度引來小人怨恨。" },
+    { char: "明", title: "光明磊落之象", desc: "「明」由「日」與「月」合成，光芒普照。代表困擾您的迷霧即將散去，真相即將大白。此時適合坦誠溝通、簽署合約或公開計劃，光明正大的作風會為您帶來極大好運。" },
+    { char: "靜", title: "心靈沉靜之象", desc: "「靜」字意味著抽離紛爭，回歸內省。這預示著目前不宜躁進或做重大變更，靜止等待、積蓄能量才是最佳策略。在混亂的環境中保持冷靜，智慧自然會顯現。" },
+    { char: "順", title: "順水推舟之象", desc: "「順」字由「川」與「頁」組成，象徵順從天意、川流不息。代表您所求之事不宜強求，適合順應當前的大趨勢與旁人意見，隨遇而安，反而能不費吹灰之力達到目標。" },
+    { char: "健", title: "剛健自強之象", desc: "「健」代表君子以自強不息。象徵蓬勃的生命力與堅強的意志力。這激勵您拿出最大的執行力與勇氣去突破障礙，您的身體與運勢正處於上升期，動起來便有生機。" }
+];
+
+// 7. Nordic Runes Database (北歐盧恩符文)
+const nordicRunesDatabase = [
+    { symbol: "ᚠ", name: "Fehu (財富)", desc: "象徵豐收的金錢與家畜。代表物質財富的累積、新項目的啟動以及辛勤付出的收穫。提醒您在獲得財富的同時，要慷慨分享以維持宇宙能量流動。" },
+    { symbol: "ᚢ", name: "Uruz (力量)", desc: "象徵野牛的強悍力量與健康。代表狂野原始的生命力、克服疾病的治癒力以及突破逆境的勇氣。預示著您有足夠的精力克服眼前的挑戰。" },
+    { symbol: "ᚦ", name: "Thurisaz (巨人之門)", desc: "象徵雷神之鎚與尖銳的荊棘。代表保護、反思與警惕。暗示您正站在命運的門檻前，不宜衝動冒險，需要冷靜評估，清除潛在的阻礙再前行。" },
+    { symbol: "ᚨ", name: "Ansuz (智慧/信使)", desc: "象徵奧丁主神的聲音與啟示。代表智慧、考試順利、獲得重要消息或導師指引。提醒您多傾聽直覺與身邊長輩的建議，這是一次心智成長的契機。" },
+    { symbol: "ᚱ", name: "Raido (旅程)", desc: "象徵馬車輪與移動。代表物理上的旅行、搬遷、或者是靈魂精神上的自我探索旅程。也暗示事情正朝向正確、有規律的軌道快速前進。" },
+    { symbol: "ᚲ", name: "Kenaz (火炬)", desc: "象徵燃燒的火焰與靈感。代表創意的萌芽、熱情重燃、看清未知事物的真相。這是一顆充滿希望與能量的符文，適合進行藝術創作或技術攻關。" },
+    { symbol: "ᚷ", name: "Gebo (禮物)", desc: "象徵結合的十字與恩賜。代表平等互利的合作關係、美滿的感情結合或意外的恩惠。提醒您珍惜與他人深層的心靈連結，真誠相待。" },
+    { symbol: "ᚹ", name: "Wunjo (喜悅)", desc: "象徵勝利的旗幟與和諧。代表目標達成、痛苦結束、迎來充滿愛與和諧的快樂時光。您所擔憂的事將會有一個圓滿的收尾。" }
+];
+
+// 8. Tea Leaf Readings (英式茶葉占卜) Database
+const teaLeafDatabase = [
+    { pattern: "🦅 飛鳥 (Bird)", desc: "茶杯底部顯現一隻展翅高飛的鳥形茶渣。這代表近期將會從遠方傳來令人振奮的喜訊，或是一次出差、旅行的好機會。思維將會變得開闊。", advice: "保持通訊暢通，留意來自遠方或陌生人的訊息。" },
+    { pattern: "💍 戒指 (Ring)", desc: "茶葉碎片在杯壁凝聚成圓環狀。這象徵著契約、承諾與關係的締結。預示著可能會有商業合約的簽署、一段感情的確定，或是一次真誠的盟約。", advice: "信守承諾，此時簽署正式文件對您非常有利。" },
+    { pattern: "⚓ 錨 (Anchor)", desc: "茶葉沉在杯底，呈現穩定的鐵錨狀。這代表漂泊的結束與安定。您在事業、生活或感情上所追求的安全感即將落實，動盪的局勢正漸趨平穩。", advice: "現在適合做長遠定居或深耕的計畫，穩紮穩打即可。" },
+    { pattern: "🔑 鑰匙 (Key)", desc: "茶葉拼湊成一把細長的鎖匙。這象徵著謎題的解答與新大門的開啟。一直以來困擾您的難題將會找到突破口，或者您將解鎖一項全新的技能與職位。", advice: "勇敢探索未知的路徑，轉機就在看似緊閉的大門背後。" },
+    { pattern: "🌳 橡樹 (Oak)", desc: "茶渣散開，神似一棵枝葉繁茂的古樹。這代表著頑強的生命力、健康狀況好轉以及長壽。在事業上，這代表長輩或大企業的庇護，能為您遮風避雨。", advice: "多接觸大自然吸收能量，腳踏實地地累積自己的實力。" },
+    { pattern: "🌋 火山 (Volcano)", desc: "茶渣在杯壁中央高聳突起。這預示著積壓的情緒、壓力或潛在的矛盾即將爆發。也代表局勢可能出現突如其來的劇烈轉變，挑戰您的臨場應變力。", advice: "切忌壓抑情緒，尋求健康的排解管道，冷靜以對變局。" },
+    { pattern: "⛵ 船隻 (Ship)", desc: "茶葉浮成一艘帆船逆流而上的輪廓。這象徵著事業揚帆起航，或是面臨一次跨領域的全新嘗試。雖然過程可能有些許波折，但方向是正確的。", advice: "鼓起勇氣，不要害怕未知的風浪，勇敢駛向您的夢想港灣。" },
+    { pattern: "🍀 三葉草 (Clover)", desc: "茶葉散落成三瓣對稱的花樣。這是極佳的好運符號！代表著今天或近期會有出乎意料的幸運事件發生（如抽獎中獎、意外撿便宜、遇到貴人順手相助）。", advice: "保持樂觀開朗的心情，隨喜迎接宇宙送給您的意外小禮物。" }
+];
+
+// 9. Aura-Soma (靈性彩油瓶) Database
+const auraSomaDatabase = [
+    { title: "B001 - 自然大天神瓶 (皇家藍 / 霓虹粉)", upperColor: "#1e3a8a", lowerColor: "#f472b6", desc: "上層皇家藍代表高維度的直覺與精神平靜，下層霓虹粉代表無條件的自我接納與溫柔。這顯示您的靈魂渴望在混亂中尋求平靜，並提醒您要溫柔地對待自己，直覺會指引您穿透眼前的迷霧。" },
+    { title: "B002 - 翡翠天地療癒瓶 (翡翠綠 / 天空藍)", upperColor: "#047857", lowerColor: "#38bdf8", desc: "上層翡翠綠象徵心輪的空間、真理與新生，下層天空藍象徵清澈的溝通與神聖意志。代表您的靈魂正在經歷一次深層的療癒期。適合放下舊有的心靈包袱，向宇宙表達您最真實的想法。" },
+    { title: "B003 - 太陽意志精華瓶 (金黃色 / 熔岩紅)", upperColor: "#eab308", lowerColor: "#dc2626", desc: "上層金黃色代表智慧、陽光與自信，下層熔岩紅代表行動力、熱情與生存意志。這顯示您體內正湧動著強大的創造能量！現在是將想法付諸實踐的最佳時機，勇敢燃燒您的熱情吧。" },
+    { title: "B004 - 極光精靈水晶瓶 (極光青 / 冰雪白)", upperColor: "#06b6d4", lowerColor: "#f9fafb", desc: "上層極光青代表自由的創意與新時代的思維，下層白色代表純潔、淨化與淚水後的重生。代表您的靈魂需要一次徹底的清障與淨化。放下過去的執念，您將迎來如極光般璀璨的新生靈感。" },
+    { title: "B005 - 智慧之泉平衡瓶 (深紫色 / 琥珀橙)", upperColor: "#6d28d9", lowerColor: "#f97316", desc: "上層深紫代表靈性自覺與蛻變，下層琥珀橙代表丹田能量、喜悅與克服深層恐懼。這顯示您正處於人生轉折點。深層的智慧正在甦醒，幫助您轉化過去的創傷，轉化為前行的喜悅能量。" },
+    { title: "B006 - 玫瑰無條件之愛瓶 (玫瑰粉 / 玫瑰粉)", upperColor: "#fb7185", lowerColor: "#fda4af", desc: "雙層皆為溫柔的玫瑰粉色。代表無條件的愛與心靈的滋養。這顯示您的心靈目前較為柔軟敏感，極度需要被愛與呵護。請停止自我批判，用溫柔溫暖的眼光看待鏡子中的自己。" },
+    { title: "B007 - 蔚藍海洋和平瓶 (蔚藍色 / 蔚藍色)", upperColor: "#0284c7", lowerColor: "#bae6fd", desc: "雙層皆為平靜的藍色調。代表海洋般的平靜、信任天意與無為而治。這代表您目前最需要的是「放手」，不要試圖去控制一切。相信宇宙的安排，順其自然，心靈便能獲得大安寧。" },
+    { title: "B008 - 神秘黃金啟示瓶 (紫羅蘭 / 亮金色)", upperColor: "#7c3aed", lowerColor: "#fbbf24", desc: "上層紫羅蘭色象徵靈性蛻變，下層亮金色代表內在的智慧寶藏。代表您的心靈深處隱藏著巨大的智慧。當您開始探索神秘學或內心世界時，您將會找到照亮命運前途的黃金鑰匙。" }
+];
+
+// 10. Totem Animals (印地安守護靈獸) Database
+const totemAnimalsDatabase = [
+    { animal: "🦆 鵝 (Goose - 1月)", desc: "鵝圖騰代表忠誠、耐力與雄心勃勃。您行事非常有毅力，不畏嚴寒，願意為了長遠目標進行超長距離的奮鬥。在團隊中是極佳的開路先鋒。", advice: "保持您的專注力，但也要記得適時與隊友輪流帶頭，防範體力透支。" },
+    { animal: "🦦 水獺 (Otter - 2月)", desc: "水獺圖騰象徵玩樂、好奇心與人道主義。您思維獨特活潑，不喜歡墨守成規，總能以樂觀童趣的眼光看待世界，給身邊人帶來歡樂。", advice: "堅持您的特立獨行，不要因為旁人的質疑而收起您的創意與玩心。" },
+    { animal: "🐺 狼 (Wolf - 3月)", desc: "狼圖騰代表直覺、智慧與群體紀律。您擁有強烈的心靈直覺，既能合群作戰，又能在孤獨的深思中找到智慧的答案。是靈魂的探索者。", advice: "傾聽您內心深處的野性直覺，它在關鍵時刻從不欺騙您。" },
+    { animal: "🦅 獵鷹 (Falcon - 4月)", desc: "獵鷹圖騰代表遠見、速度與精準行動。您是天生的獵手，洞察力極強，一旦鎖定目標便能以極快的執行力將其拿下。具有極佳的開創魄力。", advice: "在高空俯瞰時要保持冷靜，動手前做好通盤評估，以免衝動躁進。" },
+    { animal: "🦫 海狸 (Beaver - 5月)", desc: "海狸圖騰象徵著建造、團隊合作與防護防守。您是天生的工程師與實幹派，擅長將混亂的資源組織建構成穩固的家園或系統，極具耐心。", advice: "築壩需要時間，一步一個腳印，您的努力終將會建構出堅不可摧的帝國。" },
+    { animal: "🦌 鹿 (Deer - 6月)", desc: "鹿圖騰代表溫柔、警覺與優雅。您心思細膩，對周圍的能量環境非常敏感。行事溫和優雅，善於用溫柔的力量融化人際糾紛。", advice: "溫柔是您的武器，但面對侵犯時也要勇敢立起您的鹿角，捍衛底線。" },
+    { animal: "🐦 啄木鳥 (Woodpecker - 7月)", desc: "啄木鳥圖騰象徵滋養、家庭與敏銳探知。您具有極強的母性與保護欲，善於傾聽他人心聲並給予關懷。同時，您對問題的核心有極佳洞察力。", advice: "在照顧他人之前，先築好自己心靈的避風港，別讓自己受委屈。" },
+    { animal: "🐟 鮭魚 (Salmon - 8月)", desc: "鮭魚圖騰代表堅持、勇氣與逆流而上。您生命力蓬勃，面對困難與世俗的阻礙，敢於展現逆流而上的勇氣。渴望在生命中留下屬於自己的印記。", advice: "逆流前行雖然疲憊，但終點的豐收無可比擬，保持信念勇往直前。" },
+    { animal: "🐻 棕熊 (Brown Bear - 9月)", desc: "棕熊圖騰代表力量、平靜與內省療癒。您行事沉穩可靠，內心蘊含著巨大的能量，但平時溫和內斂。擅長在安靜的獨處中療癒自己與他人。", advice: "在感到混亂時，主動給自己一次「冬眠」期，沉澱後的力量會更強大。" },
+    { animal: "🐦 烏鴉 (Raven - 10月)", desc: "烏鴉圖騰象徵魔法、神秘與命運轉折。您對神秘事物有著天生的好奇心，思維深邃，總能看穿事物的本質，預知未來的轉變。是天生的變革者。", advice: "接納生活中的每一次轉變，每一次的告別都是新魔法的開始。" },
+    { animal: "🐍 蛇 (Snake - 11月)", desc: "蛇圖騰代表蛻變、再生與薩滿療癒。您具有極強的適應力與自我修復能力，一生會經歷多次身份與心靈的重大蛻變，每一次蛻皮都更強大。", advice: "不要害怕痛苦的改變，勇敢拋棄舊的模式，您正朝向更高維度再生。" },
+    { animal: "🦌 麋鹿 (Elk - 12月)", desc: "麋鹿圖騰象徵高貴、尊嚴與持久耐力。您氣場高雅尊貴，做事有始有終，具備超乎常人的長途耐力與堅韌意志。在群體中深受敬重。", advice: "昂起您的頭顱，保持您的尊嚴，您的耐力終將引領您走過最寒冷的冬季。" }
+];
+
+// 11. Arabic Geomancy (阿拉伯沙書占卜) Database
+const geomancyDatabase = [
+    { figure: "⚬<br>⚬<br>⚬<br>⚬", name: "Via (道路)", desc: "由四個單點組成的直線。代表前行的路徑、移動與改變。這表示您所問之事正處於出發、前進的動態過程中，不宜停滯。雖然旅途漫長，但方向是明確的。" },
+    { figure: "⚬ ⚬<br>⚬ ⚬<br>⚬ ⚬<br>⚬ ⚬", name: "Populus (人民)", desc: "由四對雙點組成的寬闊形狀。代表群眾、社交、聚會與共識。這顯示您目前的事務需要藉助團體的力量，或是您正受到周圍環境與輿論的強大影響。適合進行團隊合作。" },
+    { figure: "⚬ ⚬<br>⚬ ⚬<br>⚬<br>⚬", name: "Albus (白色)", desc: "上寬下窄的結構。象徵純潔、智慧、和平與精神上的成功。代表目前的局勢非常清明，沒有陰謀。只要以誠實、理性的態度面對，就能獲得和諧完美的結局。" },
+    { figure: "⚬<br>⚬<br>⚬ ⚬<br>⚬ ⚬", name: "Conjunctio (結合)", desc: "上窄下寬的結構。代表盟約、婚姻、合夥與重新聚攏。這是一個非常利於談判與建立關係的卦象，預示著雙方的矛盾將會化解，達成互利共贏的完美共識。" },
+    { figure: "⚬ ⚬<br>⚬<br>⚬<br>⚬ ⚬", name: "Carcer (監獄)", desc: "兩端寬、中間窄的封閉形狀。代表限制、固守、延遲與保護。這表示目前局勢受到外在力量的制約，強行突破只會碰壁。此時最適合閉關修煉、固守陣地、等待解鎖。" },
+    { figure: "⚬<br>⚬ ⚬<br>⚬ ⚬<br>⚬", name: "Fortuna Major (大幸運)", desc: "中間寬、兩端窄的穩固形狀。代表極大的成功、榮耀、保護與自力更生的成就。這是沙書占卜中最強大的吉祥卦象，預示著您將憑藉著自己的智慧與努力獲得輝煌成就。" },
+    { figure: "⚬ ⚬<br>⚬<br>⚬<br>⚬", name: "Fortuna Minor (小幸運)", desc: "頂端為雙點，下方為單點。代表外在力量帶來的短暫幸運、順利通過與貴人相助。這代表事情會進展得很順利，但好運多來自於外在機遇，需要快速把握，不宜拖延。" },
+    { figure: "⚬ ⚬<br>⚬<br>⚬ ⚬<br>⚬", name: "Puella (少女)", desc: "不對稱的優雅形狀。象徵美感、愛情、享樂與短暫的和諧。這代表您目前的心情愉快，事物進展帶有藝術與美感，利於社交與戀愛，但可能缺乏長久的穩定性。" }
+];
+
+// 12. Indian Vedic Nakshatras Database (印度吠陀星宿)
+const vedicDatabase = [
+    { name: "婁宿 (Ashwini) ・ 疾速之星", desc: "婁宿受雙子馬神（Ashwins）守護，象徵開創、療癒與極快的速度。這預示著您靈魂中帶有極強的開拓精神與治癒天賦，行事雷厲風行，總能迅速找到解決問題的方法。", advice: "行動迅速是您的優勢，但也要學會放慢腳步，防範因粗心大意而留下隱患。" },
+    { name: "畢宿 (Rohini) ・ 成長之星", desc: "畢宿受創造之神（Prajapati）守護，代表美麗、富足與孕育成長。這表示您具有極佳的審美觀、親和力與物質顯化能力，生活富含藝術氣息，能默默培育出偉大的項目。", advice: "相信時間的孕育力量，保持耐心，您的努力終將開花結果。" },
+    { name: "參宿 (Ardra) ・ 變革之星", desc: "參宿受暴風雨之神（Rudra）守護，象徵淚水、風暴與大變革之後的覺醒。這預示著您的靈魂需經歷挑戰與重塑，每一次的人生低潮與磨難，都將淬煉出您更強大的智慧。", advice: "暴風雨過後便是晴天，擁抱變革，淚水是洗滌靈魂雙眼的雨露。" },
+    { name: "軫宿 (Hasta) ・ 手藝之星", desc: "軫宿受太陽神（Savitr）守護，象徵雙手、創意、技巧與掌控。這顯示您手藝精巧，極具創造力，擅長技術操作、文字創作或手作工藝，能憑藉著雙手創造出豐盛的生活。", advice: "您的力量就在雙手與大腦的結合中，專注於專業技術的磨練必有大成。" },
+    { name: "心宿 (Jyeshtha) ・ 權威之星", desc: "心宿受雷雨之王（Indra）守護，代表成熟、尊嚴、權力與自我克制。這顯示您在群體中極具威信，思維成熟，天生有著大姐大/大哥大的風範，能挑起重擔捍衛群體利益。", advice: "權威來自於內心的寬容，用慈悲心去引導他人，能贏得更真誠的尊重。" },
+    { name: "斗宿 (Uttarashadha) ・ 勝利之星", desc: "斗宿受十位宇宙法規之神（Vishwadevas）守護，象徵終極勝利與道德正義。這表示您具有極高的道德標準與堅韌不拔的精神，做事問心無愧，最終必定能獲得持久的成功。", advice: "堅持走正道，正義的法則會站在您身後，護佑您獲得最後的勝利。" },
+    { name: "室宿 (Purvabhadrapada) ・ 靈修之星", desc: "室宿受獨腳火龍守護，象徵神秘力量、熱情奉獻與靈魂深處的覺醒。這預示著您對玄學、哲學或靈性修行有著極高的天賦，甘願為了信仰或理想做出巨大的犧牲與努力。", advice: "將您的精神力量引導向有益於大眾的事物，靈魂將獲得無上的豐盛。" },
+    { name: "角宿 (Chitra) ・ 創造之星", desc: "角宿受宇宙工匠之神（Vishwakarma）守護，象徵璀璨的寶石、設計與卓越的創造力。這代表您具有極佳的視覺審美、空間設計或美感天賦，擅長將抽象想法具體美化呈現。", advice: "您是天生的靈魂工匠，勇敢用您的創意與審美去美化這個世界吧。" }
+];
+
 // Life Path Numbers Database (1 to 9)
 const lifePathData = {
     1: { desc: "獨立開創者。您極具領導才能與原創想法，渴望自主獨立，但需注意不要過於自我中心或顯得孤傲。", keywords: ["領導力", "獨立性", "開創者", "自尊心"] },
@@ -169,7 +257,6 @@ function calculateDestiny() {
     const date = bday.getDate();
 
     // 1. Life Path Number (生命靈數)
-    // Extract YYYYMMDD digits and sum
     const digitsStr = year.toString() + month.toString().padStart(2, '0') + date.toString().padStart(2, '0');
     let sum = 0;
     for (let char of digitsStr) {
@@ -182,7 +269,6 @@ function calculateDestiny() {
         }
         sum = tempSum;
     }
-    // Render Life Path Number
     document.getElementById('lifepath-number').textContent = sum;
     document.getElementById('lifepath-desc').textContent = lifePathData[sum].desc;
     
@@ -216,13 +302,11 @@ function calculateDestiny() {
     document.getElementById('zodiac-ruler').textContent = zInfo.ruler;
     document.getElementById('zodiac-element').textContent = zInfo.element;
     
-    // Custom description based on Name + Zodiac Summary
-    const seed = getDailySeed(zodiacKey);
     const customZodiacSummary = `${userData.name}，根據您西洋出生星盤，您受守護星【${zInfo.ruler}】與【${zInfo.element}】引導。${zInfo.summary[0]}`;
     document.getElementById('zodiac-desc').textContent = customZodiacSummary;
     document.getElementById('zodiac-advice').textContent = zInfo.advice;
 
-    // Auto-highlight/select the zodiac button in tab 3 (Horoscope)
+    // Auto-highlight zodiac item in Tab 3 (Horoscope)
     const items = document.querySelectorAll('.zodiac-item');
     items.forEach(item => {
         if(item.id === `zodiac-${zodiacKey}`) {
@@ -231,11 +315,9 @@ function calculateDestiny() {
             item.classList.remove('selected');
         }
     });
-    // Fill horoscope tab preview as well
     selectZodiac(zodiacKey);
 
     // 3. Ziwei Doushu Life Palace Star (紫微主星)
-    // Compute star index based on month + date hash
     const ziweiSeed = (month * 7 + date * 3) % ziweiStars.length;
     const starInfo = ziweiStars[ziweiSeed];
     document.getElementById('ziwei-title').textContent = `${starInfo.star} ・ ${starInfo.tag}`;
@@ -243,7 +325,6 @@ function calculateDestiny() {
     document.getElementById('ziwei-advice').textContent = starInfo.advice;
 
     // 4. I Ching Bagua & Five Elements (易經八卦與五行)
-    // Calculate Bagua Trigram index using Name length + birthday day
     const nameCodeSum = Array.from(userData.name).reduce((acc, char) => acc + char.charCodeAt(0), 0);
     const baguaSeed = (nameCodeSum + date) % baguaTrigrams.length;
     const trigram = baguaTrigrams[baguaSeed];
@@ -252,12 +333,11 @@ function calculateDestiny() {
 
     // Deterministic Five Elements balance percentages
     const wSeed = nameCodeSum + year;
-    let wWood = (wSeed % 25) + 10;   // 10-34%
+    let wWood = (wSeed % 25) + 10;
     let wFire = ((wSeed >> 2) % 25) + 10;
     let wEarth = ((wSeed >> 4) % 25) + 10;
     let wMetal = ((wSeed >> 6) % 25) + 10;
     
-    // Add bonus element points based on Trigram element
     if (trigram.element === "木") wWood += 20;
     else if (trigram.element === "火") wFire += 20;
     else if (trigram.element === "土") wEarth += 20;
@@ -265,7 +345,6 @@ function calculateDestiny() {
     
     let wWater = 100 - (wWood + wFire + wEarth + wMetal);
     if (wWater < 5) {
-        // Adjust bounds
         wWater = 10;
         const total = wWood + wFire + wEarth + wMetal + wWater;
         wWood = Math.floor((wWood / total) * 100);
@@ -275,12 +354,63 @@ function calculateDestiny() {
         wWater = 100 - (wWood + wFire + wEarth + wMetal);
     }
 
-    // Set progress bars
     document.getElementById('elem-wood').style.width = `${wWood}%`;
     document.getElementById('elem-fire').style.width = `${wFire}%`;
     document.getElementById('elem-earth').style.width = `${wEarth}%`;
     document.getElementById('elem-metal').style.width = `${wMetal}%`;
     document.getElementById('elem-water').style.width = `${wWater}%`;
+
+    // 5. 易經梅花測字 (Glyphomancy)
+    const glyphSeed = (nameCodeSum + year + month + date) % glyphomancyDatabase.length;
+    const glyph = glyphomancyDatabase[glyphSeed];
+    document.getElementById('destiny-glyph-char').textContent = glyph.char;
+    document.getElementById('destiny-glyph-title').textContent = glyph.title;
+    document.getElementById('destiny-glyph-desc').textContent = `${userData.name}，今日占測所得之命運漢字為【${glyph.char}】。${glyph.desc}`;
+
+    // 6. 北歐盧恩符文 (Nordic Runes)
+    const runeSeed = (nameCodeSum * 3 + date * 7) % nordicRunesDatabase.length;
+    const rune = nordicRunesDatabase[runeSeed];
+    document.getElementById('destiny-rune-symbol').textContent = rune.symbol;
+    document.getElementById('destiny-rune-title').textContent = rune.name;
+    document.getElementById('destiny-rune-desc').textContent = `${userData.name}，您的本命北歐守護符文為【${rune.name.split(' ')[0]}】。${rune.desc}`;
+
+    // 7. 英式茶葉占卜 (Tea Leaf Reading)
+    const teaSeed = (nameCodeSum + month * 13 + date * 5) % teaLeafDatabase.length;
+    const tea = teaLeafDatabase[teaSeed];
+    document.getElementById('destiny-tea-pattern').textContent = tea.pattern;
+    document.getElementById('destiny-tea-desc').textContent = `${userData.name}，茶杯中呈現出【${tea.pattern.split(' ')[1]}】的圖示。${tea.desc}`;
+    document.getElementById('destiny-tea-advice').textContent = tea.advice;
+
+    // 8. 靈性彩油 Aura-Soma
+    const auraSeed = (nameCodeSum * 2 + year + month) % auraSomaDatabase.length;
+    const aura = auraSomaDatabase[auraSeed];
+    document.getElementById('destiny-aura-title').textContent = aura.title;
+    document.getElementById('destiny-aura-desc').textContent = `${userData.name}，您的脈輪彩油頻率為【${aura.title.split(' - ')[1]}】。${aura.desc}`;
+    
+    // Set colors of CSS liquid
+    document.getElementById('aura-liquid-upper').style.backgroundColor = aura.upperColor;
+    document.getElementById('aura-liquid-lower').style.backgroundColor = aura.lowerColor;
+
+    // 9. 印地安守護靈獸 (Totem Animal)
+    const totemIdx = (month - 1) % 12; // Based on birth month
+    const totem = totemAnimalsDatabase[totemIdx];
+    document.getElementById('destiny-totem-title').textContent = totem.animal;
+    document.getElementById('destiny-totem-desc').textContent = `${userData.name}，依您出生月份，您的印地安守護靈獸為【${totem.animal.split(' ')[1]}】。${totem.desc}`;
+    document.getElementById('destiny-totem-advice').textContent = totem.advice;
+
+    // 10. 阿拉伯沙書占卜 Geomancy
+    const geomSeed = (nameCodeSum + date * 11) % geomancyDatabase.length;
+    const geom = geomancyDatabase[geomSeed];
+    document.getElementById('destiny-geom-fig').innerHTML = geom.figure;
+    document.getElementById('destiny-geom-title').textContent = geom.name;
+    document.getElementById('destiny-geom-desc').textContent = `${userData.name}，沙地占文顯現【${geom.name.split(' ')[0]}】符號。${geom.desc}`;
+
+    // 11. 印度吠陀星宿 Nakshatras
+    const vedicSeed = (month * 11 + date * 17) % vedicDatabase.length;
+    const vedic = vedicDatabase[vedicSeed];
+    document.getElementById('destiny-vedic-title').textContent = vedic.name;
+    document.getElementById('destiny-vedic-desc').textContent = `${userData.name}，在印度吠陀星空中，您的本命宿為【${vedic.name.split('宿 (')[0]}宿】。${vedic.desc}`;
+    document.getElementById('destiny-vedic-advice').textContent = vedic.advice;
 }
 
 // ==========================================
