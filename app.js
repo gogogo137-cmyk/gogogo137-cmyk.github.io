@@ -65,7 +65,7 @@ createApp({
                     description: 'Interactive celestial simulation engine generating cosmic bodies and starry patterns.',
                     descriptionZh: '互動式天體物理星空模擬引擎，產生獨特星雲與恆星軌跡。',
                     icon: 'fa-user-astronaut',
-                    link: '../cosmos-generator/index.html',
+                    link: './cosmos-generator/index.html',
                     color: '#8b5cf6'
                 },
                 {
