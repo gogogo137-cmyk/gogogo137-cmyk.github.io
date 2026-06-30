@@ -21,6 +21,8 @@ function normalizeMovie(raw, index) {
         duration: raw["片長(分鐘)"] || "",
         releaseDate: raw["上映日期"] || "",
         score: Number.parseFloat(raw["評分"]) || 0,
+        localCoverUrl: `covers/cover_${raw.ID || index + 1}.jpg`,
+        coverUrl: raw["封面連結"] || "",
         directors: raw["導演"] || "",
         actors: raw["演員"] || "",
         summary: raw["劇情簡介"] || "",
@@ -79,8 +81,27 @@ function renderMovies() {
 
     movies.forEach((movie, index) => {
         const card = template.content.firstElementChild.cloneNode(true);
+        const poster = card.querySelector(".movie-poster");
+        const posterFrame = card.querySelector(".poster-frame");
+        let triedRemoteCover = false;
+
+        if (movie.localCoverUrl) {
+            poster.src = movie.localCoverUrl;
+            poster.alt = `${movie.title} 海報`;
+            poster.addEventListener("error", () => {
+                if (movie.coverUrl && !triedRemoteCover) {
+                    triedRemoteCover = true;
+                    poster.src = movie.coverUrl;
+                    return;
+                }
+                posterFrame.classList.add("poster-missing");
+            });
+        } else {
+            posterFrame.classList.add("poster-missing");
+        }
+
         card.querySelector(".movie-rank").textContent = `No. ${index + 1}`;
-        card.querySelector(".movie-score").textContent = `評分 ${movie.score.toFixed(1)}`;
+        card.querySelector(".movie-score").textContent = `★ ${movie.score.toFixed(1)}`;
         card.querySelector("h2").textContent = movie.title;
         card.querySelector(".movie-meta").textContent = `${movie.genres || "未分類"} | ${movie.region || "未知地區"} | ${movie.duration || "未知"} 分鐘`;
         card.querySelector(".movie-people").textContent = `導演：${movie.directors || "未知"} | 上映：${movie.releaseDate || "未知"}`;
