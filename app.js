@@ -89,6 +89,16 @@ createApp({
                     color: '#10b981'
                 },
                 {
+                    id: 'netwarm-movie',
+                    name: 'Classic Movie Database',
+                    nameZh: '經典電影資料庫互動展示',
+                    description: 'A static portfolio version of a scraped classic movie dataset with search, filtering, ratings, genres, and plot summaries.',
+                    descriptionZh: '將爬蟲整理出的 100 部經典電影資料放上作品集，先以靜態頁面呈現搜尋、類型篩選、評分與劇情摘要。',
+                    icon: 'fa-film',
+                    link: './netwarm-movie/index.html',
+                    color: '#14b8a6'
+                },
+                {
                     id: 'hw7-2330',
                     name: 'TSMC Stock regression (2330)',
                     nameZh: '台積電 (2330) 股票回歸分析',
