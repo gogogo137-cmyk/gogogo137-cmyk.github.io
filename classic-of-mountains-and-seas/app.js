@@ -89,6 +89,23 @@ const BEASTS_DATABASE = [
             aggression: 5,
             rarity: 92
         }
+    },
+    {
+        id: "xing-tian",
+        nameCn: "刑天",
+        nameEn: "Xing Tian",
+        category: "divine",
+        categoryCn: "神獸",
+        region: "west",
+        regionCn: "西山經 (海外西經)",
+        classicText: "「刑天與帝至此爭神，帝斷其首，葬之常羊之山。乃以乳為目，以臍為口，操干戚以舞。」",
+        description: "刑天是中國古代神話中的戰神與巨人。他與黃帝爭奪天帝神位，在激烈的搏鬥中被黃帝砍去了頭顱，頭顱被安葬在常羊山下。然而，無頭的刑天並未屈服，他以雙乳化為眼睛，以肚臍當作嘴巴，右手揮舞著戰斧（戚），左手持著盾牌（干），繼續在天地間戰鬥，象徵著永不妥協、抗爭到底的悲壯英雄靈魂。",
+        image: "assets/xing_tian.png",
+        stats: {
+            spiritual: 90,
+            aggression: 98,
+            rarity: 95
+        }
     }
 ];
 
