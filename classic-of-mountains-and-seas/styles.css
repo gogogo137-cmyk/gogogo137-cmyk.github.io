@@ -1,28 +1,28 @@
 /* CSS Custom Properties & Core Variables */
 :root {
-    --bg-dark-gray: #050608;
-    --bg-deep-ink: #0d0f12;
-    --bg-card: rgba(18, 22, 28, 0.75);
-    --bg-glass: rgba(13, 15, 18, 0.65);
+    --bg-dark-gray: #f6f3ea;      /* 暖淺灰底 / 仿宣紙色 */
+    --bg-deep-ink: #fcfbf9;       /* 亮白色 */
+    --bg-card: rgba(253, 252, 247, 0.9); /* 半透明暖白卡片底 */
+    --bg-glass: rgba(246, 243, 234, 0.8);
     
-    /* Ancient Chinese Color Palette */
-    --gold-primary: #d4af37;     /* 帝王金 */
-    --gold-dark: #b8972f;
-    --gold-glow: rgba(212, 175, 55, 0.35);
-    --jade-primary: #3d8e6c;     /* 翡翠綠 */
-    --jade-glow: rgba(61, 142, 108, 0.3);
-    --vermilion: #b22222;        /* 朱砂紅 */
-    --vermilion-glow: rgba(178, 34, 34, 0.35);
-    --ink-gray: #3a414c;
+    /* Ancient Chinese Color Palette (Light Theme Optimized) */
+    --gold-primary: #8c6b12;     /* 暗古金，適合淺色背景 */
+    --gold-dark: #6e530c;
+    --gold-glow: rgba(140, 107, 18, 0.2);
+    --jade-primary: #2d6b4f;     /* 深翡翠綠 */
+    --jade-glow: rgba(45, 107, 79, 0.15);
+    --vermilion: #9e2a2b;        /* 硃砂紅 */
+    --vermilion-glow: rgba(158, 42, 43, 0.2);
+    --ink-gray: #4a453f;         /* 墨灰色，取代純黑 */
     
     /* Text Colors */
-    --text-primary: #e2e8f0;     /* 亮灰 */
-    --text-secondary: #94a3b8;   /* 藍灰 */
-    --text-gold: #f3e5ab;        /* 淺金 */
+    --text-primary: #2b2621;     /* 深茶黑 / 墨水色 */
+    --text-secondary: #5c534c;   /* 灰褐 */
+    --text-gold: #8b0000;        /* 深紅，用於強調字 */
     
     /* Borders & Shadow */
-    --gold-border: rgba(212, 175, 55, 0.25);
-    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+    --gold-border: rgba(140, 107, 18, 0.22);
+    --card-shadow: 0 8px 24px 0 rgba(92, 80, 67, 0.12);
     --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -51,11 +51,11 @@ body {
     background: var(--bg-dark-gray);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--gold-dark);
+    background: var(--gold-primary);
     border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--gold-primary);
+    background: var(--gold-dark);
 }
 
 /* Particle Canvas Background */
@@ -67,7 +67,7 @@ body {
     height: 100%;
     z-index: 0;
     pointer-events: none;
-    background: radial-gradient(circle at 50% 50%, #12161f 0%, #050608 100%);
+    background: radial-gradient(circle at 50% 50%, #fbf9f3 0%, #eadecb 100%);
 }
 
 /* Main Container */
@@ -86,7 +86,7 @@ body {
 .app-header {
     position: relative;
     border: 1px solid var(--gold-border);
-    background: linear-gradient(135deg, rgba(13, 15, 18, 0.9) 0%, rgba(5, 6, 8, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(253, 252, 247, 0.95) 0%, rgba(234, 222, 203, 0.9) 100%);
     border-radius: 12px;
     padding: 40px;
     margin-bottom: 30px;
@@ -101,7 +101,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+    background: radial-gradient(circle at top right, rgba(140, 107, 18, 0.05) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -128,8 +128,8 @@ body {
     font-size: 1.2rem;
     letter-spacing: 6px;
     margin-bottom: 15px;
-    background-color: rgba(178, 34, 34, 0.05);
-    box-shadow: 0 0 10px rgba(178, 34, 34, 0.2);
+    background-color: rgba(158, 42, 43, 0.05);
+    box-shadow: 0 0 10px rgba(158, 42, 43, 0.1);
     border-radius: 4px;
 }
 
@@ -137,8 +137,8 @@ body {
     font-family: 'Cinzel Decorative', serif;
     font-size: 2.8rem;
     font-weight: 700;
-    color: var(--gold-primary);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 15px var(--gold-glow);
+    color: var(--text-primary);
+    text-shadow: 0 1px 4px rgba(92, 80, 67, 0.15);
     letter-spacing: 2px;
     margin-bottom: 8px;
 }
@@ -146,7 +146,7 @@ body {
 .subtitle {
     font-family: 'Noto Serif TC', serif;
     font-size: 1.2rem;
-    color: var(--text-gold);
+    color: var(--gold-primary);
     letter-spacing: 4px;
     opacity: 0.9;
 }
@@ -164,9 +164,9 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background: radial-gradient(circle, #251e18 0%, #15110e 100%);
+    background: radial-gradient(circle, #fbfbf9 0%, #e6dfd3 100%);
     border: 4px double var(--gold-primary);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8), 0 0 15px var(--gold-glow);
+    box-shadow: 0 8px 20px rgba(92, 80, 67, 0.12), 0 0 10px rgba(140, 107, 18, 0.1);
     cursor: pointer;
     transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1.2);
     user-select: none;
@@ -178,13 +178,13 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    border: 1px solid rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(140, 107, 18, 0.15);
 }
 
 .ring-outer {
     width: 160px;
     height: 160px;
-    border: 1px dashed rgba(212, 175, 55, 0.3);
+    border: 1px dashed rgba(140, 107, 18, 0.3);
 }
 
 .ring-middle {
@@ -210,15 +210,15 @@ body {
 
 .direction-label:hover {
     color: var(--gold-primary);
-    text-shadow: 0 0 8px var(--gold-glow);
+    text-shadow: 0 0 4px var(--gold-glow);
     transform: scale(1.2);
 }
 
 .direction-label.active {
-    color: var(--gold-primary);
-    background: rgba(212, 175, 55, 0.15);
+    color: #fff;
+    background: var(--gold-primary);
     border: 1px solid var(--gold-primary);
-    box-shadow: 0 0 12px var(--gold-glow);
+    box-shadow: 0 0 8px var(--gold-glow);
 }
 
 .dir-n { top: 4px; left: calc(50% - 12px); }
@@ -245,7 +245,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 0.75rem;
-    color: rgba(212, 175, 55, 0.5);
+    color: rgba(140, 107, 18, 0.45);
     letter-spacing: 3px;
     text-align: center;
     transform: rotate(22deg);
@@ -258,7 +258,7 @@ body {
     transform: translate(-50%, -50%);
     width: 48px;
     height: 48px;
-    background: radial-gradient(circle, #b22222 0%, #6b1414 100%);
+    background: radial-gradient(circle, #b22222 0%, #8b0000 100%);
     border: 2px solid var(--gold-primary);
     border-radius: 50%;
     display: flex;
@@ -266,19 +266,19 @@ body {
     justify-content: center;
     font-family: 'Noto Serif TC', serif;
     font-weight: 700;
-    color: var(--text-gold);
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.6);
+    color: #fff;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.4);
     z-index: 5;
     transition: var(--transition-smooth);
 }
 
 .compass-center:hover {
-    box-shadow: 0 0 15px var(--vermilion-glow);
+    box-shadow: 0 0 10px var(--vermilion-glow);
     transform: translate(-50%, -50%) scale(1.08);
 }
 
 .compass-center.active {
-    background: radial-gradient(circle, #d4af37 0%, #8c6e1e 100%);
+    background: radial-gradient(circle, #d4af37 0%, #b8972f 100%);
     color: #111;
 }
 
@@ -321,13 +321,13 @@ body {
     justify-content: center;
     gap: 15px;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(140, 107, 18, 0.15);
     padding-bottom: 15px;
 }
 
 .nav-tab {
     background: var(--bg-glass);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--gold-border);
     color: var(--text-secondary);
     padding: 12px 28px;
     font-family: 'Noto Serif TC', serif;
@@ -345,15 +345,15 @@ body {
 .nav-tab:hover {
     color: var(--gold-primary);
     border-color: var(--gold-primary);
-    box-shadow: 0 0 10px var(--gold-glow);
+    box-shadow: 0 0 8px var(--gold-glow);
     transform: translateY(-2px);
 }
 
 .nav-tab.active {
-    color: var(--text-gold);
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(18, 22, 28, 0.8) 100%);
-    border-color: var(--gold-primary);
-    box-shadow: 0 0 15px var(--gold-glow), inset 0 0 5px rgba(212,175,55,0.2);
+    color: var(--vermilion);
+    background: linear-gradient(135deg, rgba(158, 42, 43, 0.06) 0%, rgba(253, 252, 247, 0.9) 100%);
+    border-color: var(--vermilion);
+    box-shadow: 0 0 10px var(--vermilion-glow), inset 0 0 5px rgba(158,42,43,0.1);
 }
 
 /* Main Content Area */
@@ -379,7 +379,7 @@ body {
 /* Filters Bar Styles */
 .filters-bar {
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--gold-border);
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 25px;
@@ -401,7 +401,7 @@ body {
 .filter-group label {
     font-family: 'Noto Serif TC', serif;
     font-weight: 700;
-    color: var(--text-gold);
+    color: var(--text-primary);
     font-size: 0.95rem;
 }
 
@@ -412,8 +412,8 @@ body {
 }
 
 .filter-btn {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     color: var(--text-secondary);
     padding: 6px 14px;
     border-radius: 4px;
@@ -425,16 +425,16 @@ body {
 
 .filter-btn:hover {
     color: var(--text-primary);
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(212, 175, 55, 0.4);
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(140, 107, 18, 0.4);
 }
 
 .filter-btn.active {
-    color: #111;
+    color: #fff;
     background: var(--gold-primary);
     border-color: var(--gold-primary);
     font-weight: 700;
-    box-shadow: 0 0 10px var(--gold-glow);
+    box-shadow: 0 0 8px var(--gold-glow);
 }
 
 .filter-status {
@@ -455,7 +455,7 @@ body {
 
 .beast-card {
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--gold-border);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--card-shadow);
@@ -469,7 +469,7 @@ body {
 .beast-card:hover {
     transform: translateY(-8px);
     border-color: var(--gold-primary);
-    box-shadow: 0 12px 30px 0 rgba(212, 175, 55, 0.15), var(--card-shadow);
+    box-shadow: 0 10px 24px 0 rgba(140, 107, 18, 0.12), var(--card-shadow);
 }
 
 .beast-image-wrapper {
@@ -500,7 +500,7 @@ body {
     left: 0;
     width: 100%;
     height: 30%;
-    background: linear-gradient(to top, var(--bg-deep-ink), transparent);
+    background: linear-gradient(to top, rgba(253, 252, 247, 0.95), transparent);
 }
 
 /* Dynamic Badge Styles */
@@ -514,13 +514,13 @@ body {
     font-weight: 700;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     z-index: 2;
 }
 
 .badge-divine {
     background-color: var(--gold-primary);
-    color: #111;
+    color: #fff;
 }
 
 .badge-auspicious {
@@ -538,12 +538,12 @@ body {
     bottom: 10px;
     left: 15px;
     font-size: 0.8rem;
-    color: var(--text-gold);
+    color: var(--gold-primary);
     z-index: 2;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.85);
     padding: 2px 8px;
     border-radius: 4px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
+    border: 1px solid var(--gold-border);
     font-family: 'Noto Serif TC', serif;
 }
 
@@ -569,7 +569,7 @@ body {
     font-family: 'Noto Serif TC', serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--text-gold);
+    color: var(--text-primary);
 }
 
 .beast-title-en {
@@ -584,14 +584,14 @@ body {
     color: var(--text-secondary);
     font-size: 0.85rem;
     line-height: 1.6;
-    border-left: 2px solid var(--border-color);
+    border-left: 2px solid var(--gold-border);
     padding-left: 10px;
     margin-bottom: 15px;
     flex: 1;
 }
 
 .view-details-btn {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.02) 100%);
+    background: linear-gradient(135deg, rgba(140, 107, 18, 0.08) 0%, rgba(140, 107, 18, 0.02) 100%);
     border: 1px solid var(--gold-border);
     color: var(--gold-primary);
     padding: 10px;
@@ -607,8 +607,8 @@ body {
 
 .view-details-btn:hover {
     background: var(--gold-primary);
-    color: #111;
-    box-shadow: 0 0 15px var(--gold-glow);
+    color: #fff;
+    box-shadow: 0 0 10px var(--gold-glow);
 }
 
 /* Lore Section Scroll Styles */
@@ -627,7 +627,7 @@ body {
     font-size: 2.2rem;
     color: var(--gold-primary);
     margin-bottom: 10px;
-    text-shadow: 0 0 8px var(--gold-glow);
+    text-shadow: 0 0 4px var(--gold-glow);
 }
 
 .lore-intro p {
@@ -646,7 +646,7 @@ body {
     position: relative;
     border-left: 1px solid var(--gold-border);
     border-right: 1px solid var(--gold-border);
-    background: linear-gradient(to right, rgba(20, 24, 32, 0.8), rgba(13, 16, 22, 0.95), rgba(20, 24, 32, 0.8));
+    background: linear-gradient(to right, rgba(253, 252, 247, 0.85), rgba(246, 243, 234, 0.95), rgba(253, 252, 247, 0.85));
     border-radius: 12px;
     box-shadow: var(--card-shadow);
     transition: var(--transition-smooth);
@@ -656,7 +656,7 @@ body {
 .myth-scroll-card:hover {
     border-left-color: var(--gold-primary);
     border-right-color: var(--gold-primary);
-    box-shadow: 0 10px 25px rgba(212,175,55,0.08), var(--card-shadow);
+    box-shadow: 0 8px 20px rgba(140,107,18,0.1), var(--card-shadow);
 }
 
 .scroll-wood {
@@ -674,12 +674,12 @@ body {
 
 .scroll-tag {
     color: var(--vermilion);
-    border: 1px solid rgba(178, 34, 34, 0.3);
+    border: 1px solid rgba(158, 42, 43, 0.3);
     padding: 2px 8px;
     font-size: 0.8rem;
     font-family: 'Noto Serif TC', serif;
     border-radius: 3px;
-    background: rgba(178,34,34,0.05);
+    background: rgba(158, 42, 43, 0.05);
     display: inline-block;
     margin-bottom: 12px;
 }
@@ -687,7 +687,7 @@ body {
 .scroll-title {
     font-family: 'Noto Serif TC', serif;
     font-size: 1.6rem;
-    color: var(--text-gold);
+    color: var(--text-primary);
     margin-bottom: 12px;
 }
 
@@ -712,10 +712,10 @@ body {
 }
 
 .read-scroll-btn:hover {
-    background: rgba(212, 175, 55, 0.1);
-    color: var(--text-gold);
+    background: rgba(140, 107, 18, 0.08);
+    color: var(--gold-primary);
     border-color: var(--gold-primary);
-    box-shadow: 0 0 10px var(--gold-glow);
+    box-shadow: 0 0 8px var(--gold-glow);
 }
 
 /* About Section Styles */
@@ -735,7 +735,7 @@ body {
 
 .about-image-decoration {
     height: 180px;
-    background: linear-gradient(135deg, rgba(13,15,18,0.9), rgba(5,6,8,0.7)), url('assets/qilin.png') center/cover;
+    background: linear-gradient(135deg, rgba(246, 243, 234, 0.85), rgba(253, 252, 247, 0.6)), url('assets/qilin.png') center/cover;
     border-bottom: 1px solid var(--gold-border);
     position: relative;
 }
@@ -747,7 +747,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, var(--bg-deep-ink), transparent);
+    background: linear-gradient(to top, var(--bg-dark-gray), transparent);
 }
 
 .about-text {
@@ -759,7 +759,7 @@ body {
     color: var(--gold-primary);
     font-size: 2rem;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(140, 107, 18, 0.15);
     padding-bottom: 10px;
 }
 
@@ -777,7 +777,7 @@ body {
 
 .quote-block {
     border-left: 3px solid var(--vermilion);
-    background: rgba(178, 34, 34, 0.05);
+    background: rgba(158, 42, 43, 0.04);
     padding: 15px 20px;
     border-radius: 0 8px 8px 0;
     margin-top: 30px;
@@ -785,7 +785,7 @@ body {
 
 .quote-text {
     font-family: 'Noto Serif TC', serif;
-    color: var(--text-gold);
+    color: var(--vermilion);
     font-style: italic;
     font-size: 1.05rem;
 }
@@ -805,7 +805,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(43, 38, 33, 0.65);
     backdrop-filter: blur(8px);
     z-index: 1000;
     display: flex;
@@ -823,7 +823,7 @@ body {
 }
 
 .modal-card {
-    background: linear-gradient(135deg, #11141a 0%, #080a0d 100%);
+    background: linear-gradient(135deg, #fdfcf7 0%, #f5f0e3 100%);
     border: 1px solid var(--gold-primary);
     border-radius: 16px;
     width: 100%;
@@ -831,7 +831,7 @@ body {
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
-    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.9), 0 0 30px 0 rgba(212, 175, 55, 0.15);
+    box-shadow: 0 10px 40px 0 rgba(92, 80, 67, 0.25), 0 0 20px 0 rgba(140, 107, 18, 0.1);
     transform: scale(0.9);
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1.2);
 }
@@ -880,8 +880,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle at center, #1b202a 0%, #0d1017 100%);
-    border-right: 1px solid rgba(212, 175, 55, 0.15);
+    background: radial-gradient(circle at center, #fdfcf7 0%, #ebdcb9 100%);
+    border-right: 1px solid rgba(140, 107, 18, 0.15);
 }
 
 .beast-image-container {
@@ -892,7 +892,7 @@ body {
     aspect-ratio: 1;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+    box-shadow: 0 6px 18px rgba(92, 80, 67, 0.15);
 }
 
 .beast-image-container img {
@@ -907,16 +907,16 @@ body {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
+    border: 1px solid rgba(140, 107, 18, 0.25);
     pointer-events: none;
 }
 
 .beast-region-badge {
     margin-top: 20px;
-    color: var(--text-gold);
+    color: var(--gold-primary);
     font-family: 'Noto Serif TC', serif;
     font-size: 1rem;
-    background: rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.85);
     padding: 6px 16px;
     border-radius: 20px;
     border: 1px solid var(--gold-border);
@@ -932,7 +932,7 @@ body {
 
 .modal-header-info {
     margin-bottom: 25px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(140, 107, 18, 0.15);
     padding-bottom: 15px;
 }
 
@@ -950,7 +950,7 @@ body {
     font-family: 'Noto Serif TC', serif;
     font-size: 2.2rem;
     font-weight: 700;
-    color: var(--text-gold);
+    color: var(--text-primary);
     margin-bottom: 4px;
 }
 
@@ -989,16 +989,16 @@ body {
 
 .stat-bar {
     height: 8px;
-    background: rgba(255,255,255,0.06);
+    background: rgba(0, 0, 0, 0.06);
     border-radius: 4px;
     overflow: hidden;
 }
 
 .stat-fill {
     height: 100%;
-    background: linear-gradient(to right, var(--gold-dark), var(--gold-primary));
+    background: linear-gradient(to right, var(--gold-primary), var(--gold-dark));
     border-radius: 4px;
-    box-shadow: 0 0 8px var(--gold-glow);
+    box-shadow: 0 0 6px var(--gold-glow);
     transition: width 1s ease-out;
 }
 
@@ -1006,15 +1006,15 @@ body {
     font-size: 0.9rem;
     font-weight: 700;
     text-align: right;
-    color: var(--text-gold);
+    color: var(--gold-primary);
 }
 
 /* Lore in Modal */
 .classic-quote {
     font-family: 'Noto Serif TC', serif;
-    color: var(--text-gold);
+    color: var(--text-primary);
     font-style: italic;
-    background: rgba(178, 34, 34, 0.03);
+    background: rgba(158, 42, 43, 0.03);
     border-left: 3px solid var(--vermilion);
     padding: 15px;
     border-radius: 0 6px 6px 0;
@@ -1039,7 +1039,7 @@ body {
     max-width: 680px;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.8);
+    box-shadow: 0 15px 50px rgba(92,80,67,0.3);
     display: flex;
     max-height: 85vh;
     transform: scale(0.9);
@@ -1120,7 +1120,7 @@ body {
 .app-footer {
     margin-top: 50px;
     padding: 25px;
-    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    border-top: 1px solid rgba(140, 107, 18, 0.15);
     text-align: center;
     color: var(--text-secondary);
     font-size: 0.85rem;
@@ -1134,7 +1134,7 @@ body {
     }
     
     .header-content {
-        flex-direction: column-align-items;
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
@@ -1202,4 +1202,3 @@ body {
     font-family: 'Noto Serif TC', serif;
     opacity: 0.85;
 }
-
