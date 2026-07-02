@@ -475,3 +475,13 @@ footer p {
     }
 }
 
+/* Light Theme overrides for Shan Hai Jing card in portfolio grid */
+.card-img-placeholder[style*="ink_wash_bg"] {
+    color: #9e2a2b !important; /* Vermilion icon */
+}
+.card-img-placeholder[style*="ink_wash_bg"] span {
+    color: #2b2621 !important; /* Charcoal ink text */
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+
