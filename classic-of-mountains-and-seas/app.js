@@ -8,6 +8,7 @@ const BEASTS_DATABASE = [
     {
         id: "nine-tailed-fox",
         nameCn: "九尾狐",
+        zhuyin: "ㄐㄧㄡˇ ㄨㄟˇ ㄏㄨˊ",
         nameEn: "Nine-Tailed Fox",
         category: "auspicious", // divine, auspicious, perilous
         categoryCn: "瑞獸",
@@ -25,6 +26,7 @@ const BEASTS_DATABASE = [
     {
         id: "zhu-long",
         nameCn: "燭龍",
+        zhuyin: "ㄓㄨˊ ㄌㄨㄥˊ",
         nameEn: "Torch Dragon / Zhu Long",
         category: "divine",
         categoryCn: "神獸",
@@ -41,8 +43,9 @@ const BEASTS_DATABASE = [
     },
     {
         id: "taotie",
-        nameCn: "饕餮",
-        nameEn: "Taotie",
+        nameCn: "饕餮 (麅鴞)",
+        zhuyin: "ㄊㄠ ㄊㄧㄝˋ (ㄆㄠˊ ㄒㄧㄠ)",
+        nameEn: "Taotie (Pao Xiao)",
         category: "perilous",
         categoryCn: "凶獸",
         region: "west",
@@ -59,6 +62,7 @@ const BEASTS_DATABASE = [
     {
         id: "jingwei",
         nameCn: "精衛",
+        zhuyin: "ㄐㄧㄥ ㄨㄟˋ",
         nameEn: "Jingwei Bird",
         category: "auspicious",
         categoryCn: "瑞獸",
@@ -76,6 +80,7 @@ const BEASTS_DATABASE = [
     {
         id: "qilin",
         nameCn: "麒麟",
+        zhuyin: "ㄑㄧˊ ㄌㄧㄣˊ",
         nameEn: "Qilin / Kylin",
         category: "auspicious",
         categoryCn: "瑞獸",
@@ -93,6 +98,7 @@ const BEASTS_DATABASE = [
     {
         id: "xing-tian",
         nameCn: "刑天",
+        zhuyin: "ㄒㄧㄥˊ ㄊㄧㄢ",
         nameEn: "Xing Tian",
         category: "divine",
         categoryCn: "神獸",
@@ -105,6 +111,78 @@ const BEASTS_DATABASE = [
             spiritual: 90,
             aggression: 98,
             rarity: 95
+        }
+    },
+    {
+        id: "hundun",
+        nameCn: "混沌 (帝江)",
+        zhuyin: "ㄏㄨㄣˋ ㄉㄨㄣˋ (ㄉㄧˋ ㄐㄧㄤ)",
+        nameEn: "Hundun (Di Jiang)",
+        category: "perilous",
+        categoryCn: "凶獸",
+        region: "west",
+        regionCn: "西山經 (天山)",
+        classicText: "「天山...有神焉，其狀如黃囊，赤如丹火，六足四翼，渾敦無面目，是識歌舞，實為帝江也。」",
+        description: "混沌又名帝江，是西方的神鳥。牠的外形像一個黃色的口袋，散發著如丹火般耀眼的紅光。牠長著六隻腳和四隻翅膀，但是完全沒有五官與面目（渾敦無面目）。混沌雖然沒有七竅，卻非常精通唱歌與跳舞。在後世中，祂被列為中國古代四大凶獸之一，代表混沌無序狀態。",
+        image: "assets/hundun.png",
+        stats: {
+            spiritual: 85,
+            aggression: 45,
+            rarity: 92
+        }
+    },
+    {
+        id: "tiangou",
+        nameCn: "天狗",
+        zhuyin: "ㄊㄧㄢ ㄍㄡˇ",
+        nameEn: "Tiangou",
+        category: "auspicious",
+        categoryCn: "瑞獸",
+        region: "west",
+        regionCn: "西山經 (陰山)",
+        classicText: "「陰山...有獸焉，其狀如貍而白首，名曰天狗，其音如榴榴，可以禦凶。」",
+        description: "天狗是中國古代傳說中的靈獸。不同於後世吃月亮的惡狗或日本神話中的天狗，在《山海經》原始記載中，天狗是一隻形狀像狸（野貓）、腦袋呈白色的奇特神獸。牠會發出「榴榴」的叫聲。人們豢養牠可以用來禦凶、防範妖邪與災禍，是一隻能帶來平安的吉獸。",
+        image: "assets/tiangou.png",
+        stats: {
+            spiritual: 82,
+            aggression: 30,
+            rarity: 88
+        }
+    },
+    {
+        id: "bi-fang",
+        nameCn: "畢方",
+        zhuyin: "ㄅㄧˋ ㄈㄤ",
+        nameEn: "Bi Fang Bird",
+        category: "divine",
+        categoryCn: "神獸",
+        region: "west",
+        regionCn: "西山經 (章莪山)",
+        classicText: "「章莪之山...有鳥焉，其狀如鶴，一足，赤文青質而白喙，名曰畢方，其鳴自詨，見則其邑有訛火。」",
+        description: "畢方是中國古代神話中的木神與火神鳥。牠的外貌像鶴，但極其奇特的是牠只有一隻腳。畢方身體呈青色，覆蓋著紅色的斑紋，嘴喙是白色的。牠的叫聲就像在呼喚自己的名字「畢方」。傳說中，只要畢方在某處出現，該城鎮或地區就會莫名奇妙地發生離奇的火災（訛火）。",
+        image: "assets/bi_fang.png",
+        stats: {
+            spiritual: 88,
+            aggression: 55,
+            rarity: 90
+        }
+    },
+    {
+        id: "ling-ling",
+        nameCn: "軨軨",
+        zhuyin: "ㄌㄧㄥˊ ㄌㄧㄥˊ",
+        nameEn: "Ling Ling",
+        category: "perilous",
+        categoryCn: "凶獸",
+        region: "east",
+        regionCn: "東山經 (空桑山)",
+        classicText: "「空桑之山...有獸焉，其狀如牛而虎文，其音如欽，其名曰軨軨，見則天下大水。」",
+        description: "軨軨是居住在東方空桑山的一種異獸。牠的外形長得像牛，但身上覆蓋著如老虎一般斑闌的條紋。牠叫聲奇特，聽起來就像是在喊自己的名字「軨軨」。軨軨是象徵洪水的凶獸，傳說中只要看見牠出沒，天下就會發生極大的洪水水災。",
+        image: "assets/ling_ling.png",
+        stats: {
+            spiritual: 78,
+            aggression: 70,
+            rarity: 85
         }
     }
 ];
@@ -309,7 +387,7 @@ function renderBeasts() {
             <div class="beast-card-info">
                 <div class="beast-card-header">
                     <div class="beast-names">
-                        <h2 class="beast-title-cn">${beast.nameCn}</h2>
+                        <h2 class="beast-title-cn">${beast.nameCn} <span class="beast-zhuyin">(${beast.zhuyin})</span></h2>
                         <span class="beast-title-en">${beast.nameEn}</span>
                     </div>
                 </div>
@@ -547,7 +625,7 @@ function openBeastModal(beastId) {
     if (beast.category === "auspicious") modalCategory.classList.add("badge-auspicious");
     if (beast.category === "perilous") modalCategory.classList.add("badge-perilous");
     
-    modalName.innerText = beast.nameCn;
+    modalName.innerHTML = `${beast.nameCn} <span class="modal-zhuyin">(${beast.zhuyin})</span>`;
     modalEnglish.innerText = beast.nameEn;
     modalClassic.innerText = beast.classicText;
     modalDesc.innerText = beast.description;

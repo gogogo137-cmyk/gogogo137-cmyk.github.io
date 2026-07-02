@@ -1183,3 +1183,23 @@ body {
         padding: 35px 25px;
     }
 }
+
+/* Zhuyin / Bopomofo Styling Helper */
+.beast-zhuyin {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: normal;
+    margin-left: 6px;
+    font-family: 'Noto Serif TC', serif;
+    opacity: 0.85;
+}
+
+.modal-zhuyin {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    font-weight: normal;
+    margin-left: 8px;
+    font-family: 'Noto Serif TC', serif;
+    opacity: 0.85;
+}
+
