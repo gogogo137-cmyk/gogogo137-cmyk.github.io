@@ -9,6 +9,19 @@ createApp({
             // Project data structure - Separating data from presentation
             projects: [
                 {
+                    id: 'classic-of-mountains-and-seas',
+                    name: 'Classic of Mountains & Seas (Shan Hai Jing)',
+                    nameZh: '山海經 · 奇獸異誌',
+                    description: 'A premium, interactive web database exploring the mystical beasts, regions, and legendary lore of the ancient classic Shan Hai Jing, featuring an astrological Luo Pan compass filter.',
+                    descriptionZh: '高質感先秦古籍互動網頁。以東方玄幻色彩結合現代暗黑風格，整合天體八卦羅盤方位篩選、靈性數值詳細剖析，以及精美奇獸異誌卷軸傳說。',
+                    icon: 'fa-dragon',
+                    link: './classic-of-mountains-and-seas/index.html',
+                    color: '#d4af37',
+                    bgStyle: {
+                        background: 'linear-gradient(rgba(13, 15, 18, 0.45), rgba(13, 15, 18, 0.95)), url("./classic-of-mountains-and-seas/assets/ink_wash_bg.png") center/cover no-repeat'
+                    }
+                },
+                {
                     id: 'cwa-weather-dashboard',
                     name: 'Taiwan CWA Weather AI Visualization',
                     nameZh: '台灣氣象觀測 AI 視覺化互動儀表板',

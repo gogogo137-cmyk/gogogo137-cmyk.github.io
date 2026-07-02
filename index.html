@@ -62,7 +62,7 @@
             <div class="gallery-grid">
                 <!-- Staggered entrance animations powered by GSAP, rendered dynamically by Vue 3 -->
                 <div v-for="project in projects" :key="project.id" class="gallery-item">
-                    <div class="card-img-placeholder" :style="{ background: 'linear-gradient(135deg, ' + project.color + ' 0%, #0f172a 100%)' }">
+                    <div class="card-img-placeholder" :style="project.bgStyle ? project.bgStyle : { background: 'linear-gradient(135deg, ' + project.color + ' 0%, #0f172a 100%)' }">
                         <i class="fa-solid" :class="project.icon"></i>
                         <span>{{ project.name }}</span>
                     </div>

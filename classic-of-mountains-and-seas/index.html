@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="探索《山海經》的神話世界，包含精美奇獸異誌插圖、互動式天體羅盤方位篩選、經典神話傳說與異獸能力數值詳細剖析。">
+    <title>山海經 · 奇獸異誌 | Classic of Mountains and Seas</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;600&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Spiritual Particle Dust -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        
+        <!-- Mystical Header Section -->
+        <header class="app-header">
+            <div class="header-overlay"></div>
+            <div class="header-content">
+                <div class="title-area">
+                    <span class="ancient-seal">山海經</span>
+                    <h1 id="main-title" class="english-title">Classic of Mountains & Seas</h1>
+                    <p class="subtitle">奇獸異誌 · 互動神話卷軸</p>
+                </div>
+                
+                <!-- Celestial Luo Pan Compass -->
+                <div class="compass-wrapper">
+                    <div id="luo-pan-compass" class="luo-pan">
+                        <div class="compass-ring ring-outer"></div>
+                        <div class="compass-ring ring-middle">
+                            <span class="direction-label dir-n" data-dir="north">北</span>
+                            <span class="direction-label dir-e" data-dir="east">東</span>
+                            <span class="direction-label dir-s" data-dir="south">南</span>
+                            <span class="direction-label dir-w" data-dir="west">西</span>
+                        </div>
+                        <div class="compass-ring ring-inner">
+                            <div class="trigram-symbols">☰ ☱ ☲ ☳ ☴ ☵ ☶ ☷</div>
+                        </div>
+                        <div id="compass-center" class="compass-center" data-dir="central">
+                            <span class="center-text">中</span>
+                            <div class="needle"></div>
+                        </div>
+                    </div>
+                    <p class="compass-tip"><i class="fa-solid fa-compass spin-icon"></i> 旋轉羅盤或點擊方位以探尋各方異獸</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tab-navigation" aria-label="主要導覽">
+            <button class="nav-tab active" id="tab-btn-bestiary" data-target="tab-bestiary">
+                <i class="fa-solid fa-dragon"></i> 山海百獸
+            </button>
+            <button class="nav-tab" id="tab-btn-lore" data-target="tab-lore">
+                <i class="fa-solid fa-scroll"></i> 神話傳說
+            </button>
+            <button class="nav-tab" id="tab-btn-about" data-target="tab-about">
+                <i class="fa-solid fa-book-open"></i> 關於古籍
+            </button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- TAB 1: BESTIARY -->
+            <section id="tab-bestiary" class="tab-pane active">
+                <!-- Filters Bar -->
+                <div class="filters-bar" id="filters-container">
+                    <div class="filter-group">
+                        <label for="select-category"><i class="fa-solid fa-tags"></i> 屬性分類：</label>
+                        <div class="filter-buttons" id="select-category">
+                            <button class="filter-btn active" data-filter-type="category" data-value="all">全部</button>
+                            <button class="filter-btn" data-filter-type="category" data-value="divine">神獸</button>
+                            <button class="filter-btn" data-filter-type="category" data-value="auspicious">瑞獸</button>
+                            <button class="filter-btn" data-filter-type="category" data-value="perilous">凶獸</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="select-region"><i class="fa-solid fa-map-location-dot"></i> 地域經脈：</label>
+                        <div class="filter-buttons" id="select-region">
+                            <button class="filter-btn active" data-filter-type="region" data-value="all">全部</button>
+                            <button class="filter-btn" data-filter-type="region" data-value="east">東山經</button>
+                            <button class="filter-btn" data-filter-type="region" data-value="south">南山經</button>
+                            <button class="filter-btn" data-filter-type="region" data-value="west">西山經</button>
+                            <button class="filter-btn" data-filter-type="region" data-value="north">北山經</button>
+                            <button class="filter-btn" data-filter-type="region" data-value="central">中山經</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-status" id="filter-status-text">
+                        正在展示所有異獸 (共 5 隻)
+                    </div>
+                </div>
+
+                <!-- Bestiary Grid -->
+                <div class="beast-grid" id="beast-cards-grid">
+                    <!-- Cards will be dynamically generated by JS -->
+                </div>
+            </section>
+
+            <!-- TAB 2: LORE EXPLORER -->
+            <section id="tab-lore" class="tab-pane">
+                <div class="lore-scroll-container">
+                    <div class="lore-intro">
+                        <h2>神話卷軸</h2>
+                        <p>《山海經》不僅記載了地理與山川，更保存了眾多膾炙人口的中國遠古神話。點擊下方卷軸閱讀傳說故事。</p>
+                    </div>
+
+                    <div class="scrolls-wrapper">
+                        <!-- Scroll 1 -->
+                        <div class="myth-scroll-card" id="scroll-kuafu">
+                            <div class="scroll-wood wood-top"></div>
+                            <div class="scroll-body">
+                                <span class="scroll-tag">追日之志</span>
+                                <h3 class="scroll-title">夸父追日</h3>
+                                <p class="scroll-preview">夸父與日逐走，入日；渴，欲得飲，飲於河、渭；河、渭不足，北飲大澤。未至，道渴而死。棄其杖，化為鄧林。</p>
+                                <button class="read-scroll-btn" data-story="kuafu">展開卷軸</button>
+                            </div>
+                            <div class="scroll-wood wood-bottom"></div>
+                        </div>
+
+                        <!-- Scroll 2 -->
+                        <div class="myth-scroll-card" id="scroll-jingwei">
+                            <div class="scroll-wood wood-top"></div>
+                            <div class="scroll-body">
+                                <span class="scroll-tag">填海之執</span>
+                                <h3 class="scroll-title">精衛填海</h3>
+                                <p class="scroll-preview">炎帝之少女，名曰女娃。女娃遊於東海，溺而不返，常銜西山之木石，以堙於東海。</p>
+                                <button class="read-scroll-btn" data-story="jingwei">展開卷軸</button>
+                            </div>
+                            <div class="scroll-wood wood-bottom"></div>
+                        </div>
+
+                        <!-- Scroll 3 -->
+                        <div class="myth-scroll-card" id="scroll-nuwa">
+                            <div class="scroll-wood wood-top"></div>
+                            <div class="scroll-body">
+                                <span class="scroll-tag">補天之慈</span>
+                                <h3 class="scroll-title">女媧補天</h3>
+                                <p class="scroll-preview">往古之時，四極廢，九州裂，天不兼覆，地不周載。女媧煉五色石以補蒼天，斷鰲足以立四極。</p>
+                                <button class="read-scroll-btn" data-story="nuwa">展開卷軸</button>
+                            </div>
+                            <div class="scroll-wood wood-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: ABOUT -->
+            <section id="tab-about" class="tab-pane">
+                <div class="about-container">
+                    <div class="about-card">
+                        <div class="about-image-decoration"></div>
+                        <div class="about-text">
+                            <h2>關於《山海經》</h2>
+                            <p class="about-p font-chinese">
+                                《山海經》是中國一部極具神秘色彩的先秦古籍，全書共十八篇，分為《山經》五篇和《海經》十三篇。它以地理空間為框架，記錄了遠古時代的地理、物產、神話、巫術、民俗及異獸。
+                            </p>
+                            <p class="about-p font-chinese">
+                                書中描述了四百多個神怪異獸，牠們往往擁有奇特的外貌與超自然的力量。例如，有預示戰爭的「蜚」、象徵德行的「鳳凰」、以及帶來幸福的「九尾狐」。這些異獸不僅是遠古人民對未知自然力量的投射與敬畏，也是古代巫覡文化的縮影。
+                            </p>
+                            <p class="about-p">
+                                As a foundational text of Chinese mythology, the *Classic of Mountains and Seas* (Shan Hai Jing) blends early geography, cosmology, and folklore. It lists hundreds of sacred mountains, remote rivers, and mystical beasts, presenting a vivid canvas of how ancient peoples perceived the metaphysical forces of their environment.
+                            </p>
+                            <div class="quote-block">
+                                <p class="quote-text">「《山海經》，古之巫書也，紀神怪百物，涉地理史地，莫不神異。」</p>
+                                <span class="quote-author">—— 歷代學術評語</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Mystical Detail Modal Overlay -->
+        <div class="modal-overlay" id="beast-modal" role="dialog" aria-modal="true" aria-labelledby="modal-beast-name">
+            <div class="modal-card">
+                <button class="modal-close-btn" id="modal-close" aria-label="關閉視窗">&times;</button>
+                
+                <div class="modal-grid">
+                    <!-- Left: Beast Image & Decorative Border -->
+                    <div class="modal-visual">
+                        <div class="beast-image-container">
+                            <img id="modal-beast-img" src="" alt="異獸圖">
+                            <div class="image-frame-gold"></div>
+                        </div>
+                        <div class="beast-region-badge">
+                            <i class="fa-solid fa-compass"></i> <span id="modal-beast-region">東山經</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Stats & Information -->
+                    <div class="modal-info">
+                        <div class="modal-header-info">
+                            <span class="beast-category-tag" id="modal-beast-category">神獸</span>
+                            <h2 id="modal-beast-name" class="beast-chinese-name">九尾狐</h2>
+                            <span id="modal-beast-english" class="beast-english-name">Nine-Tailed Fox</span>
+                        </div>
+                        
+                        <div class="modal-details-body">
+                            <!-- Stats Area -->
+                            <div class="beast-stats">
+                                <h3><i class="fa-solid fa-chart-simple"></i> 靈性數值 (Spiritual Stats)</h3>
+                                <div class="stat-bar-wrapper">
+                                    <span class="stat-label">神性/Spiritual Power</span>
+                                    <div class="stat-bar"><div class="stat-fill" id="stat-spiritual" style="width: 80%"></div></div>
+                                    <span class="stat-num" id="val-spiritual">85</span>
+                                </div>
+                                <div class="stat-bar-wrapper">
+                                    <span class="stat-label">凶性/Aggression</span>
+                                    <div class="stat-bar"><div class="stat-fill" id="stat-aggression" style="width: 20%"></div></div>
+                                    <span class="stat-num" id="val-aggression">20</span>
+                                </div>
+                                <div class="stat-bar-wrapper">
+                                    <span class="stat-label">稀有度/Rarity</span>
+                                    <div class="stat-bar"><div class="stat-fill" id="stat-rarity" style="width: 90%"></div></div>
+                                    <span class="stat-num" id="val-rarity">95</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Lore Text -->
+                            <div class="beast-lore-section">
+                                <h3><i class="fa-solid fa-scroll"></i> 古籍記載 (Original Classic Text)</h3>
+                                <blockquote id="modal-beast-classic" class="classic-quote">
+                                    「青丘之山，有獸焉，其狀如狐而九尾，其音如嬰兒，能食人，食之不蠱。」
+                                </blockquote>
+                                <h3><i class="fa-solid fa-feather"></i> 現代釋義 (Modern Interpretation)</h3>
+                                <p id="modal-beast-desc" class="beast-description">
+                                    九尾狐是中國古代神話傳說中的奇獸。居住在青丘國，長著九條尾巴，聲音如同嬰兒啼哭。雖然傳說牠會食人，但人們若吃了牠的肉，便能避開妖邪蠱惑。在後世中，牠逐漸演化為瑞祥之獸，象徵子孫昌盛與帝王之兆。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Story Modal Overlay (For Lore Scroll Reading) -->
+        <div class="modal-overlay" id="story-modal" role="dialog" aria-modal="true" aria-labelledby="modal-story-title">
+            <div class="story-modal-card">
+                <button class="modal-close-btn" id="story-modal-close" aria-label="關閉視窗">&times;</button>
+                <div class="story-scroll-wood wood-left"></div>
+                <div class="story-content-wrapper">
+                    <h2 id="modal-story-title" class="story-modal-title">故事名稱</h2>
+                    <div id="modal-story-body" class="story-modal-body">
+                        <!-- Story paragraphs will go here -->
+                    </div>
+                </div>
+                <div class="story-scroll-wood wood-right"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>© 2026 山海經奇獸異誌網頁專案 | 探索遠古神怪世界</p>
+        </footer>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
