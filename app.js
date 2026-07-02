@@ -16,7 +16,7 @@ createApp({
                     descriptionZh: '高質感全端天氣儀表板。整合氣象署觀測 API、SQLite 歷史紀錄，並以 FastAPI 後端結合 Leaflet 地圖及 Plotly 互動式圖表動態呈現。',
                     icon: 'fa-cloud-sun-rain',
                     link: 'https://github.com/gogogo137-cmyk/cwa-weather',
-                    color: '#ea580c'
+                    color: '#2563eb'
                 },
                 {
                     id: 'joke-generator',
