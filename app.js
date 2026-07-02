@@ -9,6 +9,16 @@ createApp({
             // Project data structure - Separating data from presentation
             projects: [
                 {
+                    id: 'cwa-weather-dashboard',
+                    name: 'Taiwan CWA Weather AI Visualization',
+                    nameZh: '台灣氣象觀測 AI 視覺化互動儀表板',
+                    description: 'A full-stack weather system using CWA API, SQLite history tracking, FastAPI backend, and Leaflet + Plotly dynamic charts.',
+                    descriptionZh: '高質感全端天氣儀表板。整合氣象署觀測 API、SQLite 歷史紀錄，並以 FastAPI 後端結合 Leaflet 地圖及 Plotly 互動式圖表動態呈現。',
+                    icon: 'fa-cloud-sun-rain',
+                    link: 'https://github.com/gogogo137-cmyk/cwa-weather',
+                    color: '#ea580c'
+                },
+                {
                     id: 'joke-generator',
                     name: 'Random Joke Generator',
                     nameZh: '歡樂隨機笑話產生器',
@@ -147,6 +157,16 @@ createApp({
                     icon: 'fa-terminal',
                     link: '../HW5/index.html',
                     color: '#ec4899'
+                },
+                {
+                    id: 'naive-bayesian',
+                    name: 'Naive Bayesian Classifier',
+                    nameZh: 'Naive-Bayesian單純貝葉欣分類法',
+                    description: 'Interactive simulator illustrating Bayes Theorem, conditional feature independence, Laplace smoothing, and a real-time spam email filter.',
+                    descriptionZh: '高質感互動式貝氏分類器。支援自定義訓練表格、事前與條件機率分解，並包含一個採用拉普拉斯平滑的即時垃圾郵件過濾器。',
+                    icon: 'fa-brain',
+                    link: '../Naive-Bayesian/index.html',
+                    color: '#6366f1'
                 }
             ]
         };

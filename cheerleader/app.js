@@ -273,11 +273,11 @@ const cheerleaders = [
       "tpbl"
     ],
     "nationality": "korea",
-    "popularity": 348801,
+    "popularity": 334415,
     "emoji": "🌸",
     "image": "assets/qunqun.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 富邦悍將 / 台啤雲豹 Fubon Angels 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+    "bio": "性格活潑、古靈精怪，在 富邦悍將 / 台啤雲豹 Fubon Angels 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "member_19",
@@ -288,11 +288,11 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "korea",
-    "popularity": 397267,
+    "popularity": 310735,
     "emoji": "🌻",
     "image": "assets/an.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 富邦悍將 Fubon Angels 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+    "bio": "擁有鄰家女孩般的親切氣質，是 富邦悍將 Fubon Angels 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
     "id": "member_20",
@@ -303,11 +303,11 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "korea",
-    "popularity": 554315,
+    "popularity": 596356,
     "emoji": "💎",
     "image": "assets/cimei.png",
-    "bio": "為 台鋼雄鷹 Wing Stars 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+    "bio": "擁有鄰家女孩般的親切氣質，是 台鋼雄鷹 Wing Stars 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
     "id": "member_21",
@@ -318,11 +318,11 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "korea",
-    "popularity": 442569,
+    "popularity": 525411,
     "emoji": "🔥",
     "image": "assets/se7en.png",
-    "bio": "性格活潑、古靈精怪，在 中信兄弟 Passion Sisters 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "member_22",
@@ -333,11 +333,11 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "korea",
-    "popularity": 199938,
+    "popularity": 468563,
     "emoji": "🍭",
     "image": "assets/faye.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台鋼雄鷹 Wing Stars 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+    "bio": "擁有鄰家女孩般的親切氣質，是 台鋼雄鷹 Wing Stars 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
     "id": "member_23",
@@ -348,11 +348,11 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "japan",
-    "popularity": 477763,
+    "popularity": 129069,
     "emoji": "🌸",
     "image": "assets/like.png",
-    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+    "bio": "性格活潑、古靈精怪，在 統一獅 Uni-Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
   },
   {
     "id": "member_24",
@@ -363,11 +363,11 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "japan",
-    "popularity": 574987,
+    "popularity": 489391,
     "emoji": "🍡",
     "image": "assets/chihiro.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
     "id": "member_25",
@@ -378,475 +378,146 @@ const cheerleaders = [
       "cpbl"
     ],
     "nationality": "japan",
-    "popularity": 404880,
+    "popularity": 597915,
     "emoji": "🍣",
     "image": "assets/lanlan.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+    "bio": "畢業於專業舞蹈學系，身兼 味全龍 Dragon Beauties 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
   },
   {
     "id": "member_26",
-    "name": "諺諺",
+    "name": "拉拉",
     "nameEn": "Member_26",
-    "team": "台啤雲豹 電豹女",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 274444,
-    "emoji": "💫",
-    "image": "assets/hayul.png",
-    "bio": "性格活潑、古靈精怪，在 台啤雲豹 電豹女 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_27",
-    "name": "霖霖",
-    "nameEn": "Member_27",
     "team": "味全龍 Dragon Beauties",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 179874,
+    "popularity": 268557,
+    "emoji": "👟",
+    "image": "assets/hayul.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_27",
+    "name": "凱蒂",
+    "nameEn": "Member_27",
+    "team": "中信兄弟 Passion Sisters",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 318571,
     "emoji": "🔥",
     "image": "assets/yayeong.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "bio": "擁有鄰家女孩般的親切氣質，是 中信兄弟 Passion Sisters 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
     "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "member_28",
-    "name": "苡萱",
+    "name": "綠綠",
     "nameEn": "Member_28",
-    "team": "樂天桃猿 Rakuten Girls",
+    "team": "富邦悍將 Fubon Angels",
     "leagues": [
-      "cpbl"
+      "cpbl",
+      "tpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 360288,
-    "emoji": "🔥",
+    "popularity": 348164,
+    "emoji": "🍀",
     "image": "assets/mingo.png",
-    "bio": "性格活潑、古靈精怪，在 樂天桃猿 Rakuten Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 富邦悍將 Fubon Angels 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
     "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
     "id": "member_29",
-    "name": "愛麗絲",
+    "name": "柔一",
     "nameEn": "Member_29",
-    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "team": "統一獅 Uni-Girls",
     "leagues": [
-      "tpbl"
+      "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 204783,
-    "emoji": "🎵",
+    "popularity": 323579,
+    "emoji": "🌈",
     "image": "assets/hojung.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 福爾摩沙夢想家 Formosa Sexy 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+    "bio": "擁有鄰家女孩般的親切氣質，是 統一獅 Uni-Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "member_30",
-    "name": "儀諠",
+    "name": "沛沛",
     "nameEn": "Member_30",
-    "team": "中信兄弟 Passion Sisters",
+    "team": "味全龍 Dragon Beauties",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 741348,
-    "emoji": "🎀",
+    "popularity": 259572,
+    "emoji": "🍀",
     "image": "assets/emily.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+    "bio": "畢業於專業舞蹈學系，身兼 味全龍 Dragon Beauties 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
   },
   {
     "id": "member_31",
-    "name": "迪迪",
+    "name": "軒軒",
     "nameEn": "Member_31",
-    "team": "台新戰神 Taishin Wonders",
+    "team": "味全龍 Dragon Beauties",
     "leagues": [
-      "tpbl"
+      "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 594946,
-    "emoji": "🍬",
+    "popularity": 327263,
+    "emoji": "🎵",
     "image": "assets/dahye.png",
-    "bio": "畢業於專業舞蹈學系，身兼 台新戰神 Taishin Wonders 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_32",
-    "name": "芊芊",
-    "nameEn": "Member_32",
-    "team": "福爾摩沙夢想家 Formosa Sexy",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 570869,
-    "emoji": "💫",
-    "image": "assets/mizuki.png",
-    "bio": "為 福爾摩沙夢想家 Formosa Sexy 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_33",
-    "name": "媛媛",
-    "nameEn": "Member_33",
-    "team": "福爾摩沙夢想家 Formosa Sexy",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 421113,
-    "emoji": "💖",
-    "image": "assets/qunqun.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 福爾摩沙夢想家 Formosa Sexy 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_34",
-    "name": "宜婷",
-    "nameEn": "Member_34",
-    "team": "台鋼雄鷹 Wing Stars",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 465621,
-    "emoji": "🔥",
-    "image": "assets/an.png",
-    "bio": "性格活潑、古靈精怪，在 台鋼雄鷹 Wing Stars 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_35",
-    "name": "張晴",
-    "nameEn": "Member_35",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 327659,
-    "emoji": "✨",
-    "image": "assets/cimei.png",
-    "bio": "畢業於專業舞蹈學系，身兼 味全龍 Dragon Beauties 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_36",
-    "name": "嘎琳",
-    "nameEn": "Member_36",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 300774,
-    "emoji": "💗",
-    "image": "assets/se7en.png",
-    "bio": "為 樂天桃猿 Rakuten Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_37",
-    "name": "宋家宜",
-    "nameEn": "Member_37",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 573120,
-    "emoji": "🎵",
-    "image": "assets/faye.png",
-    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_38",
-    "name": "禹菡",
-    "nameEn": "Member_38",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 703690,
-    "emoji": "💗",
-    "image": "assets/like.png",
-    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_39",
-    "name": "拉拉",
-    "nameEn": "Member_39",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 608419,
-    "emoji": "🍬",
-    "image": "assets/chihiro.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_40",
-    "name": "雅伊",
-    "nameEn": "Member_40",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 613722,
-    "emoji": "🎵",
-    "image": "assets/lanlan.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_41",
-    "name": "小映",
-    "nameEn": "Member_41",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 708390,
-    "emoji": "👟",
-    "image": "assets/hayul.png",
     "bio": "為 味全龍 Dragon Beauties 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
     "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
   },
   {
-    "id": "member_42",
-    "name": "十元",
-    "nameEn": "Member_42",
-    "team": "樂天桃猿 Rakuten Girls",
+    "id": "member_32",
+    "name": "侯芳",
+    "nameEn": "Member_32",
+    "team": "統一獅 Uni-Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 344771,
-    "emoji": "🎉",
-    "image": "assets/yayeong.png",
-    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_43",
-    "name": "妮可",
-    "nameEn": "Member_43",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 616468,
+    "popularity": 653151,
     "emoji": "🌈",
-    "image": "assets/mingo.png",
-    "bio": "畢業於專業舞蹈學系，身兼 中信兄弟 Passion Sisters 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+    "image": "assets/mizuki.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 統一獅 Uni-Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_44",
-    "name": "寧寧",
-    "nameEn": "Member_44",
+    "id": "member_33",
+    "name": "小映",
+    "nameEn": "Member_33",
     "team": "味全龍 Dragon Beauties",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 170228,
-    "emoji": "💗",
-    "image": "assets/hojung.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_45",
-    "name": "妮妮",
-    "nameEn": "Member_45",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 293032,
-    "emoji": "✨",
-    "image": "assets/emily.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 統一獅 Uni-Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_46",
-    "name": "柴柴",
-    "nameEn": "Member_46",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 723886,
-    "emoji": "🔥",
-    "image": "assets/dahye.png",
-    "bio": "為 統一獅 Uni-Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_47",
-    "name": "莉子",
-    "nameEn": "Member_47",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 703466,
-    "emoji": "🍬",
-    "image": "assets/mizuki.png",
-    "bio": "為 中信兄弟 Passion Sisters 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_48",
-    "name": "螢螢",
-    "nameEn": "Member_48",
-    "team": "台鋼雄鷹 Wing Stars",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 426664,
-    "emoji": "🔥",
+    "popularity": 486966,
+    "emoji": "💫",
     "image": "assets/qunqun.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台鋼雄鷹 Wing Stars 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
-    "id": "member_49",
-    "name": "小楓",
-    "nameEn": "Member_49",
-    "team": "台啤雲豹 電豹女",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 514283,
-    "emoji": "👟",
-    "image": "assets/an.png",
-    "bio": "畢業於專業舞蹈學系，身兼 台啤雲豹 電豹女 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_50",
-    "name": "少鹽",
-    "nameEn": "Member_50",
-    "team": "福爾摩沙夢想家 Formosa Sexy",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 583980,
-    "emoji": "🔥",
-    "image": "assets/cimei.png",
-    "bio": "畢業於專業舞蹈學系，身兼 福爾摩沙夢想家 Formosa Sexy 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_51",
-    "name": "宣宣",
-    "nameEn": "Member_51",
-    "team": "台鋼雄鷹 Wing Stars",
+    "id": "member_34",
+    "name": "寧寧",
+    "nameEn": "Member_34",
+    "team": "味全龍 Dragon Beauties",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 300934,
-    "emoji": "🌈",
-    "image": "assets/se7en.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 台鋼雄鷹 Wing Stars 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_52",
-    "name": "盈瑩",
-    "nameEn": "Member_52",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 571098,
-    "emoji": "🍀",
-    "image": "assets/faye.png",
-    "bio": "為 中信兄弟 Passion Sisters 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_53",
-    "name": "波波",
-    "nameEn": "Member_53",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 356522,
-    "emoji": "🔥",
-    "image": "assets/like.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 中信兄弟 Passion Sisters 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_54",
-    "name": "溫妮",
-    "nameEn": "Member_54",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 128143,
+    "popularity": 663191,
     "emoji": "💗",
-    "image": "assets/chihiro.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_55",
-    "name": "曼容",
-    "nameEn": "Member_55",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 334813,
-    "emoji": "🎉",
-    "image": "assets/lanlan.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_56",
-    "name": "小安",
-    "nameEn": "Member_56",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 407423,
-    "emoji": "🌈",
-    "image": "assets/hayul.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "image": "assets/an.png",
+    "bio": "為 味全龍 Dragon Beauties 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
     "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
@@ -858,390 +529,192 @@ const cheerleaders = [
       "tpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 248076,
-    "emoji": "💗",
-    "image": "assets/yayeong.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台新戰神 Taishin Wonders 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+    "popularity": 419870,
+    "emoji": "😻",
+    "image": "assets/cimei.png",
+    "bio": "為 台新戰神 Taishin Wonders 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_58",
-    "name": "怡琪",
-    "nameEn": "Member_58",
+    "id": "member_36",
+    "name": "洗菜",
+    "nameEn": "Member_36",
+    "team": "台新戰神 Taishin Wonders",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 642966,
+    "emoji": "🌈",
+    "image": "assets/se7en.png",
+    "bio": "性格活潑、古靈精怪，在 台新戰神 Taishin Wonders 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_37",
+    "name": "林浠",
+    "nameEn": "Member_37",
+    "team": "台鋼雄鷹 Wing Stars",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 269889,
+    "emoji": "⭐",
+    "image": "assets/faye.png",
+    "bio": "畢業於專業舞蹈學系，身兼 台鋼雄鷹 Wing Stars 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_38",
+    "name": "心璇",
+    "nameEn": "Member_38",
+    "team": "味全龍 Dragon Beauties",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 436665,
+    "emoji": "⭐",
+    "image": "assets/like.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_39",
+    "name": "毛毛",
+    "nameEn": "Member_39",
+    "team": "台鋼雄鷹 Wing Stars",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 136476,
+    "emoji": "🍀",
+    "image": "assets/chihiro.png",
+    "bio": "為 台鋼雄鷹 Wing Stars 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_40",
+    "name": "柴柴",
+    "nameEn": "Member_40",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 521783,
+    "emoji": "💫",
+    "image": "assets/lanlan.png",
+    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_41",
+    "name": "小安",
+    "nameEn": "Member_41",
     "team": "中信兄弟 Passion Sisters",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 729762,
-    "emoji": "🍀",
-    "image": "assets/mingo.png",
-    "bio": "性格活潑、古靈精怪，在 中信兄弟 Passion Sisters 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_59",
-    "name": "柳柳",
-    "nameEn": "Member_59",
-    "team": "台新戰神 Taishin Wonders",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 144829,
-    "emoji": "📣",
-    "image": "assets/hojung.png",
-    "bio": "為 台新戰神 Taishin Wonders 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_60",
-    "name": "甜心",
-    "nameEn": "Member_60",
-    "team": "台鋼雄鷹 Wing Stars",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 624180,
-    "emoji": "🍬",
-    "image": "assets/emily.png",
-    "bio": "為 台鋼雄鷹 Wing Stars 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_61",
-    "name": "雅惟",
-    "nameEn": "Member_61",
-    "team": "富邦悍將 Fubon Angels",
-    "leagues": [
-      "cpbl",
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 619907,
-    "emoji": "👟",
-    "image": "assets/dahye.png",
-    "bio": "性格活潑、古靈精怪，在 富邦悍將 Fubon Angels 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_62",
-    "name": "口水",
-    "nameEn": "Member_62",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 431612,
-    "emoji": "🍬",
-    "image": "assets/mizuki.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_63",
-    "name": "芮妮",
-    "nameEn": "Member_63",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 183728,
-    "emoji": "😻",
-    "image": "assets/qunqun.png",
-    "bio": "為 味全龍 Dragon Beauties 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_64",
-    "name": "陳伊",
-    "nameEn": "Member_64",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 665595,
-    "emoji": "😻",
-    "image": "assets/an.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_65",
-    "name": "艾莉",
-    "nameEn": "Member_65",
-    "team": "台鋼雄鷹 Wing Stars",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 533933,
-    "emoji": "💖",
-    "image": "assets/cimei.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台鋼雄鷹 Wing Stars 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "yuki",
-    "name": "Yuki",
-    "nameEn": "Yuki",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 292005,
-    "emoji": "💖",
-    "image": "assets/se7en.png",
-    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_67",
-    "name": "馬妹",
-    "nameEn": "Member_67",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 680507,
-    "emoji": "📣",
-    "image": "assets/faye.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_68",
-    "name": "草莓",
-    "nameEn": "Member_68",
-    "team": "台啤雲豹 電豹女",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 745288,
-    "emoji": "🎵",
-    "image": "assets/like.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 台啤雲豹 電豹女 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_69",
-    "name": "檸檬",
-    "nameEn": "Member_69",
-    "team": "富邦悍將 Fubon Angels",
-    "leagues": [
-      "cpbl",
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 631456,
-    "emoji": "📣",
-    "image": "assets/chihiro.png",
-    "bio": "畢業於專業舞蹈學系，身兼 富邦悍將 Fubon Angels 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_70",
-    "name": "洗菜",
-    "nameEn": "Member_70",
-    "team": "台新戰神 Taishin Wonders",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 736813,
-    "emoji": "💫",
-    "image": "assets/lanlan.png",
-    "bio": "性格活潑、古靈精怪，在 台新戰神 Taishin Wonders 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
-  },
-  {
-    "id": "member_71",
-    "name": "沁沁",
-    "nameEn": "Member_71",
-    "team": "富邦悍將 Fubon Angels",
-    "leagues": [
-      "cpbl",
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 730354,
-    "emoji": "🌈",
+    "popularity": 602014,
+    "emoji": "💗",
     "image": "assets/hayul.png",
-    "bio": "畢業於專業舞蹈學系，身兼 富邦悍將 Fubon Angels 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_72",
-    "name": "艾莉絲",
-    "nameEn": "Member_72",
-    "team": "富邦悍將 Fubon Angels",
-    "leagues": [
-      "cpbl",
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 365522,
-    "emoji": "⭐",
-    "image": "assets/yayeong.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 富邦悍將 Fubon Angels 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_73",
-    "name": "麥麥",
-    "nameEn": "Member_73",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 668044,
-    "emoji": "🍬",
-    "image": "assets/mingo.png",
-    "bio": "性格活潑、古靈精怪，在 統一獅 Uni-Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_74",
-    "name": "柔一",
-    "nameEn": "Member_74",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 458027,
-    "emoji": "🎀",
-    "image": "assets/hojung.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 統一獅 Uni-Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
-  },
-  {
-    "id": "member_75",
-    "name": "筱雯",
-    "nameEn": "Member_75",
-    "team": "台鋼雄鷹 Wing Stars",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 534963,
-    "emoji": "👟",
-    "image": "assets/emily.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台鋼雄鷹 Wing Stars 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_76",
-    "name": "儷軒",
-    "nameEn": "Member_76",
+    "id": "member_42",
+    "name": "穎樂",
+    "nameEn": "Member_42",
     "team": "樂天桃猿 Rakuten Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 712457,
-    "emoji": "🔥",
-    "image": "assets/dahye.png",
+    "popularity": 462698,
+    "emoji": "🍀",
+    "image": "assets/yayeong.png",
     "bio": "性格活潑、古靈精怪，在 樂天桃猿 Rakuten Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
     "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
-    "id": "member_77",
-    "name": "宋宋",
-    "nameEn": "Member_77",
+    "id": "member_43",
+    "name": "奶昔",
+    "nameEn": "Member_43",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 203484,
+    "emoji": "✨",
+    "image": "assets/mingo.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 富邦悍將 Fubon Angels 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_44",
+    "name": "口水",
+    "nameEn": "Member_44",
+    "team": "味全龍 Dragon Beauties",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 630404,
+    "emoji": "📣",
+    "image": "assets/hojung.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_45",
+    "name": "熊霓",
+    "nameEn": "Member_45",
     "team": "樂天桃猿 Rakuten Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 320626,
-    "emoji": "🍬",
-    "image": "assets/mizuki.png",
-    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_78",
-    "name": "蔓妮",
-    "nameEn": "Member_78",
-    "team": "台新戰神 Taishin Wonders",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 572149,
-    "emoji": "🎵",
-    "image": "assets/qunqun.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 台新戰神 Taishin Wonders 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_79",
-    "name": "侯芳",
-    "nameEn": "Member_79",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 516125,
-    "emoji": "💫",
-    "image": "assets/an.png",
-    "bio": "為 統一獅 Uni-Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "popularity": 141041,
+    "emoji": "🎀",
+    "image": "assets/emily.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
     "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_80",
-    "name": "心璇",
-    "nameEn": "Member_80",
-    "team": "味全龍 Dragon Beauties",
+    "id": "member_46",
+    "name": "溫妮",
+    "nameEn": "Member_46",
+    "team": "樂天桃猿 Rakuten Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 402520,
-    "emoji": "💫",
-    "image": "assets/cimei.png",
-    "bio": "性格活潑、古靈精怪，在 味全龍 Dragon Beauties 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
-  },
-  {
-    "id": "member_81",
-    "name": "小珍奶",
-    "nameEn": "Member_81",
-    "team": "味全龍 Dragon Beauties",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 290286,
-    "emoji": "🎉",
-    "image": "assets/se7en.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "popularity": 314369,
+    "emoji": "📣",
+    "image": "assets/dahye.png",
+    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
     "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
-    "id": "member_82",
-    "name": "咪雅",
-    "nameEn": "Member_82",
-    "team": "統一獅 Uni-Girls",
+    "id": "member_47",
+    "name": "儀諠",
+    "nameEn": "Member_47",
+    "team": "中信兄弟 Passion Sisters",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 541115,
+    "popularity": 273456,
     "emoji": "🔥",
-    "image": "assets/faye.png",
-    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+    "image": "assets/mizuki.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 中信兄弟 Passion Sisters 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "wendy",
@@ -1252,208 +725,116 @@ const cheerleaders = [
       "tpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 437167,
+    "popularity": 393802,
     "emoji": "🎉",
-    "image": "assets/like.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 台啤雲豹 電豹女 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "image": "assets/qunqun.png",
+    "bio": "畢業於專業舞蹈學系，身兼 台啤雲豹 電豹女 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
     "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
   },
   {
-    "id": "member_84",
-    "name": "東東",
-    "nameEn": "Member_84",
-    "team": "富邦悍將 Fubon Angels",
-    "leagues": [
-      "cpbl",
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 212267,
-    "emoji": "🌈",
-    "image": "assets/chihiro.png",
-    "bio": "畢業於專業舞蹈學系，身兼 富邦悍將 Fubon Angels 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_85",
-    "name": "雪旋",
-    "nameEn": "Member_85",
-    "team": "台啤雲豹 電豹女",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 353742,
-    "emoji": "⭐",
-    "image": "assets/lanlan.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 台啤雲豹 電豹女 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_86",
-    "name": "詩雅",
-    "nameEn": "Member_86",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 366527,
-    "emoji": "🍀",
-    "image": "assets/hayul.png",
-    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
-  },
-  {
-    "id": "member_87",
-    "name": "凱伊",
-    "nameEn": "Member_87",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 602831,
-    "emoji": "🍬",
-    "image": "assets/yayeong.png",
-    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
-  },
-  {
-    "id": "member_88",
-    "name": "奶昔",
-    "nameEn": "Member_88",
-    "team": "富邦悍將 Fubon Angels",
-    "leagues": [
-      "cpbl",
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 143804,
-    "emoji": "🍀",
-    "image": "assets/mingo.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 富邦悍將 Fubon Angels 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_89",
-    "name": "凱蒂",
-    "nameEn": "Member_89",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 309587,
-    "emoji": "🍀",
-    "image": "assets/hojung.png",
-    "bio": "畢業於專業舞蹈學系，身兼 中信兄弟 Passion Sisters 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_90",
-    "name": "吉拿",
-    "nameEn": "Member_90",
-    "team": "台啤雲豹 電豹女",
-    "leagues": [
-      "tpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 296004,
-    "emoji": "✨",
-    "image": "assets/emily.png",
-    "bio": "為 台啤雲豹 電豹女 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_91",
-    "name": "毛毛",
-    "nameEn": "Member_91",
+    "id": "member_49",
+    "name": "珍妮",
+    "nameEn": "Member_49",
     "team": "台鋼雄鷹 Wing Stars",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 120581,
-    "emoji": "🎉",
-    "image": "assets/dahye.png",
-    "bio": "畢業於專業舞蹈學系，身兼 台鋼雄鷹 Wing Stars 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "popularity": 594966,
+    "emoji": "🍬",
+    "image": "assets/an.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台鋼雄鷹 Wing Stars 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_50",
+    "name": "吉拿",
+    "nameEn": "Member_50",
+    "team": "台啤雲豹 電豹女",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 195516,
+    "emoji": "😻",
+    "image": "assets/cimei.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 台啤雲豹 電豹女 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_51",
+    "name": "琳妲",
+    "nameEn": "Member_51",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 135423,
+    "emoji": "🍀",
+    "image": "assets/se7en.png",
+    "bio": "性格活潑、古靈精怪，在 樂天桃猿 Rakuten Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
     "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
-    "id": "member_92",
-    "name": "林可",
-    "nameEn": "Member_92",
+    "id": "member_52",
+    "name": "妙妙",
+    "nameEn": "Member_52",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 255136,
+    "emoji": "💗",
+    "image": "assets/faye.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 統一獅 Uni-Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_53",
+    "name": "短今",
+    "nameEn": "Member_53",
     "team": "中信兄弟 Passion Sisters",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 123456,
-    "emoji": "👟",
-    "image": "assets/mizuki.png",
-    "bio": "性格活潑、古靈精怪，在 中信兄弟 Passion Sisters 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_93",
-    "name": "妙妙",
-    "nameEn": "Member_93",
-    "team": "統一獅 Uni-Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 694243,
-    "emoji": "💫",
-    "image": "assets/qunqun.png",
-    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 統一獅 Uni-Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
-    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
-  },
-  {
-    "id": "member_94",
-    "name": "穎樂",
-    "nameEn": "Member_94",
-    "team": "樂天桃猿 Rakuten Girls",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 350852,
-    "emoji": "💗",
-    "image": "assets/an.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 樂天桃猿 Rakuten Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "popularity": 720705,
+    "emoji": "🎉",
+    "image": "assets/like.png",
+    "bio": "為 中信兄弟 Passion Sisters 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
     "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_95",
-    "name": "若潼",
-    "nameEn": "Member_95",
+    "id": "member_54",
+    "name": "菲菲",
+    "nameEn": "Member_54",
     "team": "樂天桃猿 Rakuten Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 325443,
-    "emoji": "🎵",
-    "image": "assets/cimei.png",
+    "popularity": 341944,
+    "emoji": "🎉",
+    "image": "assets/chihiro.png",
     "bio": "擁有鄰家女孩般的親切氣質，是 樂天桃猿 Rakuten Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
   },
   {
-    "id": "member_96",
-    "name": "艾妮",
-    "nameEn": "Member_96",
-    "team": "統一獅 Uni-Girls",
+    "id": "member_55",
+    "name": "艾莉",
+    "nameEn": "Member_55",
+    "team": "台鋼雄鷹 Wing Stars",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 704960,
-    "emoji": "🍬",
-    "image": "assets/se7en.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 統一獅 Uni-Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+    "popularity": 152122,
+    "emoji": "💖",
+    "image": "assets/lanlan.png",
+    "bio": "畢業於專業舞蹈學系，身兼 台鋼雄鷹 Wing Stars 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "queena",
@@ -1464,161 +845,783 @@ const cheerleaders = [
       "tpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 308647,
-    "emoji": "😻",
-    "image": "assets/faye.png",
-    "bio": "畢業於專業舞蹈學系，身兼 台新戰神 Taishin Wonders 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+    "popularity": 311738,
+    "emoji": "⭐",
+    "image": "assets/hayul.png",
+    "bio": "為 台新戰神 Taishin Wonders 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
-    "id": "member_98",
-    "name": "梓梓",
-    "nameEn": "Member_98",
-    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "id": "member_57",
+    "name": "咪雅",
+    "nameEn": "Member_57",
+    "team": "統一獅 Uni-Girls",
     "leagues": [
-      "tpbl"
+      "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 224495,
-    "emoji": "😻",
-    "image": "assets/like.png",
-    "bio": "性格活潑、古靈精怪，在 福爾摩沙夢想家 Formosa Sexy 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+    "popularity": 497398,
+    "emoji": "🎉",
+    "image": "assets/yayeong.png",
+    "bio": "為 統一獅 Uni-Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_99",
-    "name": "蘿拉",
-    "nameEn": "Member_99",
+    "id": "member_58",
+    "name": "琪琪",
+    "nameEn": "Member_58",
     "team": "味全龍 Dragon Beauties",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 694451,
-    "emoji": "💫",
-    "image": "assets/chihiro.png",
-    "bio": "為 味全龍 Dragon Beauties 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "popularity": 457235,
+    "emoji": "⭐",
+    "image": "assets/mingo.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_59",
+    "name": "艾妮",
+    "nameEn": "Member_59",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 264479,
+    "emoji": "⭐",
+    "image": "assets/hojung.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 統一獅 Uni-Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
     "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
   },
   {
-    "id": "member_100",
-    "name": "筱緹",
-    "nameEn": "Member_100",
+    "id": "member_60",
+    "name": "草莓",
+    "nameEn": "Member_60",
     "team": "台啤雲豹 電豹女",
     "leagues": [
       "tpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 233717,
-    "emoji": "⭐",
-    "image": "assets/lanlan.png",
+    "popularity": 286013,
+    "emoji": "🎉",
+    "image": "assets/emily.png",
     "bio": "擁有鄰家女孩般的親切氣質，是 台啤雲豹 電豹女 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_61",
+    "name": "岱縈",
+    "nameEn": "Member_61",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 233388,
+    "emoji": "💫",
+    "image": "assets/dahye.png",
+    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
     "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_101",
-    "name": "琪琪",
-    "nameEn": "Member_101",
+    "id": "member_62",
+    "name": "少鹽",
+    "nameEn": "Member_62",
+    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 366556,
+    "emoji": "💗",
+    "image": "assets/mizuki.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 福爾摩沙夢想家 Formosa Sexy 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_63",
+    "name": "卉妮",
+    "nameEn": "Member_63",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 255701,
+    "emoji": "🍬",
+    "image": "assets/qunqun.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_64",
+    "name": "禹菡",
+    "nameEn": "Member_64",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 296730,
+    "emoji": "⭐",
+    "image": "assets/an.png",
+    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_65",
+    "name": "其其",
+    "nameEn": "Member_65",
+    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 648925,
+    "emoji": "🎵",
+    "image": "assets/cimei.png",
+    "bio": "為 福爾摩沙夢想家 Formosa Sexy 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_66",
+    "name": "宜婷",
+    "nameEn": "Member_66",
+    "team": "台鋼雄鷹 Wing Stars",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 461147,
+    "emoji": "📣",
+    "image": "assets/se7en.png",
+    "bio": "畢業於專業舞蹈學系，身兼 台鋼雄鷹 Wing Stars 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_67",
+    "name": "沁沁",
+    "nameEn": "Member_67",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 260837,
+    "emoji": "🔥",
+    "image": "assets/faye.png",
+    "bio": "畢業於專業舞蹈學系，身兼 富邦悍將 Fubon Angels 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_68",
+    "name": "馬妹",
+    "nameEn": "Member_68",
     "team": "味全龍 Dragon Beauties",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 732602,
-    "emoji": "😻",
+    "popularity": 269580,
+    "emoji": "💖",
+    "image": "assets/like.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_69",
+    "name": "麥麥",
+    "nameEn": "Member_69",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 463973,
+    "emoji": "👟",
+    "image": "assets/chihiro.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 統一獅 Uni-Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_70",
+    "name": "潔米",
+    "nameEn": "Member_70",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 718703,
+    "emoji": "🍬",
+    "image": "assets/lanlan.png",
+    "bio": "性格活潑、古靈精怪，在 富邦悍將 Fubon Angels 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_71",
+    "name": "雅惟",
+    "nameEn": "Member_71",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 485461,
+    "emoji": "✨",
     "image": "assets/hayul.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 富邦悍將 Fubon Angels 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_72",
+    "name": "宣宣",
+    "nameEn": "Member_72",
+    "team": "台鋼雄鷹 Wing Stars",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 318797,
+    "emoji": "📣",
+    "image": "assets/yayeong.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台鋼雄鷹 Wing Stars 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_73",
+    "name": "妮妮",
+    "nameEn": "Member_73",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 585184,
+    "emoji": "💗",
+    "image": "assets/mingo.png",
+    "bio": "為 統一獅 Uni-Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_74",
+    "name": "妡妡",
+    "nameEn": "Member_74",
+    "team": "台鋼雄鷹 Wing Stars",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 546792,
+    "emoji": "👟",
+    "image": "assets/hojung.png",
+    "bio": "為 台鋼雄鷹 Wing Stars 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_75",
+    "name": "怡琪",
+    "nameEn": "Member_75",
+    "team": "中信兄弟 Passion Sisters",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 401507,
+    "emoji": "👟",
+    "image": "assets/emily.png",
+    "bio": "性格活潑、古靈精怪，在 中信兄弟 Passion Sisters 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_76",
+    "name": "柳柳",
+    "nameEn": "Member_76",
+    "team": "台新戰神 Taishin Wonders",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 718842,
+    "emoji": "⭐",
+    "image": "assets/dahye.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台新戰神 Taishin Wonders 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_77",
+    "name": "檸檬",
+    "nameEn": "Member_77",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 556811,
+    "emoji": "⭐",
+    "image": "assets/mizuki.png",
+    "bio": "畢業於專業舞蹈學系，身兼 富邦悍將 Fubon Angels 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_78",
+    "name": "艾莉絲",
+    "nameEn": "Member_78",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 733956,
+    "emoji": "✨",
+    "image": "assets/qunqun.png",
+    "bio": "畢業於專業舞蹈學系，身兼 富邦悍將 Fubon Angels 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_79",
+    "name": "凱伊",
+    "nameEn": "Member_79",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 376114,
+    "emoji": "🎉",
+    "image": "assets/an.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_80",
+    "name": "小珍奶",
+    "nameEn": "Member_80",
+    "team": "味全龍 Dragon Beauties",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 645331,
+    "emoji": "💫",
+    "image": "assets/cimei.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_81",
+    "name": "心韻",
+    "nameEn": "Member_81",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 288777,
+    "emoji": "💗",
+    "image": "assets/se7en.png",
+    "bio": "畢業於專業舞蹈學系，身兼 樂天桃猿 Rakuten Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_82",
+    "name": "陳伊",
+    "nameEn": "Member_82",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 648728,
+    "emoji": "👟",
+    "image": "assets/faye.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 樂天桃猿 Rakuten Girls 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_83",
+    "name": "媛媛",
+    "nameEn": "Member_83",
+    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 744594,
+    "emoji": "🍬",
+    "image": "assets/like.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 福爾摩沙夢想家 Formosa Sexy 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_84",
+    "name": "曼容",
+    "nameEn": "Member_84",
+    "team": "中信兄弟 Passion Sisters",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 409373,
+    "emoji": "🎵",
+    "image": "assets/chihiro.png",
+    "bio": "為 中信兄弟 Passion Sisters 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_85",
+    "name": "希雅",
+    "nameEn": "Member_85",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 380749,
+    "emoji": "✨",
+    "image": "assets/lanlan.png",
+    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_86",
+    "name": "張晴",
+    "nameEn": "Member_86",
+    "team": "味全龍 Dragon Beauties",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 464692,
+    "emoji": "🌈",
+    "image": "assets/hayul.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 味全龍 Dragon Beauties 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_87",
+    "name": "諺諺",
+    "nameEn": "Member_87",
+    "team": "台啤雲豹 電豹女",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 691936,
+    "emoji": "👟",
+    "image": "assets/yayeong.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 台啤雲豹 電豹女 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_88",
+    "name": "橘兒",
+    "nameEn": "Member_88",
+    "team": "台新戰神 Taishin Wonders",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 556159,
+    "emoji": "⭐",
+    "image": "assets/mingo.png",
+    "bio": "為 台新戰神 Taishin Wonders 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
+  },
+  {
+    "id": "member_89",
+    "name": "苡萱",
+    "nameEn": "Member_89",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 260120,
+    "emoji": "✨",
+    "image": "assets/hojung.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_90",
+    "name": "晴兒",
+    "nameEn": "Member_90",
+    "team": "中信兄弟 Passion Sisters",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 189233,
+    "emoji": "💫",
+    "image": "assets/emily.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 中信兄弟 Passion Sisters 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "yuki",
+    "name": "Yuki",
+    "nameEn": "Yuki",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 546685,
+    "emoji": "💫",
+    "image": "assets/dahye.png",
+    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
+  },
+  {
+    "id": "member_92",
+    "name": "詩雅",
+    "nameEn": "Member_92",
+    "team": "統一獅 Uni-Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 669156,
+    "emoji": "⭐",
+    "image": "assets/mizuki.png",
+    "bio": "性格活潑、古靈精怪，在 統一獅 Uni-Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_93",
+    "name": "蘿拉",
+    "nameEn": "Member_93",
+    "team": "味全龍 Dragon Beauties",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 597481,
+    "emoji": "📣",
+    "image": "assets/qunqun.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+  },
+  {
+    "id": "member_94",
+    "name": "梓梓",
+    "nameEn": "Member_94",
+    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 347551,
+    "emoji": "👟",
+    "image": "assets/an.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 福爾摩沙夢想家 Formosa Sexy 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_95",
+    "name": "迪迪",
+    "nameEn": "Member_95",
+    "team": "台新戰神 Taishin Wonders",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 223909,
+    "emoji": "📣",
+    "image": "assets/cimei.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 台新戰神 Taishin Wonders 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_96",
+    "name": "愛麗絲",
+    "nameEn": "Member_96",
+    "team": "福爾摩沙夢想家 Formosa Sexy",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 562128,
+    "emoji": "🎵",
+    "image": "assets/se7en.png",
+    "bio": "為 福爾摩沙夢想家 Formosa Sexy 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_97",
+    "name": "小蛙",
+    "nameEn": "Member_97",
+    "team": "味全龍 Dragon Beauties",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 530724,
+    "emoji": "🎉",
+    "image": "assets/faye.png",
     "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 味全龍 Dragon Beauties 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
     "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_102",
-    "name": "小蛙",
-    "nameEn": "Member_102",
-    "team": "味全龍 Dragon Beauties",
+    "id": "member_98",
+    "name": "少少",
+    "nameEn": "Member_98",
+    "team": "統一獅 Uni-Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 527749,
+    "popularity": 217608,
+    "emoji": "⭐",
+    "image": "assets/like.png",
+    "bio": "畢業於專業舞蹈學系，身兼 統一獅 Uni-Girls 的編舞核心。在舞台上展現精湛且具爆發力的舞姿，氣場十足，是現場表演的焦點人物。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_99",
+    "name": "卡卡",
+    "nameEn": "Member_99",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 166256,
     "emoji": "💫",
+    "image": "assets/chihiro.png",
+    "bio": "為 富邦悍將 Fubon Angels 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "member_100",
+    "name": "丹丹",
+    "nameEn": "Member_100",
+    "team": "富邦悍將 Fubon Angels",
+    "leagues": [
+      "cpbl",
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 280474,
+    "emoji": "🎉",
+    "image": "assets/lanlan.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 富邦悍將 Fubon Angels 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_101",
+    "name": "畇二",
+    "nameEn": "Member_101",
+    "team": "中信兄弟 Passion Sisters",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 242432,
+    "emoji": "🍬",
+    "image": "assets/hayul.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "多棲藝人發展、廣告品牌大使、流行舞編排與教學、戶外健身品牌大使。"
+  },
+  {
+    "id": "member_102",
+    "name": "筠熹",
+    "nameEn": "Member_102",
+    "team": "樂天桃猿 Rakuten Girls",
+    "leagues": [
+      "cpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 387141,
+    "emoji": "🍀",
     "image": "assets/yayeong.png",
-    "bio": "性格活潑、古靈精怪，在 味全龍 Dragon Beauties 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
     "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
     "id": "member_103",
-    "name": "琳妲",
+    "name": "十元",
     "nameEn": "Member_103",
     "team": "樂天桃猿 Rakuten Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 521319,
-    "emoji": "👟",
+    "popularity": 494522,
+    "emoji": "🎀",
     "image": "assets/mingo.png",
-    "bio": "性格活潑、古靈精怪，在 樂天桃猿 Rakuten Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 樂天桃猿 Rakuten Girls 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
     "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   },
   {
     "id": "member_104",
-    "name": "貴貴",
+    "name": "莎莎",
     "nameEn": "Member_104",
-    "team": "中信兄弟 Passion Sisters",
-    "leagues": [
-      "cpbl"
-    ],
-    "nationality": "taiwan",
-    "popularity": 601618,
-    "emoji": "🎵",
-    "image": "assets/hojung.png",
-    "bio": "擁有鄰家女孩般的親切氣質，是 中信兄弟 Passion Sisters 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
-  },
-  {
-    "id": "member_105",
-    "name": "其其",
-    "nameEn": "Member_105",
     "team": "福爾摩沙夢想家 Formosa Sexy",
     "leagues": [
       "tpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 291005,
+    "popularity": 707623,
     "emoji": "✨",
-    "image": "assets/emily.png",
-    "bio": "為 福爾摩沙夢想家 Formosa Sexy 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+    "image": "assets/hojung.png",
+    "bio": "擁有鄰家女孩般的親切氣質，是 福爾摩沙夢想家 Formosa Sexy 備受矚目的新星。憑藉對應援的熱愛與無比活力，迅速在球場累積高人氣與關注。",
+    "direction": "寫真書出版發行、商業活動主持、網路影音節目企劃、個人品牌創立與電商運營。"
   },
   {
-    "id": "member_106",
-    "name": "孟潔",
-    "nameEn": "Member_106",
-    "team": "樂天桃猿 Rakuten Girls",
+    "id": "member_105",
+    "name": "波波",
+    "nameEn": "Member_105",
+    "team": "中信兄弟 Passion Sisters",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 277453,
-    "emoji": "🌈",
-    "image": "assets/dahye.png",
-    "bio": "為 樂天桃猿 Rakuten Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
+    "popularity": 271209,
+    "emoji": "🍬",
+    "image": "assets/emily.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 中信兄弟 Passion Sisters 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
     "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
   },
   {
-    "id": "member_107",
-    "name": "芮絲",
-    "nameEn": "Member_107",
+    "id": "member_106",
+    "name": "蔓妮",
+    "nameEn": "Member_106",
+    "team": "台新戰神 Taishin Wonders",
+    "leagues": [
+      "tpbl"
+    ],
+    "nationality": "taiwan",
+    "popularity": 722824,
+    "emoji": "✨",
+    "image": "assets/dahye.png",
+    "bio": "以清純甜美的氣質與治癒人心的笑容風靡看台，是 台新戰神 Taishin Wonders 的招牌隊員之一。應援時細心熱情，與球迷的親切互動極具魅力。",
+    "direction": "個人自媒體（Instagram/YouTube）經營、美妝與穿搭品牌合作代言、舞蹈編排、體育活動推廣。"
+  },
+  {
+    "id": "joy",
+    "name": "Joy",
+    "nameEn": "Joy",
     "team": "統一獅 Uni-Girls",
     "leagues": [
       "cpbl"
     ],
     "nationality": "taiwan",
-    "popularity": 689609,
-    "emoji": "🌈",
+    "popularity": 658401,
+    "emoji": "🍀",
     "image": "assets/mizuki.png",
-    "bio": "為 統一獅 Uni-Girls 的人氣隊員，擁有活潑開朗的性格與熱情洋溢的笑容。在場上賣力應援，擅長與球迷互動，舞蹈實力突出，深得粉絲愛戴。",
-    "direction": "高階時尚服飾模特兒、跨國文化與旅遊宣傳推廣、舞蹈教學、運動健康食品代言人。"
+    "bio": "性格活潑、古靈精怪，在 統一獅 Uni-Girls 中扮演開心果的角色。不僅應援動作元氣滿滿，也擅長帶動觀眾席氣氛，深具群眾感染力。",
+    "direction": "綜藝電視節目主持、遊戲實況主、品牌聯名商品企劃、影視戲劇客串演出。"
   }
 ];
 
